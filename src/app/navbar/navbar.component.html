@@ -1,0 +1,90 @@
+<div class="navbar">
+
+    <mat-toolbar class="nav-content" color="primary">
+
+        <a class="nav-link" [routerLink]="">Payslip</a>
+        <div class="leaves">
+            <div class="navbar-nav mr-auto">
+
+                <div class="nav-item" routerLinkActive="active" (mouseover)="leavesmenuTrigger.openMenu()"
+                    (mouseout)="$event.stopPropagation();leavesmenuTrigger.openMenu()">
+                    <a class="nav-link" #leavesmenuTrigger="matMenuTrigger" [matMenuTriggerFor]="leavesmenu">Leaves</a>
+                    <mat-menu #leavesmenu="matMenu">
+                        <button mat-menu-item [routerLink]="['/plan/manual-plan']"> <mat-icon>event_note</mat-icon>Apply Leave</button>
+                        <button mat-menu-item [routerLink]="['/plan/create-plan']"><mat-icon>people</mat-icon> EmployeeAccess</button>
+                        <button mat-menu-item [routerLink]="['/plan/pending-plans']">
+                            <mat-icon>event_busy</mat-icon>Leaves Approval</button>
+                        <button mat-menu-item
+                            [routerLink]="['/plan/pending-plans']"><mat-icon>event_available</mat-icon> Employee Leaves
+                        </button>
+
+                    </mat-menu>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="admin">
+            <div class="navbar-nav mr-auto">
+
+                <div class="nav-item" routerLinkActive="active" (mouseover)="createPlanmenuTrigger.openMenu()"
+                    (mouseout)="$event.stopPropagation();createPlanmenuTrigger.openMenu()">
+                    <a class="nav-link" #createPlanmenuTrigger="matMenuTrigger"
+                        [matMenuTriggerFor]="createPlan">Admin</a>
+                    <mat-menu #createPlan="matMenu">
+                        <button mat-menu-item
+                            [routerLink]="['/plan/manual-plan']"><mat-icon>people</mat-icon>Employees</button>
+                        <button mat-menu-item [routerLink]="['/plan/create-plan']"><i class="fa-solid fa-indian-rupee-sign"> </i>₹   Salary
+                            Deductions</button>
+                        <button mat-menu-item [routerLink]="['/plan/pending-plans']"><mat-icon>add_circle</mat-icon>
+                            Create Designation</button>
+                        <button mat-menu-item [routerLink]="['/plan/pending-plans']"> <mat-icon>add_circle</mat-icon>
+                            Create TaxType</button>
+                        <button mat-menu-item
+                            [routerLink]="['/plan/pending-plans']"><mat-icon>account_balance</mat-icon> Bank
+                            Details</button>
+                        <button mat-menu-item [routerLink]="['/plan/pending-plans']" ><i></i> ₹  Salary Details</button>
+                    </mat-menu>
+                </div>
+            </div>
+        </div>
+
+        <div class="profile">
+
+
+            <div class="nav-item" routerLinkActive="active" (mouseover)="dispatchPlanmenuTrigger.openMenu()">
+                <a class="nav-link" #dispatchPlanmenuTrigger="matMenuTrigger"
+                    [matMenuTriggerFor]="dispatchPlan">Wellcome {{name}} <mat-icon>account_circle</mat-icon> </a>
+                <mat-menu #dispatchPlan="matMenu">
+
+                    <button mat-menu-item
+                        [routerLink]="['/dispatch-plan/view-plan']"><mat-icon>camera_enhance</mat-icon> Profile
+                        Photo</button>
+                    <button mat-menu-item [routerLink]="['/dispatch-plan/modifiy-plan']">
+                        <mat-icon>camera_enhance</mat-icon> Update Photo</button>
+                    <button mat-menu-item [routerLink]="['updateprofile']"> <mat-icon>person</mat-icon>Profile</button>
+                    <button mat-menu-item [routerLink]="['/dispatch-plan/approve-plans']">
+                        <mat-icon>build</mat-icon>Change Password</button>
+                    <button mat-menu-item [routerLink]="['/login']">
+                        <mat-icon>exit_to_app</mat-icon>Logout</button>
+                </mat-menu>
+            </div>
+
+
+
+
+
+        </div>
+
+
+    </mat-toolbar>
+
+    <div class="bottom-content">
+        <router-outlet></router-outlet>
+    </div>
+
+
+
+
+</div>

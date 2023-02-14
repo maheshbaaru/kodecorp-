@@ -1,0 +1,81 @@
+<p-panel header="UPDATE PROFILE" >
+
+    <ng-template pTemplate="icons">
+        <p-button routerLink="/navbar" label="back" icon="pi pi-check" styleClass="p-button-sm"></p-button>
+        <p-button label="save" icon="pi pi-check" styleClass="p-button-sm"></p-button>
+    </ng-template>
+    <form formgroup="updateform">
+        <div class="grid p-fluid">
+            <div class="row1">
+                <div class="col-12 md:col-6 lg:col-4">
+                    <span>EmployeeID</span>
+                    <div class="p-inputgroup" >
+                        <input class="form-control" type="text" pInputText placeholder="EmployeeID">
+                    </div>
+                </div>
+
+                <div class="col-12 md:col-6 lg:col-4">
+                    <span>FirstName</span>
+                    <div class="p-inputgroup" >
+                        <input class="form-control" type="text"  pInputText placeholder="FirstName">
+                    </div>
+                </div>
+
+                <div class="col-12 md:col-6 lg:col-4">
+                    <span>LastName</span>
+                    <div class="p-inputgroup" >
+                        <input class="form-control" type="text" pInputText placeholder="LastName" readonly="readonly">
+                    </div>
+                </div>
+            </div>
+            <div class="row1">
+
+
+                <div class="col-12 md:col-6 lg:col-4">
+                    <span>Email</span>
+                    <div class="p-inputgroup" >
+                        <input class="form-control" type="text" pInputText placeholder="Email">
+                    </div>
+                </div>
+
+                <div class="col-12 md:col-6 lg:col-4">
+                    <span>PanNumber</span>
+                    <div class="p-inputgroup" >
+                        <input class="form-control" type="text" pInputText placeholder="PanNumber">
+                    </div>
+                </div>
+
+                <div class="col-12 md:col-6 lg:col-4">
+                    <span>DesignationID</span>
+                    <div class="p-inputgroup" >
+                        <input class="form-control" type="text" pInputText placeholder="DesignationID">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row1">
+
+
+                <div class="col-12 md:col-6 lg:col-4">
+                    <span>ShiftId</span>
+                    <div class="p-inputgroup" >
+                        <input class="form-control" type="text" pInputText placeholder="ShiftId">
+                    </div>
+                </div>
+                <div class="col-12 md:col-6 lg:col-4">
+                    <span>DOJ</span>
+                    <div class="p-inputgroup">
+                        <input class="form-control" type="text" pInputText placeholder="DOJ">
+                    </div>
+                </div>
+                <div class="p-field-checkbox">
+                    <p-checkbox name="group1" value=""  inputId="ny"></p-checkbox>
+                    <label for="ny"style="padding:48px">IsActivated</label>
+                </div>
+            </div>
+
+        </div>
+    </form>
+
+
+</p-panel>

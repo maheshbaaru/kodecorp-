@@ -1,0 +1,23 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import {MatToolbarModule,} from '@angular/material/toolbar';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatIconModule} from '@angular/material/icon';
+
+
+
+
+@NgModule({
+  declarations: [],
+  imports: [
+    CommonModule,MatIconModule,MatMenuModule,MatToolbarModule,MatSlideToggleModule
+  ],
+  exports: [
+    MatIconModule, 
+    MatIconModule, 
+    MatMenuModule,
+    MatToolbarModule,
+  ]
+})
+export class MaterialModule { }

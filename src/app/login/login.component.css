@@ -1,0 +1,25 @@
+
+
+
+.main{
+    width: 20rem;
+    margin: 1rem;
+    padding: 2rem 1rem;
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+}
+h1{
+ 
+    text-align: center;
+    font-family: Poppins-Bold;
+    text-transform: uppercase;
+    padding: 15px;
+    margin: 15px;
+}
+p-card {
+display: flex;
+justify-content:center ;
+}
