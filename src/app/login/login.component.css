@@ -1,7 +1,16 @@
-
-
-
 .main{
+    background-size: cover;
+    position: fixed; 
+  top: 0; 
+  left: 0; 
+    
+  /* Preserve aspect ratio */
+  min-width: 100%;
+  min-height: 100%;
+}
+
+
+/* .main{
     width: 20rem;
     margin: 1rem;
     padding: 2rem 1rem;
@@ -10,9 +19,9 @@
     flex-direction: column;
     justify-content: center;
     background-color: #fff;
-}
+} */
 h1{
- 
+   
     text-align: center;
     font-family: Poppins-Bold;
     text-transform: uppercase;
@@ -22,4 +31,86 @@ h1{
 p-card {
 display: flex;
 justify-content:center ;
+padding: 10px;
+margin: 10px;
+
 }
+
+
+ .nav-left h2 {
+    font-size: 2rem;
+    color: rgb(16, 133, 243);
+    font-family: 'Ubuntu', sans-serif;
+  
+} 
+ .head{
+   
+    background-color: ghostwhite;
+
+ /* position: fixed;
+    width: 100%;  */
+ }
+
+ .txt1 {
+    font-family: Poppins-Regular;
+    font-size: 13px;
+    line-height: 1.4;
+    color: #999999;
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-control {
+    font-family: Poppins-Regular;
+    width: 50px;
+    height: 38px;
+    margin-top: 14px;
+    border: 1px solid rgb(178, 178, 178);
+    box-shadow: 0px 1px 4px 0px rgb(168 168 16);
+    border-radius: 3px;
+ }
+ 
+ .p-button.p-button-info, .p-buttonset.p-button-info > .p-button, .p-splitbutton.p-button-info > .p-button {
+    font-family: Poppins-Regular;
+    color: #ffffff;
+    background: #9df63b;
+    border: 1px solid #9df63b;
+    width: 84px;
+    height: 35px;
+}
+label{
+    font-family: Poppins-Regular;
+    margin: 2px;
+    padding: 2px;
+}
+/* 
+.login100-form-title-1 {
+    font-family: Poppins-Bold;
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    background-color: cornflowerblue;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 22px 114px 22px 111px;
+} */
+ .card{
+    font-family: Poppins-Regular;
+    background-size: cover;
+    background-position: center;
+    color:#2e2c2c;
+    padding: 60px 130px 52px 111px;
+    margin: 0;
+} 

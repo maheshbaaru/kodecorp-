@@ -1,34 +1,58 @@
-<div>
-    <form formgroup ="loginform" (ngsubmit)="onSubmit()">
-        <p-card   [style]="{width: '360px'}" styleClass="shadow-2" >
-            <ng-template pTemplate="header">
-               
-              <h1> SIGN IN</h1>
-            </ng-template>
-        
-            <div class="p-col-12 p-md-4">
-                <label>Username</label>
-                <div class="p-inputgroup">
-                  <input type="text" pInputText placeholder="Username" formControlName="username"  [ngClass]="{ 'is-invalid': submitted  }">         
-                </div>
-            </div>
-            <br>
-            <div class="p-col-12 p-md-4">
-                <label>password</label>
+<div  class="main"  [style.background-image]="'url(/assets/image1.avif)'">
+   <div class="head ">
 
-                <div class="p-inputgroup">
-                  
-                    <input type="text" pInputText placeholder="password" formControlName="password" [ngClass]="{ 'is-invalid': submitted }">   
-                         
-                </div>
-            </div>
-          <br>
-          <button pButton pRipple type="button"  [routerLink]="['/navbar']" label="login" class="p-button-rounded p-button-info"></button>
-        </p-card>
-        </form>
+    <div class="nav-left">
+      <h2> <img src="http://www.kodecorp.com/KodeCorp/uploads/2020/08/Logo.png" width="300px" height="100px" > </h2>
+    </div>
+
+
+  </div> 
+
+
+  <form formgroup="loginform" (ngsubmit)="onSubmit()">
+    <p-card [style]="{width: '360px'}" styleClass="shadow-2">
+      <ng-template pTemplate="header">
+
+       <h1 class="card" [style.background-image]="'url(/assets/images2.jfif)'" >  SIGN IN </h1>
+      </ng-template>
+
+      <div class="p-col-12 p-md-4">
+        <label>Username</label>
+        <div class="p-inputgroup">
+          <input type="text" class="form-control" pInputText placeholder="Username" formControlName="username"
+            [ngClass]="{ 'is-invalid': submitted  }">
+        </div>
+      </div>
+      <br>
+      <div class="p-col-12 p-md-4">
+        <label>Password</label>
+
+        <div class="p-inputgroup">
+
+          <input type="text" class="form-control" pInputText placeholder="Password" formControlName="password"
+            [ngClass]="{ 'is-invalid': submitted }">
+
+        </div>
+      </div>
+      <br>
+      <div class="links">
+        <div class="p-field-checkbox">
+          <p-checkbox name="group1" value="" inputId="ny"></p-checkbox>
+          <label   for="ny">Remember Me</label>
+      </div>
+         <div>
+          <a class="txt1" [routerLink]="['/fpassword']" >Forgot Password?</a>
+         </div>
+      
+      </div>
+ <br>
+      <button pButton pRipple type="button" [routerLink]="['/navbar']" label="login"
+        class="p-button-rounded p-button-info"></button>
+
+       
+    </p-card>
+
     
+  </form>
+
 </div>
-
-   
-
-  

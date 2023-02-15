@@ -18,6 +18,7 @@ import {ListboxModule} from 'primeng/listbox';
 import {ToolbarModule} from 'primeng/toolbar';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MaterialModule } from './material/material.module';
+import { FpasswordComponent } from './fpassword/fpassword.component';
 
 
 
@@ -28,7 +29,8 @@ import { MaterialModule } from './material/material.module';
     SalarydisplyComponent,
     UpdateprofileComponent,
     LoginComponent,
-    NavbarComponent
+    NavbarComponent,
+    FpasswordComponent
   ],
   imports: [
     BrowserModule,

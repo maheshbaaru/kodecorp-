@@ -4,7 +4,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import {MatToolbarModule,} from '@angular/material/toolbar';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatIconModule} from '@angular/material/icon';
-
+import {MatTabsModule} from '@angular/material/tabs';
 
 
 
@@ -18,6 +18,8 @@ import {MatIconModule} from '@angular/material/icon';
     MatIconModule, 
     MatMenuModule,
     MatToolbarModule,
+MatTabsModule
+
   ]
 })
 export class MaterialModule { }

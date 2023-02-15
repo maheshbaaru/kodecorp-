@@ -1,8 +1,15 @@
 <p-panel header="UPDATE PROFILE" >
 
     <ng-template pTemplate="icons">
-        <p-button routerLink="/navbar" label="back" icon="pi pi-check" styleClass="p-button-sm"></p-button>
-        <p-button label="save" icon="pi pi-check" styleClass="p-button-sm"></p-button>
+        
+        <div class="p-button-rounded">
+            <button pButton pRipple type="button" [routerLink]="['/login']" label="save"
+            class="p-button-rounded p-button-info"></button>
+
+
+            <button pButton pRipple type="button" [routerLink]="['/navbar']" label="Back"
+            class="p-button-rounded p-button-info"></button>
+        </div>
     </ng-template>
     <form formgroup="updateform">
         <div class="grid p-fluid">
@@ -28,7 +35,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row1">
+            <div class="row2">
 
 
                 <div class="col-12 md:col-6 lg:col-4">
@@ -53,7 +60,7 @@
                 </div>
             </div>
 
-            <div class="row1">
+            <div class="row3">
 
 
                 <div class="col-12 md:col-6 lg:col-4">
@@ -68,10 +75,13 @@
                         <input class="form-control" type="text" pInputText placeholder="DOJ">
                     </div>
                 </div>
-                <div class="p-field-checkbox">
-                    <p-checkbox name="group1" value=""  inputId="ny"></p-checkbox>
-                    <label for="ny"style="padding:48px">IsActivated</label>
+                <div class="checkbox">
+                    <div class="p-field-checkbox">
+                        <p-checkbox name="group1" value=""  inputId="ny"></p-checkbox>
+                        <label>IsActive</label>
+                    </div>
                 </div>
+               
             </div>
 
         </div>
