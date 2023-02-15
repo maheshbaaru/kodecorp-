@@ -6,22 +6,12 @@ import { AppComponent } from './app.component';
 import { SalarydisplyComponent } from './salarydisply/salarydisply.component';
 import { UpdateprofileComponent } from './updateprofile/updateprofile.component';
 import { LoginComponent } from './login/login.component';
-import {CheckboxModule} from 'primeng/checkbox';
-import {InputTextModule} from 'primeng/inputtext';
-import {InputMaskModule} from 'primeng/inputmask';
-import { ButtonModule } from 'primeng/button';
-import { CardModule, } from 'primeng/card';
-import { RippleModule } from 'primeng/ripple';
-import {EditorModule} from 'primeng/editor';
-import {PanelModule} from 'primeng/panel';
-import {ListboxModule} from 'primeng/listbox';
-import {ToolbarModule} from 'primeng/toolbar';
+
 import { NavbarComponent } from './navbar/navbar.component';
 import { MaterialModule } from './material/material.module';
 import { FpasswordComponent } from './fpassword/fpassword.component';
-
-
-
+import { HomeComponent } from './home/home.component';
+import { PrimengModule } from './primeng/primeng.module';
 
 @NgModule({
   declarations: [
@@ -30,23 +20,18 @@ import { FpasswordComponent } from './fpassword/fpassword.component';
     UpdateprofileComponent,
     LoginComponent,
     NavbarComponent,
-    FpasswordComponent
+    FpasswordComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CheckboxModule,
-    InputTextModule,
-    CardModule,
-    ButtonModule,
-    RippleModule,
-    InputMaskModule,EditorModule,
-    PanelModule,
+
     BrowserAnimationsModule,
-    ListboxModule,
-    ToolbarModule,MaterialModule
+    MaterialModule,
+    PrimengModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

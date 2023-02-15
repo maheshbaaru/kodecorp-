@@ -1,98 +1,79 @@
 
 
-.col-md-6 {
+/* .col-md-6 {
    width: 50%;
    float: left;
    position: relative;
    min-height: 1px;
    padding-right: 15px;
    padding-left: 15px;
-}
+} */
 
-.panel-title {
+/* .panel-title {
    font-size: 13px !important;
    font-weight: 600;
    margin-bottom: 0;
    margin-top: 0;
    text-transform: uppercase;
    letter-spacing: 0.03em;
-}
+} */
 
-.row1 ,.row2,.row3{
+/* .row1 ,.row2,.row3{
    display: flex;
    flex-direction: row;
    justify-content: space-between;
     padding: 5px;
-   margin: 5px; 
+   margin: 5px;
 
    min-height: 1px;
 
-}
+} */
 
-.form-control {
+/* .form-control {
 
    width: 50px;
    height: 38px;
  margin-top: 14px;
-   padding: 5px; 
+   padding: 5px;
    border: 1px solid rgb(178, 178, 178);
    box-shadow: 0px 1px 4px 0px rgb(168 168 16);
    border-radius: 3px;
-}
+} */
 
-.p-button-rounded{
+/* .p-button-rounded{
    display: flex;
    justify-content: center;
    align-items: center;
    padding: 0 20px;
    min-width: 82px;
    height: 34px;
-   
-}
-.p-button.p-button-info, .p-buttonset.p-button-info > .p-button, .p-splitbutton.p-button-info > .p-button {
-   font-family: Poppins-Regular;
-   color: #ffffff;
-   /* background: #9df63b;
-   border: 1px solid #9df63b; */
-   padding: 5px;
-   margin: 10px;
-   width: 84px;
-   height: 35px;
+
+} */
 
 
-   background: rgb(61, 157, 179) !important;
-    display: inline-block;
-    padding: 6px 12px !important;
-    font-size: 13px !important;
-    /* margin-bottom: 4px;
-    line-height: 7px;
-    height: 20px;
-    font-weight: 400; */
-}
-
-@media screen and (min-width: 600px) {
+/* @media screen and (min-width: 600px) {
    .center-updateProfile {
       width: 60px;
       margin: 0 auto;
    }
-}
+} */
 
 
-.p-panel-header {
-   
+/* .p-panel-header {
+
       border: 1px solid #dee2e6;
       padding: 6px;
       background: #8698a9;
       color: #343a40;
       border-top-right-radius: 6px;
       border-top-left-radius: 6px;
-  }
+  } */
 
-span,label{
+/* span,label{
    font-weight: bold;
 }
 .checkbox{
    font-family: Poppins-Regular;
    margin-right: 51px;
    padding: 29px;
-}
+} */
