@@ -12,7 +12,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
-
+import { EmployeesComponent } from './employees/employees.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { NgModule } from '@angular/core';
     ChangepasswordComponent,
     HomeComponent,
     AppliedleavesComponent,
+    EmployeesComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,6 +35,7 @@ import { NgModule } from '@angular/core';
     BrowserAnimationsModule,
     MaterialModule,
     PrimengModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,0 +1,72 @@
+[
+  {
+  "EmpId":"KC020",
+  "FirstName":"SAI TEJA",
+  "LastName":"NANDURI",
+  "Email":"snanduri@kodecorp.com",
+  "Designation":"Tech Lead",
+  "PanNumber":"AWEPN5566E",
+  "IsActive":"False",
+  "Shift":"First Shift"
+  },
+  {
+    "EmpId":"KC014",
+    "FirstName":"NAVEEN KUMAR",
+    "LastName":"SIRANGU",
+    "Email":"nsirangu@kodecorp.com",
+    "Designation":"Tech Lead",
+    "PanNumber":"DQJPS8329L",
+    "IsActive":"True",
+    "Shift":"First Shift"
+    },
+    {
+      "EmpId":"KC036",
+      "FirstName":"Venkata Rao",
+      "LastName":"Pakkurthi",
+      "Email":"vpakkurthi@kodecorp.com",
+      "Designation":"Tech Lead",
+      "PanNumber":"ATLPP3243Q",
+      "IsActive":"True",
+      "Shift":"First Shift"
+      },
+      {
+        "EmpId":"KC081",
+        "FirstName":"SRIKANTH",
+        "LastName":"SUNKAVALLI",
+        "Email":"ssunkavalli@kodecorp.com",
+        "Designation":"Software Developer",
+        "PanNumber":"CFQPB5424Q",
+        "IsActive":"False",
+        "Shift":"First Shift"
+        },
+        {
+          "EmpId":"KC061",
+          "FirstName":"ANIL KUMAR",
+          "LastName":"BOTCH",
+          "Email":"ssunkavalli@kodecorp.com",
+          "Designation":"Tech Lead",
+          "PanNumber":"GJMPS5707P",
+          "IsActive":"True",
+          "Shift":"First Shift"
+          },
+          {
+            "EmpId":"KC081",
+            "FirstName":"SRIKANTH",
+            "LastName":"SUNKAVALLI",
+            "Email":"ssunkavalli@kodecorp.com",
+            "Designation":"Tech Lead",
+            "PanNumber":"GJMPS5707P",
+            "IsActive":"True",
+            "Shift":"First Shift"
+            },
+            {
+              "EmpId":"KC081",
+              "FirstName":"SRIKANTH",
+              "LastName":"SUNKAVALLI",
+              "Email":"ssunkavalli@kodecorp.com",
+              "Designation":"Tech Lead",
+              "PanNumber":"GJMPS5707P",
+              "IsActive":"True",
+              "Shift":"First Shift"
+              }
+]
