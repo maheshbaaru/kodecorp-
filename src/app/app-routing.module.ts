@@ -5,7 +5,7 @@ import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ChangepasswordComponent } from './changepassword/changepassword.component';
 import { HomeComponent } from './home/home.component';
-import { EmployeesComponent } from './employees/employees.component';
+import { SalDeductionComponent } from './sal-deduction/sal-deduction.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
@@ -17,7 +17,7 @@ const routes: Routes = [
     component: NavbarComponent,
     children: [
       { path: 'updateprofile', component: UpdateprofileComponent },
-{path:'employees',component:EmployeesComponent}
+      {path:'salDeduction',component:SalDeductionComponent}
     ],
   },
 
