@@ -1,0 +1,83 @@
+<p-panel>
+  <ng-template pTemplate="header">
+    <div  class="col -md-6" style="text-align:left">
+    <strong>EMPLOYEES </strong>
+    <input type="text" pInputText placeholder="Search Employee" (input)="table.filterGlobal($any($event.target).value,'contains')"    />
+  </div>
+      <div class="col-sm-6" style="text-align:right">
+      <button pButton  type="button" label="Create New"  icon="pi pi-plus" class="p-button-sm p-button-success" ></button>
+  </div>
+  </ng-template> 
+  <p-table #table [value]="empdata" [tableStyle]="{'min-width': '50rem'}" styleClass="p-datatable-gridlines"   [globalFilterFields]="['FirstName','IsActive']">
+  <ng-template pTemplate="header">
+    <tr>
+      <th>
+        <div class="p-d-flex p-jc-between p-ai-center">
+        EmpID
+        <p-columnFilter style="color:rgb(79, 85, 90)" type="text" field="empId" display="menu"></p-columnFilter>
+      </div>
+    </th>
+      <th>
+        <div class="p-d-flex p-jc-between p-ai-center">
+          FirstName
+        <p-columnFilter  type="text" field="firstname" display="menu"></p-columnFilter>
+      </div>
+    </th>
+      <th> 
+        <div class="p-d-flex p-jc-between p-ai-center">
+        LastName
+      <p-columnFilter type="text" field="lastname" display="menu"></p-columnFilter>
+    </div>
+        </th>
+      <th>
+        <div class="p-d-flex p-jc-between p-ai-center">
+          Email
+        <p-columnFilter type="text" field="email" display="menu"></p-columnFilter>
+      </div>
+    </th>
+      <th> 
+        <div class="p-d-flex p-jc-between p-ai-center">
+        Designation
+      <p-columnFilter type="text" field="designation" display="menu"></p-columnFilter>
+    </div>
+      </th>
+      <th> 
+         <div class="p-d-flex p-jc-between p-ai-center">
+        Pan Number
+      <p-columnFilter type="text" field="pannumber" display="menu"></p-columnFilter>
+    </div>
+  </th>
+      <th>
+         <div class="p-d-flex p-jc-between p-ai-center">
+        IsActive
+      <p-columnFilter type="text" field="isActive" display="menu"></p-columnFilter>
+    </div>
+       </th>
+      <th>
+         <div class="p-d-flex p-jc-between p-ai-center">
+        Shift
+      <p-columnFilter type="text" field="empId" display="menu"></p-columnFilter>
+    </div>
+       </th>
+
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-employee >
+    <tr>
+      <td style="color: blue;"  >{{employee.EmpId}}</td>
+      <td>{{employee.FirstName}}</td>
+      <td>{{employee.LastName}}</td>
+      <td>{{employee.Email}}</td>
+      <td>{{employee.Designation}}</td>
+      <td>{{employee.PanNumber}}</td>
+      <td>{{employee.IsActive}}</td>
+      <td>{{employee.Shift}}</td>
+
+    </tr>
+    
+  </ng-template>
+
+</p-table> 
+ 
+</p-panel>
+

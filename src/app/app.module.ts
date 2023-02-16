@@ -35,8 +35,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 
-
-
+import { SalDeductionComponent } from './sal-deduction/sal-deduction.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +49,10 @@ import { AppRoutingModule } from './app-routing.module';
     CreateDesignationComponent,
     CreateTaxtypeComponent,
     CreateNewSalaryDetailsComponent,
-    ProfilePhotoComponent
+    ProfilePhotoComponent,
+    HomeComponent,
+    AppliedleavesComponent,
+    SalDeductionComponent,
   ],
   imports: [
     BrowserModule,
@@ -77,7 +79,13 @@ import { AppRoutingModule } from './app-routing.module';
     DropdownModule,
     FormsModule,
     HttpClientModule,
-   CardModule,CheckboxModule,InputTextModule,ReactiveFormsModule
+   CardModule,CheckboxModule,InputTextModule,ReactiveFormsModule,
+ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MaterialModule,
+    PrimengModule,
+    FormsModule,
+    HttpClientModule,
   ],
   providers: [SalaryService],
   bootstrap: [AppComponent]

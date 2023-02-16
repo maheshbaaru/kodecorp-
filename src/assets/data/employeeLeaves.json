@@ -1,0 +1,18 @@
+[
+  {"EmpId":"KC001","Name":"HARI KODE","LeaveType":"Casual","NoDays":"1","FDate":"17-01-2021","Tdate":"18-01-2021","AppliedOn":"16-01-2021","status":"New","comment":"earned","AComments":""},
+  {"EmpId":"KC002","Name":"PAVAN KUMAR SUNKARA","LeaveType":"Casual","NoDays":"1","FDate":"17-01-2021","Tdate":"18-01-2021","AppliedOn":"16-01-2021","status":"New","comment":"earned","AComments":""},
+  {"EmpId":"KC003","Name":"PUSHPALATHA GORRELA","LeaveType":"Casual","NoDays":"1","FDate":"17-01-2021","Tdate":"18-01-2021","AppliedOn":"16-01-2021","status":"New","comment":"earned","AComments":""},
+  {"EmpId":"KC004","Name":"Asha Shaik","LeaveType":"Casual","NoDays":"1","FDate":"17-01-2021","Tdate":"18-01-2021","AppliedOn":"16-01-2021","status":"New","comment":"earned","AComments":""},
+  {"EmpId":"KC005","Name":"JAGADEESH KOPPISETTI","LeaveType":"Casual","NoDays":"1","FDate":"17-01-2021","Tdate":"18-01-2021","AppliedOn":"16-01-2021","status":"New","comment":"earned","AComments":""},
+  {"EmpId":"KC006","Name":"BHARATH KUMAR BADISA","LeaveType":"Casual","NoDays":"1","FDate":"17-01-2021","Tdate":"18-01-2021","AppliedOn":"16-01-2021","status":"New","comment":"earned","AComments":""},
+  {"EmpId":"KC007","Name":"PRAVEENA BUNGA","LeaveType":"Casual","NoDays":"1","FDate":"17-01-2021","Tdate":"18-01-2021","AppliedOn":"16-01-2021","status":"New","comment":"earned","AComments":""},
+  {"EmpId":"KC008","Name":"NITHIN PONDURI","LeaveType":"Casual","NoDays":"1","FDate":"17-01-2021","Tdate":"18-01-2021","AppliedOn":"16-01-2021","status":"New","comment":"earned","AComments":""},
+  {"EmpId":"KC009","Name":"SRIKANTH SUNKAVALLI","LeaveType":"Casual","NoDays":"1","FDate":"17-01-2021","Tdate":"18-01-2021","AppliedOn":"16-01-2021","status":"New","comment":"earned","AComments":""},
+  {"EmpId":"KC010","Name":"SATEESH KUMAR TOLLIKONDA","LeaveType":"Casual","NoDays":"1","FDate":"17-01-2021","Tdate":"18-01-2021","AppliedOn":"16-01-2021","status":"New","comment":"earned","AComments":""},
+  {"EmpId":"KC011","Name":"SUNEEL KUMAR DASINENI","LeaveType":"Casual","NoDays":"1","FDate":"17-01-2021","Tdate":"18-01-2021","AppliedOn":"16-01-2021","status":"New","comment":"earned","AComments":""},
+  {"EmpId":"KC001","Name":"HARI KODE","LeaveType":"Casual","NoDays":"1","FDate":"17-01-2021","Tdate":"18-01-2021","AppliedOn":"16-01-2021","status":"New","comment":"earned","AComments":""},
+  {"EmpId":"KC005","Name":"JAGADEESH KOPPISETTI","LeaveType":"Casual","NoDays":"1","FDate":"17-01-2021","Tdate":"18-01-2021","AppliedOn":"16-01-2021","status":"New","comment":"earned","AComments":""},
+  {"EmpId":"KC007","Name":"PRAVEENA BUNGA","LeaveType":"Casual","NoDays":"1","FDate":"17-01-2021","Tdate":"18-01-2021","AppliedOn":"16-01-2021","status":"New","comment":"earned","AComments":""},
+  {"EmpId":"KC009","Name":"SRIKANTH SUNKAVALLI","LeaveType":"Casual","NoDays":"1","FDate":"17-01-2021","Tdate":"18-01-2021","AppliedOn":"16-01-2021","status":"New","comment":"earned","AComments":""}
+]
+

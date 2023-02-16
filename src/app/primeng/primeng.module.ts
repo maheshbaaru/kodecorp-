@@ -23,6 +23,7 @@ import { ContextMenuModule } from 'primeng/contextmenu';
 import { StyleClassModule } from 'primeng/styleclass';
 import { ConfirmationService } from 'primeng/api';
 
+
 const primeNg: any = [
   CheckboxModule,
   InputTextModule,

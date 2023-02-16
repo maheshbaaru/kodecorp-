@@ -1,0 +1,112 @@
+<p-table #dt1 [value]="employee" styleClass="p-datatable-sm p-datatable-gridlines p-datatable-striped" [paginator]="true" [rows]="10" [showCurrentPageReport]="true"  currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries" [rowsPerPageOptions]="[10,25,50]" [globalFilterFields]="['Name','EmployeeId']" responsiveLayout="scroll">
+  <ng-template pTemplate="right">
+
+
+</ng-template>
+  <ng-template pTemplate="caption">
+    <div class="p-d-flex">
+      <!-- <span style="margin-right:13px" >SALARY DEDUCTIONS</span> -->
+            <span class="p-input-icon-left p-ml-auto " >
+
+              <i class="pi pi-search"></i>
+              <input pInputText type="text" (input)="dt1.filterGlobal($any($event.target).value, 'contains')" placeholder="Search Employee"/>
+            </span>
+            <span [style]="{'float':'right'}" >
+              <button pButton pRipple label="New" styleClass="p-button-sm" icon="pi pi-plus" class="p-button-success mr-2" (click)="openNew()"></button>
+            </span>
+    </div>
+  </ng-template>
+
+  <ng-template pTemplate="header">
+    <tr>
+      <th>
+        <div class="p-d-flex p-jc-between p-ai-center">
+        Emp ID
+        <p-columnFilter type="text" field="EmployeeId" display="menu"></p-columnFilter>
+
+      </div>
+      </th>
+      <th>
+        <div class="p-d-flex p-jc-between p-ai-center">
+          Name
+          <p-columnFilter type="text" field="Name" display="menu"></p-columnFilter>
+        </div>
+      </th>
+
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-emp >
+    <tr>
+      <td class="idStyle" ><a [routerLink]="['/emp',emp.EmployeeId]">{{emp.EmployeeId}}</a></td>
+      <td>{{emp.Name}}</td>
+
+    </tr>
+  </ng-template>
+</p-table>
+<p-dialog [(visible)]="productDialog" [style]="{width: '850px',height:'700px'}"  header="Create" [modal]="true" styleClass="p-fluid">
+
+  <ng-template pTemplate="content p-p-4">
+
+    <div class="formgrid grid">
+
+
+      <div class="field col-4">
+        <label class="p-mb-3" for="taxTayes" >TaxTypeId
+          <span class="text-red-500" required>*</span>
+        </label>
+        <p-dropdown [options]="taxTaypes" [(ngModel)]="SelectedCity1" placeholder="SELECT TAX TYPE" optionLabel="name" [showClear]="true" ></p-dropdown>
+
+      </div>
+      <div>
+
+      </div>
+      <div class="field col-4" >
+        <label for="name">EmpId
+          <span class="text-red-500" required>*</span>
+        </label>
+        <p-dropdown [options]="employee" [(ngModel)]="selectedCity1" placeholder="Select Id" [group]="true">
+          <ng-template let-group pTemplate="group">
+            <div class="p-d-flex p-ai-center">
+              <span>{{group.Name}}</span>
+            </div>
+          </ng-template>
+        </p-dropdown>
+
+
+      </div>
+
+      <div class="field col-4" [style]="{width:'14rem'}">
+          <label class="p-mb-3">Amount
+            <span class="text-red-500" required>*</span>
+          </label>
+          <p-inputNumber id="Amount" [(ngModel)]="selectedAmount" mode="currency" currency="INR" locale="en-US"  autofocus></p-inputNumber>
+      </div>
+
+
+
+          <div class="col-6 mr-5" style="width:15rem ">
+              <label for="LOPDAYS">NoOF LOP DAYS
+                <span class="text-red-500" required>*</span>
+              </label>
+              <input type="text" pInputText id="LOPDAYS" [(ngModel)]="selectedLOP" placeholder="NO OF LOP DAY'S" required autofocus />
+
+          </div>
+          <div class="col-6" style="width: 15rem;">
+
+            <label for="Month" >Effected Month
+              <span class="text-red-500" required>*</span>
+            </label>
+            <p-calendar  [(ngModel)]="date3" [disabledDates]="invalidDates" [showIcon]="true" view="month" [touchUI]="true" inputId="Month" dateFormat="mm.yy"  [required]="true" autofocus></p-calendar>
+        </div>
+      </div>
+
+
+
+  </ng-template>
+
+  <ng-template pTemplate="footer">
+      <button pButton pRipple label="Cancel" icon="pi pi-times" class="p-button-text" (click)="hideDialog()"></button>
+      <button pButton pRipple label="Save" icon="pi pi-check" class="p-button-text" (click)="save()"></button>
+  </ng-template>
+
+</p-dialog>

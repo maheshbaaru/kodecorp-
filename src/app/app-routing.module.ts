@@ -10,11 +10,14 @@ import { CreateTaxtypeComponent } from './create-taxtype/create-taxtype.componen
 import { CreateNewSalaryDetailsComponent } from './create-new-salary-details/create-new-salary-details.component';
 import { ProfilePhotoComponent } from './profile-photo/profile-photo.component';
 import { ChangepasswordComponent } from './changepassword/changepassword.component';
+import { SalDeductionComponent } from './sal-deduction/sal-deduction.component';
+import { HomeComponent } from './home/home.component';
+
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
 
-  { path: '** ', component: LoginComponent },
+  { path: '** ',redirectTo: '/login' },
 
   {
     path: 'navbar',
@@ -24,9 +27,12 @@ const routes: Routes = [
       {path:'salary-details', component:SalaryDetailsComponent},
       {path:'create-designation',component:CreateDesignationComponent},
       {path:'create-taxtype',component:CreateTaxtypeComponent},
-      {path:'profile-photo',component:ProfilePhotoComponent}
+      {path:'profile-photo',component:ProfilePhotoComponent},
+      {path:'salDeduction',component:SalDeductionComponent},
   
-    ]
+    ],
+      
+    
   },
 
   {
