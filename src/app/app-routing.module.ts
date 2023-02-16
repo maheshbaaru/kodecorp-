@@ -12,6 +12,7 @@ import { ProfilePhotoComponent } from './profile-photo/profile-photo.component';
 import { ChangepasswordComponent } from './changepassword/changepassword.component';
 import { SalDeductionComponent } from './sal-deduction/sal-deduction.component';
 import { HomeComponent } from './home/home.component';
+import { AppliedleavesComponent } from './appliedleaves/appliedleaves.component';
 
 
 const routes: Routes = [
@@ -29,6 +30,7 @@ const routes: Routes = [
       {path:'create-taxtype',component:CreateTaxtypeComponent},
       {path:'profile-photo',component:ProfilePhotoComponent},
       {path:'salDeduction',component:SalDeductionComponent},
+      {path:'appliedleaves',component:AppliedleavesComponent}
   
     ],
       
