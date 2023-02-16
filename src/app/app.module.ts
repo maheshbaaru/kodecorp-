@@ -30,7 +30,7 @@ import { CreateTaxtypeComponent } from './create-taxtype/create-taxtype.componen
 import { CreateNewSalaryDetailsComponent } from './create-new-salary-details/create-new-salary-details.component';
 import { DropdownModule } from 'primeng/dropdown';
 import { ProfilePhotoComponent } from './profile-photo/profile-photo.component';
-import {FileUploadModule} from 'primeng/fileupload';
+import {FileUploadModule,} from 'primeng/fileupload';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
@@ -71,10 +71,9 @@ import { EmployeeAccessComponent } from './employee-access/employee-access.compo
     RippleModule,
     InputMaskModule,EditorModule,
     PanelModule,
-   
+   ReactiveFormsModule,
     ListboxModule,
-    ToolbarModule,MaterialModule,HttpClientModule,TableModule,FormsModule,ReactiveFormsModule,
-    BrowserModule,
+    ToolbarModule,MaterialModule,HttpClientModule,TableModule,FormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
 
@@ -85,8 +84,7 @@ import { EmployeeAccessComponent } from './employee-access/employee-access.compo
     DropdownModule,
     FormsModule,
     HttpClientModule,
-   CardModule,CheckboxModule,InputTextModule,ReactiveFormsModule,
-ReactiveFormsModule,
+   CardModule,CheckboxModule,InputTextModule,
     BrowserAnimationsModule,
     MaterialModule,
     PrimengModule,
