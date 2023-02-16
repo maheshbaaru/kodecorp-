@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { UpdateprofileComponent } from './updateprofile/updateprofile.component';
 import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { FpasswordComponent } from './fpassword/fpassword.component';
+import { ChangepasswordComponent } from './changepassword/changepassword.component';
 import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
@@ -16,7 +16,7 @@ const routes: Routes = [
     component: NavbarComponent,
     children: [
       { path: 'updateprofile', component: UpdateprofileComponent },
-      { path: 'home', component: HomeComponent },
+    
     ],
   },
 
@@ -24,7 +24,7 @@ const routes: Routes = [
     path: 'login',
     component: LoginComponent,
   },
-  { path: 'fpassword', component: FpasswordComponent },
+  { path: 'changepassword', component: ChangepasswordComponent },
 ];
 
 @NgModule({

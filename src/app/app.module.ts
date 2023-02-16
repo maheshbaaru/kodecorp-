@@ -9,9 +9,10 @@ import { LoginComponent } from './login/login.component';
 
 import { NavbarComponent } from './navbar/navbar.component';
 import { MaterialModule } from './material/material.module';
-import { FpasswordComponent } from './fpassword/fpassword.component';
+import { ChangepasswordComponent } from './changepassword/changepassword.component';
 import { HomeComponent } from './home/home.component';
 import { PrimengModule } from './primeng/primeng.module';
+import { AppliedleavesComponent } from './appliedleaves/appliedleaves.component';
 
 @NgModule({
   declarations: [
@@ -20,8 +21,9 @@ import { PrimengModule } from './primeng/primeng.module';
     UpdateprofileComponent,
     LoginComponent,
     NavbarComponent,
-    FpasswordComponent,
+    ChangepasswordComponent,
     HomeComponent,
+    AppliedleavesComponent,
   ],
   imports: [
     BrowserModule,
