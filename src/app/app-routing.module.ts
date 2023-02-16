@@ -12,27 +12,25 @@ import { ProfilePhotoComponent } from './profile-photo/profile-photo.component';
 import { ChangepasswordComponent } from './changepassword/changepassword.component';
 import { SalDeductionComponent } from './sal-deduction/sal-deduction.component';
 import { HomeComponent } from './home/home.component';
-
+import { SalDeductionListComponent } from './sal-deduction-list/sal-deduction-list.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
 
-  { path: '** ',redirectTo: '/login' },
+  { path: '** ', redirectTo: '/login' },
 
   {
     path: 'navbar',
     component: NavbarComponent,
     children: [
       { path: 'updateprofile', component: UpdateprofileComponent },
-      {path:'salary-details', component:SalaryDetailsComponent},
-      {path:'create-designation',component:CreateDesignationComponent},
-      {path:'create-taxtype',component:CreateTaxtypeComponent},
-      {path:'profile-photo',component:ProfilePhotoComponent},
-      {path:'salDeduction',component:SalDeductionComponent},
-  
+      { path: 'salary-details', component: SalaryDetailsComponent },
+      { path: 'create-designation', component: CreateDesignationComponent },
+      { path: 'create-taxtype', component: CreateTaxtypeComponent },
+      { path: 'profile-photo', component: ProfilePhotoComponent },
+      { path: 'salDeduction', component: SalDeductionComponent },
+      { path: 'DeductionList/:id', component: SalDeductionListComponent },
     ],
-      
-    
   },
 
   {
@@ -40,8 +38,10 @@ const routes: Routes = [
     component: LoginComponent,
   },
   { path: 'changepassword', component: ChangepasswordComponent },
-  { path: 'create-new-salary-details', component: CreateNewSalaryDetailsComponent },
-
+  {
+    path: 'create-new-salary-details',
+    component: CreateNewSalaryDetailsComponent,
+  },
 ];
 
 @NgModule({

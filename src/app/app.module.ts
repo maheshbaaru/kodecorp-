@@ -36,6 +36,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 
 import { SalDeductionComponent } from './sal-deduction/sal-deduction.component';
+import { SalDeductionListComponent } from './sal-deduction-list/sal-deduction-list.component';
 
 @NgModule({
   declarations: [
@@ -53,6 +54,7 @@ import { SalDeductionComponent } from './sal-deduction/sal-deduction.component';
     HomeComponent,
     AppliedleavesComponent,
     SalDeductionComponent,
+    SalDeductionListComponent,
   ],
   imports: [
     BrowserModule,
