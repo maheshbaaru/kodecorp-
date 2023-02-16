@@ -5,6 +5,7 @@ import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FpasswordComponent } from './fpassword/fpassword.component';
 import { HomeComponent } from './home/home.component';
+import { PaySlipComponent } from './pay-slip/pay-slip.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
@@ -17,6 +18,7 @@ const routes: Routes = [
     children: [
       { path: 'updateprofile', component: UpdateprofileComponent },
       { path: 'home', component: HomeComponent },
+      {path:'PaySlip',component:PaySlipComponent}
     ],
   },
 

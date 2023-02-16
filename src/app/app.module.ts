@@ -12,7 +12,8 @@ import { MaterialModule } from './material/material.module';
 import { FpasswordComponent } from './fpassword/fpassword.component';
 import { HomeComponent } from './home/home.component';
 import { PrimengModule } from './primeng/primeng.module';
-
+import { PaySlipComponent } from './pay-slip/pay-slip.component';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,6 +23,7 @@ import { PrimengModule } from './primeng/primeng.module';
     NavbarComponent,
     FpasswordComponent,
     HomeComponent,
+    PaySlipComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,6 +32,7 @@ import { PrimengModule } from './primeng/primeng.module';
     BrowserAnimationsModule,
     MaterialModule,
     PrimengModule,
+    FormsModule 
   ],
   providers: [],
   bootstrap: [AppComponent],

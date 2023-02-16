@@ -1,0 +1,21 @@
+<p-panel>
+  <ng-template pTemplate="header">
+    <div  class="col -md-6" style="text-align:left" >
+    <strong>PAY SLIP </strong>
+  </div>
+      <!-- <div class="col-sm-6" style="text-align:right">
+      <button pButton  type="button" label="Back"  icon="pi pi-arrow-left" class="p-button-success p-button-info p-button-sm"></button>&nbsp;
+      <button pButton  type="button" label="Save"  icon="pi pi-check" class="p-button-success p-button-info p-button-sm"></button>
+  </div> -->
+  </ng-template> 
+  <div class="col-12 md:col-4">
+    <h3 >Select Month & Year<span class="after">*</span></h3>
+    
+    <!-- <input type="text" pInputText class="p-inputtext-sm"  placeholder="MM/YYYY">  -->
+    <p-calendar [(ngModel)]="date" view="month" dateFormat="mm/yy" [showIcon]="false" placeHolder="MM/YYYY" [yearNavigator]="true" yearRange="2000:2030"  inputId="monthpicker"></p-calendar>
+   
+    <br/>
+    <br/>
+    <button pButton  type="button" label="Submit"  class=" p-button-sm p-button-success "></button>
+    </div>
+</p-panel>
