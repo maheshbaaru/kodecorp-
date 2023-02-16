@@ -1,0 +1,43 @@
+
+
+<div class="form-group create-container">
+    <div style="padding-bottom: 20px; width: 100%;" >
+      <label >CREATE EMPLOYEE SALARY</label>
+      <button class="btn btn-primary" type="submit" style="float: right; font-size: smaller;"><i class="pi pi-arrow-left icon"></i>BACK</button>
+      <button class="btn btn-primary" type="submit" style="float: right;margin-right:5px; font-size: smaller;" (click)="onFormSubmit()" form="empForm" ><i class="pi pi-check icon"></i>SAVE</button>
+    </div>
+     
+      
+     <div >
+      <form  [formGroup]="empForm" class="form-control form-styles cont  " (submit)="onFormSubmit()" >
+        
+          <div class="cont2 ">
+           <label for="designation-input" class="input-styling" required >EmpID
+               <span class="required">*</span>
+            </label>
+            <p-dropdown [options]="names" placeholder="SELECT EMPLOYEE" optionLabel="name"
+            [showClear]="true"  formControlName="name"></p-dropdown>
+          </div>
+          <div  class="cont2">
+           <label for="designation-input" class="input-styling" required  >Salary
+               <span class="required">*</span>
+            </label>
+            <input id="designation-input" type="input" placeholder="ENTER SALARY" pInputText formControlName="Salary"/>
+           
+          </div>
+          <div  class="cont2">
+           <label for="designation-input" class="input-styling" required>Last Revised Data
+               <span class="required">*</span>
+            </label>
+            <input id="designation-input" type="date" placeholder="DD-MM-YYYY" pInputText  formControlName="LastRevisedDate"/>
+          </div>
+          <div  class="cont2">
+           <label for="designation-input" class="input-styling" required>Next Revised Data
+               <span class="required">*</span>
+            </label>
+            <input id="designation-input" type="date" placeholder="DD-MM-YYYY" pInputText  formControlName="NextRevisedDate"/>
+          </div>
+       </form>
+     </div>
+  </div>
+  

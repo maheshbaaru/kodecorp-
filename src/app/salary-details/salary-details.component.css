@@ -1,0 +1,21 @@
+.icon-size{
+   
+    font-size: 12px !important;
+  
+}
+.form-container{
+    background-color:  rgb(45, 45, 53);
+    color:aliceblue;
+    font-weight: 500;
+    font-size: smaller;
+    height:64px;
+
+};
+.button{
+    font-weight: 500;
+    font-size: small;
+   
+}
+
+
+

@@ -1,0 +1,20 @@
+.input-styling{
+    padding:40px;
+    
+}
+
+.create-container{
+    color:white;
+    padding:3px;
+    padding-top:7px !important;
+    background-color: rgb(45, 45, 53) ;
+    margin:20px;
+    font-size: smaller;
+    border-radius: 6px;;
+}
+.icon{
+    font-size: 10px;
+    padding-right:5px;
+}
+
+

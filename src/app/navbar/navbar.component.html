@@ -47,15 +47,15 @@
                                 [routerLink]="['updateprofile']"><mat-icon>people</mat-icon>Employees</button>
                             <button mat-menu-item [routerLink]="['updateprofile']"><img src="assets/rupe.png">Salary
                                 Deductions</button>
-                            <button mat-menu-item [routerLink]="['updateprofile']"><mat-icon>add_circle</mat-icon>
+                            <button mat-menu-item [routerLink]="['create-designation']"><mat-icon>add_circle</mat-icon>
                                 Create Designation</button>
-                            <button mat-menu-item [routerLink]="['updateprofile']">
+                            <button mat-menu-item [routerLink]="['create-taxtype']">
                                 <mat-icon>add_circle</mat-icon>
                                 Create TaxType</button>
                             <button mat-menu-item
                                 [routerLink]="['/plan/pending-plans']"><mat-icon>account_balance</mat-icon> Bank
                                 Details</button>
-                            <button mat-menu-item [routerLink]="['updateprofile']"><img src="assets/rupe.png">Salary
+                            <button mat-menu-item [routerLink]="['salary-details']"><img src="assets/rupe.png">Salary
                                 Details</button>
                         </mat-menu>
                     </div>
@@ -73,7 +73,7 @@
                 <mat-menu #dispatchPlan="matMenu">
 
                     <button mat-menu-item
-                        [routerLink]="['/dispatch-plan/view-plan']"><mat-icon>camera_enhance</mat-icon> Profile
+                        [routerLink]="['profile-photo']"><mat-icon>camera_enhance</mat-icon> Profile
                         Photo</button>
                     <button mat-menu-item [routerLink]="['/dispatch-plan/modifiy-plan']">
                         <mat-icon>camera_enhance</mat-icon> Update Photo</button>
@@ -89,9 +89,7 @@
 
 
     </mat-toolbar>
-    <div>
-        <app-home></app-home>
-    </div>
+ 
 
     <div class="bottom-content">
         <router-outlet></router-outlet>

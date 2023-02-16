@@ -1,0 +1,72 @@
+<div style="border:2px solid  rgb(45, 45, 53);margin:10px;border-radius:7px;">
+    <div>
+        <form class="form-control form-container "  >
+            <label for="input" style="padding-right: 10px;">SALARY DISPLAY LIST</label>
+                
+                <input id="input" pInputText type="text" (input)="dt.filterGlobal($any($event.target).value, 'contains')" placeholder="SEARCH EMPLOYEE"  />
+               
+                    <!-- <button class="btn btn-primary button" style="float: right;font-size: small;font-weight: 500;">+ CREATE NEW</button>  -->
+                    <a href="create-new-salary-details" class="btn btn-primary" style="float: right;font-size: small;font-weight: 500;">+ CREATE NEW</a>
+        </form>
+
+    </div>   
+   
+
+    <div>
+        <p-table #dt [value]="sample"  dataKey="id" styleClass="p-datatable-customers" [rowHover]="true"
+        [rows]="10" [showCurrentPageReport]="true" [rowsPerPageOptions]="[10,25,50]" 
+        [paginator]="true" currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
+        [filterDelay]="0" styleClass="p-datatable-gridlines" [globalFilterFields]="['sample.EmployeeId','Name','Salary','LastRevisedDate','NextRevisedDate']" >
+       
+        <ng-template pTemplate="header">
+        
+                <tr>
+                    
+                    <th> 
+                    	<div class="p-d-flex p-jc-between p-ai-center">
+                            Employee ID
+                            <p-columnFilter type="text" field="country.name" display="menu"></p-columnFilter>
+                        </div>
+                            
+                    </th>
+                    <th><div class="p-d-flex p-jc-between p-ai-center">
+                        Employee name	
+                        <p-columnFilter type="text" field="country.name" display="menu"></p-columnFilter>
+                    </div></th>
+                    <th>
+                        <div class="p-d-flex p-jc-between p-ai-center">
+                            Salary 
+                            <p-columnFilter type="text" field="country.name" display="menu"></p-columnFilter>
+                        </div>
+                            
+                    </th>
+                    <th>
+                        <div class="p-d-flex p-jc-between p-ai-center">
+                            Last Revised Date 
+                            <p-columnFilter type="text" field="country.name" display="menu"></p-columnFilter>
+                        </div>
+                        
+                    </th>
+                    <th>
+                        <div class="p-d-flex p-jc-between p-ai-center">
+                            Next Revised Date 
+                            <p-columnFilter type="text" field="country.name" display="menu"></p-columnFilter>
+                        </div>
+                    </th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-Employee>
+                <tr>
+                    <td><a href="#">KC{{Employee.EmployeeID<100?'0'+Employee.EmployeeID:Employee.EmployeeID}}</a>
+                        </td>
+                    <td>{{Employee.FirstName}} {{Employee.LastName}}</td>
+                    <td>{{Employee.Salary}}</td>
+                    <td>{{Employee.LastRevisedDate| date: 'dd-MM-yyyy'}}</td>
+                    <td>{{Employee.NextRevisedDate| date: 'dd-MM-yyyy'}}</td>
+                </tr>
+            </ng-template>
+        </p-table>
+
+    </div>
+    
+</div>
