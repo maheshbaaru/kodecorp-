@@ -1,63 +1,74 @@
-.main{
+.main {
     background-size: cover;
-    position: fixed; 
-  top: 0; 
-  left: 0; 
-    
-  /* Preserve aspect ratio */
-  min-width: 100%;
-  min-height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    /* Preserve aspect ratio */
+    min-width: 100%;
+    min-height: 100%;
 }
 
 
 /* .main{
-    width: 20rem;
+     max-width: 100%; */
+    /* height: auto;
+    width: auto\9;  */
+    /* ie8 */
+
+   /* width: 20rem;
     margin: 1rem;
     padding: 2rem 1rem;
     display: flex;
     
     flex-direction: column;
     justify-content: center;
-    background-color: #fff;
+    background-color: #fff; 
 } */
-h1{
-   
+h1 {
+
     text-align: center;
     font-family: Poppins-Bold;
     text-transform: uppercase;
     padding: 15px;
     margin: 15px;
 }
-p-card {
-display: flex;
-justify-content:center ;
-padding: 10px;
-margin: 10px;
 
+p-card {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    width: 100%; 
+    height: auto;
+
+    
 }
 
 
- .nav-left h2 {
+.nav-left h2 {
     font-size: 2rem;
     color: rgb(16, 133, 243);
     font-family: 'Ubuntu', sans-serif;
-  
-} 
- .head{
-   
+
+}
+
+.head {
+
     background-color: ghostwhite;
 
- /* position: fixed;
+    /* position: fixed;
     width: 100%;  */
- }
+}
 
- .txt1 {
+.txt1 {
     font-family: Poppins-Regular;
     font-size: 13px;
     line-height: 1.4;
     color: #999999;
 }
-.links{
+
+.links {
     display: flex;
     justify-content: space-between;
 }
@@ -70,21 +81,25 @@ margin: 10px;
     border: 1px solid rgb(178, 178, 178);
     box-shadow: 0px 1px 4px 0px rgb(168 168 16);
     border-radius: 3px;
- }
- 
- .p-button.p-button-info, .p-buttonset.p-button-info > .p-button, .p-splitbutton.p-button-info > .p-button {
+}
+
+.p-button.p-button-info,
+.p-buttonset.p-button-info>.p-button,
+.p-splitbutton.p-button-info>.p-button {
     font-family: Poppins-Regular;
     color: #ffffff;
-    background: #9df63b;
-    border: 1px solid #9df63b;
+    background: #3b9cf6;
+    border: 1px solid #3b9cf6;
     width: 84px;
     height: 35px;
 }
-label{
+
+label {
     font-family: Poppins-Regular;
     margin: 2px;
     padding: 2px;
 }
+
 /* 
 .login100-form-title-1 {
     font-family: Poppins-Bold;
@@ -106,11 +121,11 @@ label{
     background-position: center;
     padding: 22px 114px 22px 111px;
 } */
- .card{
+.card {
     font-family: Poppins-Regular;
     background-size: cover;
     background-position: center;
-    color:#2e2c2c;
+    color: #2e2c2c;
     padding: 60px 130px 52px 111px;
     margin: 0;
-} 
+}
