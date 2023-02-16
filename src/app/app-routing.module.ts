@@ -13,6 +13,8 @@ import { ChangepasswordComponent } from './changepassword/changepassword.compone
 import { SalDeductionComponent } from './sal-deduction/sal-deduction.component';
 import { HomeComponent } from './home/home.component';
 import { SalDeductionListComponent } from './sal-deduction-list/sal-deduction-list.component';
+import { LeavesApprovelComponent } from './leaves-approvel/leaves-approvel.component';
+import { EmployeeAccessComponent } from './employee-access/employee-access.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
@@ -30,6 +32,9 @@ const routes: Routes = [
       { path: 'profile-photo', component: ProfilePhotoComponent },
       { path: 'salDeduction', component: SalDeductionComponent },
       { path: 'DeductionList/:id', component: SalDeductionListComponent },
+      { path: 'back', redirectTo: 'SalDeductionListComponent' },
+      { path: 'leavesApprov', component: LeavesApprovelComponent },
+      { path: 'access', component: EmployeeAccessComponent },
     ],
   },
 

@@ -1,0 +1,35 @@
+
+<p-panel header="Employee Access" >
+
+  <div  modelTitle class="col-6" style="width: 15rem;">
+    <label for="Date" class="text-600 text-m font-medium mb-2" >Date:
+      <span class="text-red-500" required>*</span>
+    </label>
+    <p-calendar  [(ngModel)]="date3"  [showIcon]="true"  [required]="true" dateFormat="dd.mm.yy"  autofocus ></p-calendar>
+  </div>
+  <p-divider></p-divider>
+  <div class="body">
+  <div class="card">
+    <p-table [value]="empAccess" styleClass="p-datatable-sm p-datatable-gridlines">
+      <ng-template pTemplate="header">
+        <tr>
+          <th>Emp ID</th>
+          <th>Log Date/Time</th>
+          <th>In/Out</th>
+          <th>ShiftName</th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-emp>
+        <tr>
+          <td>{{emp.data}}</td>
+          <td>{{emp.data}}</td>
+          <td>{{emp.data}}</td>
+          <td>{{emp.data}}</td>
+        </tr>
+      </ng-template>
+    </p-table>
+    </div>
+
+  </div>
+
+</p-panel>

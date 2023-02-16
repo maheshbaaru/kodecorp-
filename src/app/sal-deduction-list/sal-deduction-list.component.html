@@ -1,1 +1,68 @@
-<p>sal-deduction-list works!</p>
+<p-panel header="Salary Deduction List" class="border-900">
+
+  <p-table #dt1 [value]="employeeList" styleClass="p-datatable-sm p-datatable-gridlines p-datatable-striped" [paginator]="true" [rows]="10" [showCurrentPageReport]="true"  currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries" [rowsPerPageOptions]="[10,25,50]" [globalFilterFields]="['Name','EmployeeId']" responsiveLayout="scroll">
+
+
+    <ng-template pTemplate="caption">
+      <div class="table-header">
+          List of Customers
+          <span class="align-content-end" style="float: right;">
+            <a>
+            <button pButton pRipple label="Back" styleClass="p-button-sm" icon="pi pi-arrow-left" class="p-button-success mr-2" routerLink="/"></button>
+          </a>
+          </span>
+      </div>
+  </ng-template>
+
+    <ng-template pTemplate="header">
+      <tr>
+        <th>
+          <div class="p-d-flex p-jc-between p-ai-center">
+          Emp ID
+          <p-columnFilter type="text" field="EmployeeId" display="menu"></p-columnFilter>
+
+        </div>
+        </th>
+        <th>
+          <div class="p-d-flex p-jc-between p-ai-center">
+           TaxTypes
+            <p-columnFilter type="text" field="Name" display="menu"></p-columnFilter>
+          </div>
+        </th>
+        <th>
+          <div class="p-d-flex p-jc-between p-ai-center">
+          Amount
+          <p-columnFilter type="text" field="EmployeeId" display="menu"></p-columnFilter>
+
+        </div>
+        </th>
+        <th>
+          <div class="p-d-flex p-jc-between p-ai-center">
+          EffectedMonth
+          <p-columnFilter type="text" field="EmployeeId" display="menu"></p-columnFilter>
+
+        </div>
+        </th>
+        <th>
+          <div class="p-d-flex p-jc-between p-ai-center">
+          No Of LOP Days
+          <p-columnFilter type="text" field="EmployeeId" display="menu"></p-columnFilter>
+
+        </div>
+        </th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-emp >
+      <tr>
+        <td class="idStyle" >{{emp.EmployeeId}}</td>
+        <td>{{emp.TaxType}}</td>
+        <td>{{emp.Amount}}</td>
+        <td>{{emp.EffectedMonth}}</td>
+        <td>{{emp.NoOfLOPDays}}</td>
+
+      </tr>
+    </ng-template>
+  </p-table>
+
+</p-panel>
+

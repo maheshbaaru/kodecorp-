@@ -37,6 +37,8 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { SalDeductionComponent } from './sal-deduction/sal-deduction.component';
 import { SalDeductionListComponent } from './sal-deduction-list/sal-deduction-list.component';
+import { LeavesApprovelComponent } from './leaves-approvel/leaves-approvel.component';
+import { EmployeeAccessComponent } from './employee-access/employee-access.component';
 
 @NgModule({
   declarations: [
@@ -55,6 +57,8 @@ import { SalDeductionListComponent } from './sal-deduction-list/sal-deduction-li
     AppliedleavesComponent,
     SalDeductionComponent,
     SalDeductionListComponent,
+    LeavesApprovelComponent,
+    EmployeeAccessComponent,
   ],
   imports: [
     BrowserModule,
