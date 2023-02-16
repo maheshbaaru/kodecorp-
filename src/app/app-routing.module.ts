@@ -10,7 +10,7 @@ import { SalDeductionComponent } from './sal-deduction/sal-deduction.component';
 const routes: Routes = [
   { path: '', component: LoginComponent },
 
-  { path: '** ',redirectTo: '/login',pathMatch : 'full' },
+  { path: '** ',redirectTo: '/login' },
 
   {
     path: 'navbar',

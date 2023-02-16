@@ -1,6 +1,6 @@
  import { Component } from '@angular/core';
-// import { FormBuilder, FormGroup } from '@angular/forms';
-// import namesData from 'src/assets/namesData.json';
+import { FormBuilder, FormGroup } from '@angular/forms';
+// import namesData from 'src/assets/data/namesData.json'
 // import { OnInit, ViewChild } from '@angular/core';
 // import { EmployeeData, Representative } from 'src/app/employee';
 // import { Table } from 'primeng/table';
