@@ -2,3 +2,11 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.after{
+  color:red;
+}
+.p-panel .p-panel-header {
+  background-color:slategray !important;
+  padding:0.5rem !important;
+  
+}
