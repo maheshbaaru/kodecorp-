@@ -73,7 +73,7 @@
                 <mat-menu #dispatchPlan="matMenu">
 
                     <button mat-menu-item
-                        [routerLink]="['/dispatch-plan/view-plan']"><mat-icon>camera_enhance</mat-icon> Profile
+                        [routerLink]="['']"><mat-icon>camera_enhance</mat-icon> Profile
                         Photo</button>
                     <button mat-menu-item [routerLink]="['/dispatch-plan/modifiy-plan']">
                         <mat-icon>camera_enhance</mat-icon> Update Photo</button>
@@ -89,11 +89,12 @@
 
 
     </mat-toolbar>
-    <div>
-        <app-home></app-home>
-    </div>
+   
+       
 
     <div class="bottom-content">
+        <app-home></app-home>
+    
         <router-outlet></router-outlet>
     </div>
 <footer>©2023 - Kode Corp Technology Solutions Pvt.Ltd </footer>
