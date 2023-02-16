@@ -14,11 +14,12 @@ import { SalDeductionComponent } from './sal-deduction/sal-deduction.component';
 import { HomeComponent } from './home/home.component';
 import { AppliedleavesComponent } from './appliedleaves/appliedleaves.component';
 
+import { SalDeductionListComponent } from './sal-deduction-list/sal-deduction-list.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
 
-  { path: '** ',redirectTo: '/login' },
+  { path: '** ', redirectTo: '/login' },
 
   {
     path: 'navbar',
@@ -32,9 +33,13 @@ const routes: Routes = [
       {path:'salDeduction',component:SalDeductionComponent},
       {path:'appliedleaves',component:AppliedleavesComponent}
   
+      { path: 'salary-details', component: SalaryDetailsComponent },
+      { path: 'create-designation', component: CreateDesignationComponent },
+      { path: 'create-taxtype', component: CreateTaxtypeComponent },
+      { path: 'profile-photo', component: ProfilePhotoComponent },
+      { path: 'salDeduction', component: SalDeductionComponent },
+      { path: 'DeductionList/:id', component: SalDeductionListComponent },
     ],
-      
-    
   },
 
   {
@@ -42,8 +47,10 @@ const routes: Routes = [
     component: LoginComponent,
   },
   { path: 'changepassword', component: ChangepasswordComponent },
-  { path: 'create-new-salary-details', component: CreateNewSalaryDetailsComponent },
-
+  {
+    path: 'create-new-salary-details',
+    component: CreateNewSalaryDetailsComponent,
+  },
 ];
 
 @NgModule({
