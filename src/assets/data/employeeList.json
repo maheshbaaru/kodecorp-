@@ -1,0 +1,13 @@
+[
+  {"EmployeeId":"KC001","TaxType":"Income Tax","Amount":10000,"EffectedMonth":"jan2023","NoOfLOPDays":""},
+  {"EmployeeId":"KC001","TaxType":"Provident Fund","Amount":5000,"EffectedMonth":"jan2023","NoOfLOPDays":""},
+  {"EmployeeId":"KC001","TaxType":"LOP","Amount":10000,"EffectedMonth":"jan2023","NoOfLOPDays":""},
+  {"EmployeeId":"KC001","TaxType":"Income Tax","Amount":10000,"EffectedMonth":"jan2023","NoOfLOPDays":""},
+  {"EmployeeId":"KC001","TaxType":"Income Tax","Amount":10000,"EffectedMonth":"jan2023","NoOfLOPDays":""},
+  {"EmployeeId":"KC001","TaxType":"Income Tax","Amount":10000,"EffectedMonth":"jan2023","NoOfLOPDays":""},
+  {"EmployeeId":"KC002","TaxType":"Provident Fund","Amount":10000,"EffectedMonth":"jan2023","NoOfLOPDays":""},
+  {"EmployeeId":"KC002","TaxType":"Income Tax","Amount":10000,"EffectedMonth":"jan2023","NoOfLOPDays":""},
+  {"EmployeeId":"KC002","TaxType":"LOP","Amount":10000,"EffectedMonth":"jan2023","NoOfLOPDays":""},
+  {"EmployeeId":"KC002","TaxType":"Income Tax","Amount":10000,"EffectedMonth":"jan2023","NoOfLOPDays":""}
+]
+
