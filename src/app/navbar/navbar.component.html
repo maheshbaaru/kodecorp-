@@ -19,7 +19,7 @@
                     (mouseout)="$event.stopPropagation();leavesmenuTrigger.openMenu()">
                     <a class="nav-link" #leavesmenuTrigger="matMenuTrigger" [matMenuTriggerFor]="leavesmenu">Leaves</a>
                         <mat-menu #leavesmenu="matMenu">
-                        <button mat-menu-item [routerLink]="['updateprofile']"> <mat-icon>event_note</mat-icon>Apply Leave</button>
+                        <button mat-menu-item [routerLink]="['apply']"> <mat-icon>event_note</mat-icon>Apply Leave</button>
                         <button mat-menu-item [routerLink]="['access']"><mat-icon>people</mat-icon> EmployeeAccess</button>
                             <button mat-menu-item [routerLink]="['leavesApprov']">
                                 <mat-icon>event_busy</mat-icon>Leaves Approval</button>

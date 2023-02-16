@@ -17,6 +17,7 @@ import { AppliedleavesComponent } from './appliedleaves/appliedleaves.component'
 import { SalDeductionListComponent } from './sal-deduction-list/sal-deduction-list.component';
 import { LeavesApprovelComponent } from './leaves-approvel/leaves-approvel.component';
 import { EmployeeAccessComponent } from './employee-access/employee-access.component';
+import { ApppledLeavesComponent } from './apppled-leaves/apppled-leaves.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
@@ -44,6 +45,7 @@ const routes: Routes = [
       { path: 'back', redirectTo: 'SalDeductionListComponent' },
       { path: 'leavesApprov', component: LeavesApprovelComponent },
       { path: 'access', component: EmployeeAccessComponent },
+      { path: 'apply', component: ApppledLeavesComponent },
     ],
   },
 
