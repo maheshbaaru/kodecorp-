@@ -16,7 +16,7 @@
                <span class="required">*</span>
             </label>
             <p-dropdown [options]="names" placeholder="SELECT EMPLOYEE" optionLabel="name"
-            [showClear]="true"  formControlName="name"></p-dropdown>
+            [showClear]="true"  formControlName="name" ></p-dropdown>
           </div>
           <div  class="cont2">
            <label for="designation-input" class="input-styling" required  >Salary
@@ -26,13 +26,13 @@
 
           </div>
           <div  class="cont2">
-           <label for="designation-input" class="input-styling" required>Last Revised Data
+           <label for="designation-input" class="input-styling" required>Last Revised Date
                <span class="required">*</span>
             </label>
             <p-calendar [showIcon]="true"  id="designation-input" placeholder="DD-MM-YYYY"  formControlName="LastRevisedDate"></p-calendar>
           </div>
           <div  class="cont2">
-           <label for="designation-input" class="input-styling" required>Next Revised Data
+           <label for="designation-input" class="input-styling" required>Next Revised Date
                <span class="required">*</span>
             </label>
             <p-calendar [showIcon]="true"  id="designation-input" placeholder="DD-MM-YYYY"  formControlName="NextRevisedDate"></p-calendar>
