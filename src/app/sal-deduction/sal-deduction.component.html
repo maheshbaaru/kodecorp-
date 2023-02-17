@@ -9,10 +9,10 @@
             <span class="p-input-icon-left p-ml-auto " >
 
               <i class="pi pi-search"></i>
-              <input pInputText type="text" (input)="dt1.filterGlobal($any($event.target).value, 'contains')" placeholder="Search Employee"/>
+              <input class="h-1rem" pInputText type="text" (input)="dt1.filterGlobal($any($event.target).value, 'contains')" placeholder="Search Employee"/>
             </span>
             <span [style]="{'float':'right'}" >
-              <button pButton pRipple label="New" styleClass="p-button-sm" icon="pi pi-plus" class="p-button-success mr-2" (click)="openNew()"></button>
+              <button pButton pRipple label="New" styleClass="p-button-sm" icon="pi pi-plus" class="p-button-success mr-2 h-1rem" (click)="openNew()"></button>
             </span>
     </div>
   </ng-template>
