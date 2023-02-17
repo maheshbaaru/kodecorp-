@@ -1,32 +1,22 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
-import { HttpClient } from '@angular/common/http';
-interface employees{
-  EmpId:string;
-  FirstName:string;
-  LastName:string;
-  Email:string;
-  Designation:string;
-  PanNumber:string;
-  IsActive:string;
-  Shift:string;
-}
+import { EmployeedDataService } from '../EmployeesDataService';
 @Component({
   selector: 'app-employees',
   templateUrl: './employees.component.html',
   styleUrls: ['./employees.component.css']
 })
 export class EmployeesComponent {
-  empdata!:employees[];
-  constructor( private router:Router,
-    private http:HttpClient
+  empdata:any;
+  constructor(
+     private service:EmployeedDataService
     ) { }
   
 
   ngOnInit(): void {
-    this.http.get('./assets/data/Employees.json').subscribe(data=>{
-        this.empdata=data as employees[];
-         console.log(this.empdata);
-       })
+    this.service.getEmployeeList().subscribe((data1) => {
+      console.log(data1);
+      this.empdata = data1;
+    });
     }
+   
 }
