@@ -44,6 +44,7 @@ import { PaySlipComponent } from './pay-slip/pay-slip.component';
 import { CreateNewEmployeeComponent } from './create-new-employee/create-new-employee.component';
 import { ModifypasswordComponent } from './modifypassword/modifypassword.component';
 import { UpdatephotoComponent } from './updatephoto/updatephoto.component';
+import { UpdateEmployeeComponent } from './update-employee/update-employee.component';
 
 @NgModule({
   declarations: [
@@ -70,6 +71,7 @@ import { UpdatephotoComponent } from './updatephoto/updatephoto.component';
     CreateNewEmployeeComponent,
     ModifypasswordComponent,
     UpdatephotoComponent,
+    UpdateEmployeeComponent,
   ],
   imports: [
     BrowserModule,

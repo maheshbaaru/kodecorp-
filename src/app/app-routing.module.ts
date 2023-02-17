@@ -23,6 +23,7 @@ import { PaySlipComponent } from './pay-slip/pay-slip.component';
 import { ModifypasswordComponent } from './modifypassword/modifypassword.component';
 import { CreateNewEmployeeComponent } from './create-new-employee/create-new-employee.component';
 import { UpdatephotoComponent } from './updatephoto/updatephoto.component';
+import { UpdateEmployeeComponent } from './update-employee/update-employee.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
@@ -63,6 +64,7 @@ const routes: Routes = [
       {path:'cretenewemployee',component:CreateNewEmployeeComponent},
    {path:'updatephoto',component:UpdatephotoComponent},
       { path: 'modifypassword', component: ModifypasswordComponent },
+      {path:'updateemployee',component:UpdateEmployeeComponent}
     ],
   },
 
