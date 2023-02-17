@@ -51,7 +51,7 @@ const routes: Routes = [
       { path: 'apply', component: ApppledLeavesComponent },
       { path: 'Employees', component: EmployeesComponent },
       { path: 'paySlip', component: PaySlipComponent },
-   
+   {path:'updatephoto',component:UpdatephotoComponent},
       { path: 'modifypassword', component: ModifypasswordComponent },
     ],
   },
