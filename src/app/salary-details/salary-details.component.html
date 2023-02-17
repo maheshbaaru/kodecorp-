@@ -2,54 +2,54 @@
     <div>
         <form class="form-control form-container "  >
             <label for="input" style="padding-right: 10px;">SALARY DISPLAY LIST</label>
-                
+
                 <input id="input" pInputText type="text" (input)="dt.filterGlobal($any($event.target).value, 'contains')" placeholder="SEARCH EMPLOYEE"  />
-               
+
                     <!-- <button class="btn btn-primary button" style="float: right;font-size: small;font-weight: 500;">+ CREATE NEW</button>  -->
-                    <a href="create-new-salary-details" class="btn btn-primary" style="float: right;font-size: small;font-weight: 500;">+ CREATE NEW</a>
+                    <a routerLink="../create-new-salary-details" class="btn btn-primary" style="float: right;font-size: small;font-weight: 500;">+ CREATE NEW</a>
         </form>
 
-    </div>   
-   
+    </div>
+
 
     <div>
         <p-table #dt [value]="sample"  dataKey="id" styleClass="p-datatable-customers" [rowHover]="true"
-        [rows]="10" [showCurrentPageReport]="true" [rowsPerPageOptions]="[10,25,50]" 
+        [rows]="10" [showCurrentPageReport]="true" [rowsPerPageOptions]="[10,25,50]"
         [paginator]="true" currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
         [filterDelay]="0" styleClass="p-datatable-gridlines" [globalFilterFields]="['sample.EmployeeId','Name','Salary','LastRevisedDate','NextRevisedDate']" >
-       
+
         <ng-template pTemplate="header">
-        
+
                 <tr>
-                    
-                    <th> 
+
+                    <th>
                     	<div class="p-d-flex p-jc-between p-ai-center">
                             Employee ID
                             <p-columnFilter type="text" field="country.name" display="menu"></p-columnFilter>
                         </div>
-                            
+
                     </th>
                     <th><div class="p-d-flex p-jc-between p-ai-center">
-                        Employee name	
+                        Employee name
                         <p-columnFilter type="text" field="country.name" display="menu"></p-columnFilter>
                     </div></th>
                     <th>
                         <div class="p-d-flex p-jc-between p-ai-center">
-                            Salary 
+                            Salary
                             <p-columnFilter type="text" field="country.name" display="menu"></p-columnFilter>
                         </div>
-                            
+
                     </th>
                     <th>
                         <div class="p-d-flex p-jc-between p-ai-center">
-                            Last Revised Date 
+                            Last Revised Date
                             <p-columnFilter type="text" field="country.name" display="menu"></p-columnFilter>
                         </div>
-                        
+
                     </th>
                     <th>
                         <div class="p-d-flex p-jc-between p-ai-center">
-                            Next Revised Date 
+                            Next Revised Date
                             <p-columnFilter type="text" field="country.name" display="menu"></p-columnFilter>
                         </div>
                     </th>
@@ -68,5 +68,5 @@
         </p-table>
 
     </div>
-    
+
 </div>

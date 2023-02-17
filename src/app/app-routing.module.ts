@@ -34,6 +34,10 @@ const routes: Routes = [
     children: [
       { path: 'updateprofile', component: UpdateprofileComponent },
       { path: 'salary-details', component: SalaryDetailsComponent },
+      {
+        path: 'create-new-salary-details',
+        component: CreateNewSalaryDetailsComponent,
+      },
       { path: 'create-designation', component: CreateDesignationComponent },
       { path: 'create-taxtype', component: CreateTaxtypeComponent },
       { path: 'profile-photo', component: ProfilePhotoComponent },
@@ -51,11 +55,11 @@ const routes: Routes = [
       { path: 'apply', component: ApppledLeavesComponent },
       { path: 'Employees', component: EmployeesComponent },
       { path: 'paySlip', component: PaySlipComponent },
-   {path:'updatephoto',component:UpdatephotoComponent},
+      { path: 'updatephoto', component: UpdatephotoComponent },
       { path: 'modifypassword', component: ModifypasswordComponent },
     ],
   },
-  {path: 'create-new-salary-details',component: CreateNewSalaryDetailsComponent},
+
   { path: 'changepassword', component: ChangepasswordComponent },
   { path: 'login', component: LoginComponent },
 ];
