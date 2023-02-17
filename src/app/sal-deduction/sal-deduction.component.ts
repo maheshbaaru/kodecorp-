@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { EmployeeService } from '../employee.service';
+import { EmployeeService } from '../services/employee.service';
 interface TaxTayes {
   name: string;
 }

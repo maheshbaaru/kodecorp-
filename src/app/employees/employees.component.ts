@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { EmployeedDataService } from '../EmployeesDataService';
+import { EmployeedDataService } from '../services/EmployeesDataService';
 @Component({
   selector: 'app-employees',
   templateUrl: './employees.component.html',
@@ -10,7 +10,7 @@ export class EmployeesComponent {
   constructor(
      private service:EmployeedDataService
     ) { }
-  
+
 
   ngOnInit(): void {
     this.service.getEmployeeList().subscribe((data1) => {
@@ -18,5 +18,5 @@ export class EmployeesComponent {
       this.empdata = data1;
     });
     }
-   
+
 }
