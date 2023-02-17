@@ -4,7 +4,7 @@
     <strong>CREATE EMPLOYEES </strong>
   </div>
       <div class="col-sm-6" style="text-align:right">
-      <button pButton type="button" label="Back"  icon=" pi pi-arrow-left" iconPos="left" class="p-button-sm " ></button>&nbsp;
+      <button pButton type="button" label="Back"  icon=" pi pi-arrow-left"  routerLink="../Employees" iconPos="left" class="p-button-sm " ></button>&nbsp;
       <button pButton type="button" label="Save" icon="pi pi-check" iconPos="left" class="p-button-sm"></button>
 
   </div>
@@ -13,56 +13,72 @@
     
     <div class="col-md-4">
   <div class="col-12 md:col-4  ">
-    <h6 >EmployeeID<span class="after">*</span></h6>
+    <h3 >EmployeeID<span class="required">*</span></h3>
     <input type="text" pInputText  class="p-inputtext-sm" placeholder="ENTER EMPLOYEE ID"> 
     <br>
     <br>
 
-    <h6 >Email<span class="after">*</span></h6>
+    <h3>Email<span class="required">*</span></h3>
     <input type="text" class="p-inputtext-sm" pInputText placeholder="ENTER EMAIL">
     <br>
     <br>
 
-    <h6 >DesignationID<span class="after">*</span></h6>
+    <h3 >DesignationID<span class="required">*</span></h3>
    
-    <p-dropdown  [showClear]="true" placeholder="Select Designation"></p-dropdown>
+     <p-dropdown [options]="roles"   placeholder="Select Designation"  >
+    
+    </p-dropdown> 
+    <!-- <p-dropdown [options]="roles" [(ngModel)]="selectedrole"  placeholder="Select Role" [group]="true">
+      <ng-template let-group pTemplate="group">
+        <div class="p-d-flex p-ai-center">
+          <span>{{group.name}}</span>
+        </div>
+      </ng-template>
+    </p-dropdown> -->
     <br>
     <br>
 
     <p-checkbox name="group1" value="IsActive" inputId="any" ></p-checkbox>
-    <label for="any">IsActive<span class="after">*</span></label>
+    <label for="any">IsActive<span class="required">*</span></label>
 
 </div>
 </div>
 <div class="col-md-4">
 <div class="col-12 md:col-4">
-  <h6 >FirstName<span class="after">*</span></h6>
+  <h3>FirstName<span class="required">*</span></h3>
   <input type="text" pInputText class="p-inputtext-sm"  placeholder="ENTER FIRSTNAME"> 
   <br>
   <br>
 
-  <h6 >PanNumber</h6>
+  <h3 >PanNumber</h3>
   <input type="text"  class="p-inputtext-sm" pInputText placeholder="ENTER PAN NUMBER">
   <br>
   <br>
 
-  <h6 >ShiftId<span class="after">*</span></h6>
-  <p-dropdown   [showClear]="true" placeholder="Select Shift"></p-dropdown>
+  <h3 >ShiftId<span class="required">*</span></h3>
+  <p-dropdown [options]="Shifts"   placeholder="Select Shift"  ></p-dropdown>
+  <!-- <p-dropdown [options]="Shifts"   placeholder="Select Shift"    [group]="true">
+    <ng-template let-group pTemplate="group">
+      <div class="p-d-flex p-ai-center">
+        <span>{{group.name}}</span>
+      </div>
+    </ng-template>
+  </p-dropdown> -->
   </div>
 </div>
 <div class="col-md-4">
 <div class="col-12 md:col-4  ">
-  <h6 >LastName<span class="after">*</span></h6>
+  <h3 >LastName<span class="required">*</span></h3>
   <input type="text"  class="p-inputtext-sm" pInputText placeholder="ENTER LASTNAME"> 
   <br>
   <br>
 
-  <h6 >Password<span class="after">*</span></h6>
+  <h3 >Password<span class="required">*</span></h3>
   <input type="text"  class="p-inputtext-sm" pInputText placeholder="ENTER PASSWORD">
   <br>
   <br>
 
-  <h6 >DOJ<span class="after">*</span></h6>
+  <h3 >DOJ<span class="required">*</span></h3>
   <input type="text"  class="p-inputtext-sm" pInputText placeholder="DD/MM/YYYY"> 
 </div>
 </div>

@@ -5,7 +5,7 @@
     <input type="text" pInputText placeholder="Search Employee" (input)="table.filterGlobal($any($event.target).value,'contains')"    />
   </div>
       <div class="col-sm-6" style="text-align:right">
-      <button pButton  type="button" label="Create New"  icon="pi pi-plus"   class="p-button-sm p-button-success" ></button>
+      <button pButton  type="button" label="Create New"  icon="pi pi-plus" routerLink="../cretenewemployee"  class="p-button-sm p-button-success" ></button>
   </div>
   </ng-template> 
   <p-table #table [value]="empdata" [tableStyle]="{'min-width': '50rem'}" styleClass="p-datatable-gridlines"   [globalFilterFields]="['FirstName','IsActive']">
