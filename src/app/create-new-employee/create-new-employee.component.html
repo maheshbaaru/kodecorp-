@@ -14,18 +14,18 @@
     <div class="col-md-4">
   <div class="col-12 md:col-4  ">
     <h3 >EmployeeID<span class="required">*</span></h3>
-    <input type="text" pInputText  class="p-inputtext-sm" placeholder="ENTER EMPLOYEE ID"> 
+    <input type="text" pInputText  class="p-inputtext-sm" placeholder="ENTER EMPLOYEE ID" required> 
     <br>
     <br>
 
-    <h3>Email<span class="required">*</span></h3>
-    <input type="text" class="p-inputtext-sm" pInputText placeholder="ENTER EMAIL">
+    <h3>Email<span class="required" >*</span></h3>
+    <input type="text" class="p-inputtext-sm" required  pInputText placeholder="ENTER EMAIL">
     <br>
     <br>
 
     <h3 >DesignationID<span class="required">*</span></h3>
    
-     <p-dropdown [options]="roles"   placeholder="Select Designation"  >
+     <p-dropdown [options]="roles"    placeholder="Select Designation" >
     
     </p-dropdown> 
     <!-- <p-dropdown [options]="roles" [(ngModel)]="selectedrole"  placeholder="Select Role" [group]="true">
@@ -46,7 +46,7 @@
 <div class="col-md-4">
 <div class="col-12 md:col-4">
   <h3>FirstName<span class="required">*</span></h3>
-  <input type="text" pInputText class="p-inputtext-sm"  placeholder="ENTER FIRSTNAME"> 
+  <input type="text" pInputText class="p-inputtext-sm" required  placeholder="ENTER FIRSTNAME"> 
   <br>
   <br>
 
@@ -69,12 +69,12 @@
 <div class="col-md-4">
 <div class="col-12 md:col-4  ">
   <h3 >LastName<span class="required">*</span></h3>
-  <input type="text"  class="p-inputtext-sm" pInputText placeholder="ENTER LASTNAME"> 
+  <input type="text"  class="p-inputtext-sm" required  pInputText placeholder="ENTER LASTNAME"> 
   <br>
   <br>
 
   <h3 >Password<span class="required">*</span></h3>
-  <input type="text"  class="p-inputtext-sm" pInputText placeholder="ENTER PASSWORD">
+  <input type="text"  class="p-inputtext-sm" required  pInputText placeholder="ENTER PASSWORD">
   <br>
   <br>
 
