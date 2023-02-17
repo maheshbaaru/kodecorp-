@@ -20,11 +20,12 @@ import { EmployeeAccessComponent } from './employee-access/employee-access.compo
 import { ApppledLeavesComponent } from './apppled-leaves/apppled-leaves.component';
 import { EmployeesComponent } from './employees/employees.component';
 import { PaySlipComponent } from './pay-slip/pay-slip.component';
+import { ModifypasswordComponent } from './modifypassword/modifypassword.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
 
-  { path: '** ', redirectTo: '/login' },
+  { path: '** ', redirectTo: '/login'},
 
   {
     path: 'navbar',
@@ -37,7 +38,7 @@ const routes: Routes = [
       { path: 'profile-photo', component: ProfilePhotoComponent },
       { path: 'salDeduction', component: SalDeductionComponent },
       { path: 'appliedleaves', component: AppliedleavesComponent },
-       { path: 'salary-details', component: SalaryDetailsComponent },
+      { path: 'salary-details', component: SalaryDetailsComponent },
       { path: 'create-designation', component: CreateDesignationComponent },
       { path: 'create-taxtype', component: CreateTaxtypeComponent },
       { path: 'profile-photo', component: ProfilePhotoComponent },
@@ -47,25 +48,22 @@ const routes: Routes = [
       { path: 'leavesApprov', component: LeavesApprovelComponent },
       { path: 'access', component: EmployeeAccessComponent },
       { path: 'apply', component: ApppledLeavesComponent },
-      {path:'Employees',component:EmployeesComponent},{
-        path:'paySlip',component:PaySlipComponent
-      }
-    ],
-  },
+      { path: 'Employees', component: EmployeesComponent },
+       {path: 'paySlip', component: PaySlipComponent},
+       {path: 'create-new-salary-details',component: CreateNewSalaryDetailsComponent},
+       {path: 'modifypassword', component: ModifypasswordComponent},
 
-  {
-    path: 'login',
-    component: LoginComponent,
+  
+],
+
   },
   { path: 'changepassword', component: ChangepasswordComponent },
-  {
-    path: 'create-new-salary-details',
-    component: CreateNewSalaryDetailsComponent,
-  },
+  { path: 'login',component: LoginComponent,},
 ];
 
+
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule],
-})
+      imports: [RouterModule.forRoot(routes)],
+      exports: [RouterModule],
+    })
 export class AppRoutingModule { }
