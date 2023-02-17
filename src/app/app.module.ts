@@ -1,10 +1,10 @@
-import { ChangepasswordComponent } from './changepassword/changepassword.component';
+
 import { HomeComponent } from './home/home.component';
 import { PrimengModule } from './primeng/primeng.module';
 import { AppliedleavesComponent } from './appliedleaves/appliedleaves.component';
 import { AppComponent } from './app.component';
 import { SalarydisplyComponent } from './salarydisply/salarydisply.component';
-import { UpdateprofileComponent } from './updateprofile/updateprofile.component';
+import { UpdateprofileComponent } from './profilecomponents/updateprofile/updateprofile.component';
 import { LoginComponent } from './login/login.component';
 import { CheckboxModule } from 'primeng/checkbox';
 import { InputTextModule } from 'primeng/inputtext';
@@ -28,7 +28,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CreateTaxtypeComponent } from './create-taxtype/create-taxtype.component';
 import { CreateNewSalaryDetailsComponent } from './create-new-salary-details/create-new-salary-details.component';
 import { DropdownModule } from 'primeng/dropdown';
-import { ProfilePhotoComponent } from './profile-photo/profile-photo.component';
+import { ProfilePhotoComponent } from './profilecomponents/profile-photo/profile-photo.component';
 import { FileUploadModule } from 'primeng/fileupload';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -42,8 +42,10 @@ import { ApppledLeavesComponent } from './apppled-leaves/apppled-leaves.componen
 import { EmployeesComponent } from './employees/employees.component';
 import { PaySlipComponent } from './pay-slip/pay-slip.component';
 import { CreateNewEmployeeComponent } from './create-new-employee/create-new-employee.component';
-import { ModifypasswordComponent } from './modifypassword/modifypassword.component';
-import { UpdatephotoComponent } from './updatephoto/updatephoto.component';
+import { ChangepasswordComponent } from './profilecomponents/changepassword/changepassword.component';
+import { UpdatephotoComponent } from './profilecomponents/updatephoto/updatephoto.component';
+import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
+
 import { UpdateEmployeeComponent } from './update-employee/update-employee.component';
 
 @NgModule({
@@ -53,7 +55,7 @@ import { UpdateEmployeeComponent } from './update-employee/update-employee.compo
     UpdateprofileComponent,
     LoginComponent,
     NavbarComponent,
-    ChangepasswordComponent,
+   ForgotpasswordComponent,
     SalaryDetailsComponent,
     CreateDesignationComponent,
     CreateTaxtypeComponent,
@@ -69,8 +71,10 @@ import { UpdateEmployeeComponent } from './update-employee/update-employee.compo
     EmployeesComponent,
     PaySlipComponent,
     CreateNewEmployeeComponent,
-    ModifypasswordComponent,
+    
     UpdatephotoComponent,
+    ForgotpasswordComponent,
+    ChangepasswordComponent,
     UpdateEmployeeComponent,
   ],
   imports: [

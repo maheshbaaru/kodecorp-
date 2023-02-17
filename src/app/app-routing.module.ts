@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { UpdateprofileComponent } from './updateprofile/updateprofile.component';
+import { UpdateprofileComponent } from './profilecomponents/updateprofile/updateprofile.component';
 import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
@@ -8,8 +8,8 @@ import { SalaryDetailsComponent } from './salary-details/salary-details.componen
 import { CreateDesignationComponent } from './create-designation/create-designation.component';
 import { CreateTaxtypeComponent } from './create-taxtype/create-taxtype.component';
 import { CreateNewSalaryDetailsComponent } from './create-new-salary-details/create-new-salary-details.component';
-import { ProfilePhotoComponent } from './profile-photo/profile-photo.component';
-import { ChangepasswordComponent } from './changepassword/changepassword.component';
+import { ProfilePhotoComponent } from './profilecomponents/profile-photo/profile-photo.component';
+
 import { SalDeductionComponent } from './sal-deduction/sal-deduction.component';
 import { HomeComponent } from './home/home.component';
 import { AppliedleavesComponent } from './appliedleaves/appliedleaves.component';
@@ -20,10 +20,14 @@ import { EmployeeAccessComponent } from './employee-access/employee-access.compo
 import { ApppledLeavesComponent } from './apppled-leaves/apppled-leaves.component';
 import { EmployeesComponent } from './employees/employees.component';
 import { PaySlipComponent } from './pay-slip/pay-slip.component';
-import { ModifypasswordComponent } from './modifypassword/modifypassword.component';
+import { ChangepasswordComponent } from './profilecomponents/changepassword/changepassword.component';
 import { CreateNewEmployeeComponent } from './create-new-employee/create-new-employee.component';
-import { UpdatephotoComponent } from './updatephoto/updatephoto.component';
+import { UpdatephotoComponent } from './profilecomponents/updatephoto/updatephoto.component';
+import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
 import { UpdateEmployeeComponent } from './update-employee/update-employee.component';
+
+
+
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
@@ -36,11 +40,9 @@ const routes: Routes = [
     children: [
       { path: 'updateprofile', component: UpdateprofileComponent },
       { path: 'salary-details', component: SalaryDetailsComponent },
-      {
-        path: 'create-new-salary-details',
-        component: CreateNewSalaryDetailsComponent,
-      },
+      {path: 'create-new-salary-details',component: CreateNewSalaryDetailsComponent, },
       { path: 'create-designation', component: CreateDesignationComponent },
+      { path: 'changepassword', component: ChangepasswordComponent },
       { path: 'create-taxtype', component: CreateTaxtypeComponent },
       { path: 'profile-photo', component: ProfilePhotoComponent },
       { path: 'salDeduction', component: SalDeductionComponent },
@@ -63,12 +65,12 @@ const routes: Routes = [
       },
       {path:'cretenewemployee',component:CreateNewEmployeeComponent},
    {path:'updatephoto',component:UpdatephotoComponent},
-      { path: 'modifypassword', component: ModifypasswordComponent },
+      
       {path:'updateemployee',component:UpdateEmployeeComponent}
     ],
   },
 
-  { path: 'changepassword', component: ChangepasswordComponent },
+  { path: 'forgotpassword', component: ForgotpasswordComponent },
   { path: 'login', component: LoginComponent },
 ];
 
