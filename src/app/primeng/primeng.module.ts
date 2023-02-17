@@ -22,7 +22,7 @@ import { DialogModule } from 'primeng/dialog';
 import { ContextMenuModule } from 'primeng/contextmenu';
 import { StyleClassModule } from 'primeng/styleclass';
 import { ConfirmationService } from 'primeng/api';
-
+import { DividerModule } from 'primeng/divider';
 
 const primeNg: any = [
   CheckboxModule,
@@ -45,6 +45,7 @@ const primeNg: any = [
   DialogModule,
   ContextMenuModule,
   StyleClassModule,
+  DividerModule,
 ];
 
 @NgModule({

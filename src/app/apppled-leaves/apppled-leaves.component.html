@@ -1,0 +1,101 @@
+<p-panel header="Leaves Approval">
+
+  <p-table #dt1 [value]="employeeLeavs" styleClass="p-datatable-sm p-datatable-gridlines p-datatable-striped" [paginator]="true" [rows]="10" [showCurrentPageReport]="true"  currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries" [rowsPerPageOptions]="[10,25,50]" [globalFilterFields]="['Name','EmpId','LeaveType','NoDays','FDate','Tdate','AppliedOn','status']" responsiveLayout="scroll">
+
+
+
+
+    <ng-template pTemplate="header">
+      <tr>
+        <th>
+          <div class="p-d-flex p-jc-between p-ai-center">
+          Emp ID
+          <p-columnFilter type="text" field="EmpId" display="menu"></p-columnFilter>
+
+        </div>
+        </th>
+        <th>
+          <div class="p-d-flex p-jc-between p-ai-center">
+            Emp Name
+            <p-columnFilter type="text" field="Name" display="menu"></p-columnFilter>
+          </div>
+        </th>
+        <th>
+          <div class="p-d-flex p-jc-between p-ai-center">
+          Leave Type
+          <p-columnFilter type="text" field="LeaveType" display="menu"></p-columnFilter>
+
+        </div>
+        </th>
+        <th>
+          <div class="p-d-flex p-jc-between p-ai-center">
+          Num Of Days
+          <p-columnFilter type="text" field="NoDays" display="menu"></p-columnFilter>
+
+        </div>
+        </th>
+        <th>
+          <div class="p-d-flex p-jc-between p-ai-center">
+          From Date
+          <p-columnFilter type="text" field="FDate" display="menu"></p-columnFilter>
+
+        </div>
+        </th>
+        <th>
+          <div class="p-d-flex p-jc-between p-ai-center">
+          To Date
+          <p-columnFilter type="text" field="Tdate" display="menu"></p-columnFilter>
+
+        </div>
+        </th>
+        <th>
+          <div class="p-d-flex p-jc-between p-ai-center">
+          Applied On
+          <p-columnFilter type="text" field="AppliedOn" display="menu"></p-columnFilter>
+
+        </div>
+        </th>
+        <th>
+          <div class="p-d-flex p-jc-between p-ai-center">
+          Status
+          <p-columnFilter type="text" field="status" display="menu"></p-columnFilter>
+
+        </div>
+        </th>
+        <th>
+          <div class="p-d-flex p-jc-between p-ai-center">
+          Comments
+          <p-columnFilter type="text" field="comment" display="menu"></p-columnFilter>
+
+        </div>
+        </th>
+        <th>
+          <div class="p-d-flex p-jc-between p-ai-center">
+          Admin Comments
+          <p-columnFilter type="text" field="AComments" display="menu"></p-columnFilter>
+
+        </div>
+        </th>
+
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-emp>
+      <tr>
+        <td >{{emp.EmpId}}</td>
+        <td>{{emp.Name}}</td>
+        <td>{{emp.LeaveType}}</td>
+        <td>{{emp.NoDays}}</td>
+        <td>{{emp.FDate}}</td>
+        <td>{{emp.Tdate}}</td>
+        <td>{{emp.AppliedOn}}</td>
+        <td>{{emp.status}}</td>
+        <td>{{emp.comment}}</td>
+        <td>{{emp.AComments}}</td>
+
+
+      </tr>
+    </ng-template>
+  </p-table>
+
+</p-panel>
+

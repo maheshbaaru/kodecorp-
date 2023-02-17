@@ -15,6 +15,9 @@ import { HomeComponent } from './home/home.component';
 import { AppliedleavesComponent } from './appliedleaves/appliedleaves.component';
 
 import { SalDeductionListComponent } from './sal-deduction-list/sal-deduction-list.component';
+import { LeavesApprovelComponent } from './leaves-approvel/leaves-approvel.component';
+import { EmployeeAccessComponent } from './employee-access/employee-access.component';
+import { ApppledLeavesComponent } from './apppled-leaves/apppled-leaves.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
@@ -26,19 +29,22 @@ const routes: Routes = [
     component: NavbarComponent,
     children: [
       { path: 'updateprofile', component: UpdateprofileComponent },
-      {path:'salary-details', component:SalaryDetailsComponent},
-      {path:'create-designation',component:CreateDesignationComponent},
-      {path:'create-taxtype',component:CreateTaxtypeComponent},
-      {path:'profile-photo',component:ProfilePhotoComponent},
-      {path:'salDeduction',component:SalDeductionComponent},
-      {path:'appliedleaves',component:AppliedleavesComponent},
-  
       { path: 'salary-details', component: SalaryDetailsComponent },
       { path: 'create-designation', component: CreateDesignationComponent },
       { path: 'create-taxtype', component: CreateTaxtypeComponent },
       { path: 'profile-photo', component: ProfilePhotoComponent },
       { path: 'salDeduction', component: SalDeductionComponent },
+      { path: 'appliedleaves', component: AppliedleavesComponent },
+       { path: 'salary-details', component: SalaryDetailsComponent },
+      { path: 'create-designation', component: CreateDesignationComponent },
+      { path: 'create-taxtype', component: CreateTaxtypeComponent },
+      { path: 'profile-photo', component: ProfilePhotoComponent },
+      { path: 'salDeduction', component: SalDeductionComponent },
       { path: 'DeductionList/:id', component: SalDeductionListComponent },
+      { path: 'back', redirectTo: 'SalDeductionListComponent' },
+      { path: 'leavesApprov', component: LeavesApprovelComponent },
+      { path: 'access', component: EmployeeAccessComponent },
+      { path: 'apply', component: ApppledLeavesComponent },
     ],
   },
 
@@ -57,4 +63,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
