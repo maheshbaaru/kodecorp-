@@ -5,7 +5,7 @@ import { OnInit, ViewChild } from '@angular/core';
 import { EmployeeData, Representative } from 'src/app/employee';
 import { Table } from 'primeng/table';
 
-import { SalaryService } from '../services/salary.service';
+import { SalaryService } from '../../services/salary.service';
 import salary from 'src/assets/data/salary.json';
 
 interface EmployeeName {
@@ -18,10 +18,10 @@ interface LeaveType {
 
 @Component({
   selector: 'app-modifypassword',
-  templateUrl: './modifypassword.component.html',
-  styleUrls: ['./modifypassword.component.css'],
+  templateUrl: './changepassword.component.html',
+  styleUrls: ['./changepassword.component.css'],
 })
-export class ModifypasswordComponent {
+export class ChangepasswordComponent {
   employees: EmployeeData[] | any;
   leaveTypes: LeaveType[];
 

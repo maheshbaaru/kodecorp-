@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { EmployeedDataService } from '../services/EmployeesDataService';
+//import { Router } from '@angular/router';
 @Component({
   selector: 'app-employees',
   templateUrl: './employees.component.html',
@@ -8,6 +9,7 @@ import { EmployeedDataService } from '../services/EmployeesDataService';
 export class EmployeesComponent {
   empdata:any;
   constructor(
+    //private router:Router,
      private service:EmployeedDataService
     ) { }
 
@@ -17,6 +19,8 @@ export class EmployeesComponent {
       console.log(data1);
       this.empdata = data1;
     });
-    }
+  }
+
+  
 
 }
