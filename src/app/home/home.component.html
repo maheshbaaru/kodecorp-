@@ -1,55 +1,55 @@
 <div class="surface-ground">
-  <div class="grid">
+  <div class="grid bg-white">
     <div class="col-12 lg:col-3 p-3">
-      <div class="p-3 border-round shadow-2 flex align-items-center surface-card">
+      <div class="p-3 border-round shadow-2 flex align-items-center surface-card" [routerLink]="['leavesApprov']">
           <div class="bg-teal-100 inline-flex align-items-center justify-content-center mr-3" style="width: 48px; height: 48px; border-radius: 10px;">
             <i class="pi pi-user text-green-600 text-3xl"></i>
           </div>
-          <div *ngFor="let da of data">
-            <span class="text-800 text-x font-medium mb-2" [routerLink]="['leavesApprov']">Pending Leaves</span>
+          <div *ngFor="let da of data" >
+            <span class="text-800 text-x font-medium mb-2" >Pending Leaves</span>
             <p class="mt-1 mb-0 text-600 font-medium  text-m">{{da.pendingLeaves}}</p>
-            
-          
+
+
           </div>
       </div>
 
 
     </div>
     <div class="col-12 lg:col-3 p-3">
-      <div class="p-3 border-round shadow-2 flex align-items-center surface-card">
+      <div class="p-3 border-round shadow-2 flex align-items-center surface-card" [routerLink]="['salary-details']">
           <div class="bg-teal-100 inline-flex align-items-center justify-content-center mr-3" style="width: 48px; height: 48px; border-radius: 10px;">
             <i class="pi pi-user text-orange-600 text-3xl"></i>
           </div>
           <div>
-            <span class="text-orange-900 text-x font-medium mb-2" [routerLink]="['salary-details']">UpComing Revisions</span>
+            <span class="text-orange-900 text-x font-medium mb-2" >UpComing Revisions</span>
             <p class="mt-1 mb-0 text-600 font-medium  text-m">0</p>
-           
+
           </div>
       </div>
 
     </div>
     <div class="col-12 lg:col-3 p-3">
-      <div class="p-3 border-round shadow-2 flex align-items-center surface-card">
+      <div class="p-3 border-round shadow-2 flex align-items-center surface-card" [routerLink]="['Employees']">
           <div class="bg-teal-100 inline-flex align-items-center justify-content-center mr-3" style="width: 48px; height: 48px; border-radius: 10px;">
             <i class="pi pi-users text-blue-600 text-3xl"></i>
           </div>
           <div>
-            <span class="text-blue-900 text-l font-medium mb-2" [routerLink]="['Employees']">Active Employees</span>
+            <span class="text-blue-900 text-l font-medium mb-2" >Active Employees</span>
             <p class="mt-1 mb-0 text-blue-800 font-medium  text-m"  >36</p>
-          
+
           </div>
       </div>
 
     </div>
     <div class="col-12 lg:col-3 p-3">
-      <div class="p-3 border-round shadow-2 flex align-items-center surface-card">
+      <div class="p-3 border-round shadow-2 flex align-items-center surface-card" [routerLink]="['updateprofile']">
           <div class="bg-teal-100 inline-flex align-items-center justify-content-center mr-3" style="width: 48px; height: 48px; border-radius: 10px;">
             <i class="pi pi-user text-black-600 text-3xl"></i>
           </div>
           <div>
-            <span class="text-gray-900 text-medium font-medium mb-2" [routerLink]="['updateprofile']" >Profile</span>
+            <span class="text-gray-900 text-medium font-medium mb-2"  >Profile</span>
             <p class="mt-1 mb-0 text-600 font-medium  text-sm"></p>
-          
+
           </div>
       </div>
 
