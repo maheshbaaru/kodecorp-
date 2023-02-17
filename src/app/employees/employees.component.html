@@ -64,7 +64,7 @@
   </ng-template>
   <ng-template pTemplate="body" let-employee >
     <tr>
-      <td style="color: blue;"  >{{employee.EmpId}}</td>
+      <td style="color: blue;" [routerLink]="['../updateemployee']">{{employee.EmpId}}</td>
       <td>{{employee.FirstName}}</td>
       <td>{{employee.LastName}}</td>
       <td>{{employee.Email}}</td>
@@ -78,6 +78,5 @@
   </ng-template>
 
 </p-table> 
- 
 </p-panel>
 

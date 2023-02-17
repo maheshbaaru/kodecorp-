@@ -46,6 +46,8 @@ import { ChangepasswordComponent } from './profilecomponents/changepassword/chan
 import { UpdatephotoComponent } from './profilecomponents/updatephoto/updatephoto.component';
 import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
 
+import { UpdateEmployeeComponent } from './update-employee/update-employee.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -73,6 +75,7 @@ import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.compone
     UpdatephotoComponent,
     ForgotpasswordComponent,
     ChangepasswordComponent,
+    UpdateEmployeeComponent,
   ],
   imports: [
     BrowserModule,

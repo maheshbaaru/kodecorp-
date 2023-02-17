@@ -24,6 +24,10 @@ import { ChangepasswordComponent } from './profilecomponents/changepassword/chan
 import { CreateNewEmployeeComponent } from './create-new-employee/create-new-employee.component';
 import { UpdatephotoComponent } from './profilecomponents/updatephoto/updatephoto.component';
 import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
+import { UpdateEmployeeComponent } from './update-employee/update-employee.component';
+
+
+
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
@@ -36,11 +40,9 @@ const routes: Routes = [
     children: [
       { path: 'updateprofile', component: UpdateprofileComponent },
       { path: 'salary-details', component: SalaryDetailsComponent },
-      {
-        path: 'create-new-salary-details',
-        component: CreateNewSalaryDetailsComponent,
-      },
+      {path: 'create-new-salary-details',component: CreateNewSalaryDetailsComponent, },
       { path: 'create-designation', component: CreateDesignationComponent },
+      { path: 'changepassword', component: ChangepasswordComponent },
       { path: 'create-taxtype', component: CreateTaxtypeComponent },
       { path: 'profile-photo', component: ProfilePhotoComponent },
       { path: 'salDeduction', component: SalDeductionComponent },
@@ -63,7 +65,8 @@ const routes: Routes = [
       },
       {path:'cretenewemployee',component:CreateNewEmployeeComponent},
    {path:'updatephoto',component:UpdatephotoComponent},
-      { path: 'changepassword', component: ChangepasswordComponent },
+      
+      {path:'updateemployee',component:UpdateEmployeeComponent}
     ],
   },
 
