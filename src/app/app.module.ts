@@ -43,6 +43,7 @@ import { ApppledLeavesComponent } from './apppled-leaves/apppled-leaves.componen
 import { EmployeesComponent } from './employees/employees.component';
 import { PaySlipComponent } from './pay-slip/pay-slip.component';
 import { CreateNewEmployeeComponent } from './create-new-employee/create-new-employee.component';
+import { ModifypasswordComponent } from './modifypassword/modifypassword.component';
 
 @NgModule({
   declarations: [
@@ -64,7 +65,8 @@ import { CreateNewEmployeeComponent } from './create-new-employee/create-new-emp
     LeavesApprovelComponent,
     EmployeeAccessComponent,
     ApppledLeavesComponent,
-    EmployeesComponent,PaySlipComponent,CreateNewEmployeeComponent
+    EmployeesComponent,PaySlipComponent,CreateNewEmployeeComponent,
+    ModifypasswordComponent,
   ],
   imports: [
     BrowserModule,
