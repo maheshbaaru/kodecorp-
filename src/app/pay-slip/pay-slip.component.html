@@ -11,18 +11,8 @@
   <div class="col-12 md:col-4">
     <h3 >Select Month & Year<span class="after">*</span></h3>
     
-    <input type="text" pInputText class="p-inputtext-sm"  placeholder="MM/YYYY">  
-    <p-calendar [(ngModel)]="date"
-     view="month"
-     dateFormat="mm/yy"
-     [showIcon]="false"
-     placeholder="MM/YYYY" 
-    [yearNavigator]="true" 
-    yearRange="2000:2030"  
-    inputId="monthpicker"> 
-
-    </p-calendar>
-   
+    <!-- <input type="text" pInputText class="p-inputtext-sm"  placeholder="MM/YYYY">   -->
+    <p-calendar [(ngModel)]="date" view="month" dateFormat="mm/yy" [yearNavigator]="true" yearRange="2000:2030" [readonlyInput]="true" inputId="monthpicker"></p-calendar>     
     <br/>
     <br/>
     <button pButton  type="button" label="Submit"  class=" p-button-sm p-button-success "></button>
