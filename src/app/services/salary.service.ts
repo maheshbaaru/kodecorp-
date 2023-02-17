@@ -7,7 +7,7 @@ export class SalaryService {
 
   getCarsSmall() {
     return this.http
-      .get('/showcase/resources/data/cars-small.json')
+      .get('')
       .toPromise()
       .then((res: any) => <EmployeeData[]>res.data)
       .then((data) => {
