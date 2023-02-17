@@ -18,6 +18,8 @@ import { SalDeductionListComponent } from './sal-deduction-list/sal-deduction-li
 import { LeavesApprovelComponent } from './leaves-approvel/leaves-approvel.component';
 import { EmployeeAccessComponent } from './employee-access/employee-access.component';
 import { ApppledLeavesComponent } from './apppled-leaves/apppled-leaves.component';
+import { EmployeesComponent } from './employees/employees.component';
+import { PaySlipComponent } from './pay-slip/pay-slip.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
@@ -46,6 +48,9 @@ const routes: Routes = [
       { path: 'leavesApprov', component: LeavesApprovelComponent },
       { path: 'access', component: EmployeeAccessComponent },
       { path: 'apply', component: ApppledLeavesComponent },
+      {path:'Employees',component:EmployeesComponent},{
+        path:'paySlip',component:PaySlipComponent
+      }
     ],
   },
 
