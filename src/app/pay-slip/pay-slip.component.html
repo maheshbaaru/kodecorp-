@@ -9,7 +9,7 @@
   </div> 
   </ng-template> 
   <div class="col-12 md:col-4">
-    <h3 >Select Month & Year<span class="after">*</span></h3>
+    <h3 >Select Month & Year<span class="required">*</span></h3>
     
     <!-- <input type="text" pInputText class="p-inputtext-sm"  placeholder="MM/YYYY">   -->
     <p-calendar [(ngModel)]="date" view="month" dateFormat="mm/yy" [yearNavigator]="true" yearRange="2000:2030" [readonlyInput]="true" inputId="monthpicker"></p-calendar>     

@@ -42,6 +42,7 @@ import { EmployeeAccessComponent } from './employee-access/employee-access.compo
 import { ApppledLeavesComponent } from './apppled-leaves/apppled-leaves.component';
 import { EmployeesComponent } from './employees/employees.component';
 import { PaySlipComponent } from './pay-slip/pay-slip.component';
+import { CreateNewEmployeeComponent } from './create-new-employee/create-new-employee.component';
 import { ModifypasswordComponent } from './modifypassword/modifypassword.component';
 import { UpdatephotoComponent } from './updatephoto/updatephoto.component';
 
@@ -65,7 +66,7 @@ import { UpdatephotoComponent } from './updatephoto/updatephoto.component';
     LeavesApprovelComponent,
     EmployeeAccessComponent,
     ApppledLeavesComponent,
-    EmployeesComponent,PaySlipComponent,
+    EmployeesComponent,PaySlipComponent,CreateNewEmployeeComponent,
     ModifypasswordComponent,
     UpdatephotoComponent,
   ],
