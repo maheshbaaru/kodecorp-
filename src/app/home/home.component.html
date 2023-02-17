@@ -6,8 +6,10 @@
             <i class="pi pi-user text-green-600 text-3xl"></i>
           </div>
           <div *ngFor="let da of data">
-            <span class="text-800 text-x font-medium mb-2">Pending Leaves</span>
+            <span class="text-800 text-x font-medium mb-2" [routerLink]="['leavesApprov']">Pending Leaves</span>
             <p class="mt-1 mb-0 text-600 font-medium  text-m">{{da.pendingLeaves}}</p>
+            
+          
           </div>
       </div>
 
@@ -19,8 +21,9 @@
             <i class="pi pi-user text-orange-600 text-3xl"></i>
           </div>
           <div>
-            <span class="text-orange-900 text-x font-medium mb-2">UpComing Revisions</span>
+            <span class="text-orange-900 text-x font-medium mb-2" [routerLink]="['salary-details']">UpComing Revisions</span>
             <p class="mt-1 mb-0 text-600 font-medium  text-m">0</p>
+           
           </div>
       </div>
 
@@ -31,8 +34,9 @@
             <i class="pi pi-users text-blue-600 text-3xl"></i>
           </div>
           <div>
-            <span class="text-blue-900 text-l font-medium mb-2">Active Employees</span>
-            <p class="mt-1 mb-0 text-blue-800 font-medium  text-m">36</p>
+            <span class="text-blue-900 text-l font-medium mb-2" [routerLink]="['Employees']">Active Employees</span>
+            <p class="mt-1 mb-0 text-blue-800 font-medium  text-m"  >36</p>
+          
           </div>
       </div>
 
@@ -43,8 +47,9 @@
             <i class="pi pi-user text-black-600 text-3xl"></i>
           </div>
           <div>
-            <span class="text-gray-900 text-medium font-medium mb-2">Profile</span>
+            <span class="text-gray-900 text-medium font-medium mb-2" [routerLink]="['updateprofile']" >Profile</span>
             <p class="mt-1 mb-0 text-600 font-medium  text-sm"></p>
+          
           </div>
       </div>
 
