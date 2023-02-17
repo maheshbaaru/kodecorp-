@@ -11,6 +11,6 @@
     <p-calendar [(ngModel)]="date" view="month" dateFormat="mm/yy" [yearNavigator]="true" placeholder="MM/YYYY" yearRange="2000:2030" [readonlyInput]="true" inputId="monthpicker"></p-calendar>     
     <br/>
     <br/>
-    <button pButton  type="button" label="Submit"  class=" p-button-sm p-button-success "></button>
+    <button pButton  type="button" label="Submit" (click)="Alert()" class=" p-button-sm p-button-success "></button>
     </div>
 </p-panel>
