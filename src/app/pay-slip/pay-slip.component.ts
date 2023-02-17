@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class PaySlipComponent {
 date!:Date;
+constructor(){
+ 
+}
+ngOnInit(){
+
+}
+Alert(){
+  if(!this.date){
+    alert('please select month and year');
+  }
+  else{
+    alert('Employee does not have bank account or salary');
+  }
+}
 }
