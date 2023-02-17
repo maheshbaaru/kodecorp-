@@ -9,7 +9,7 @@
               <mat-tab label="Third">Content 3</mat-tab>
             </mat-tab-group> -->
             <div>
-                <p class="nav-link" [routerLink]="['PaySlip']" >Payslip</p>
+                <p class="nav-link" [routerLink]="['paySlip']" >Payslip</p>
             </div>
 
             <div class="leaves">
@@ -44,7 +44,7 @@
                             [matMenuTriggerFor]="createPlan">Admin</a>
                         <mat-menu #createPlan="matMenu">
                             <button mat-menu-item
-                                [routerLink]="['updateprofile']"><mat-icon>people</mat-icon>Employees</button>
+                                [routerLink]="['Employees']"><mat-icon>people</mat-icon>Employees</button>
                             <button mat-menu-item [routerLink]="['salDeduction']"><img src="assets/rupe.png">Salary
                                 Deductions</button>
                             <button mat-menu-item [routerLink]="['create-designation']"><mat-icon>add_circle</mat-icon>

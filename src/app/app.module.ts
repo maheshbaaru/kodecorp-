@@ -40,6 +40,8 @@ import { SalDeductionListComponent } from './sal-deduction-list/sal-deduction-li
 import { LeavesApprovelComponent } from './leaves-approvel/leaves-approvel.component';
 import { EmployeeAccessComponent } from './employee-access/employee-access.component';
 import { ApppledLeavesComponent } from './apppled-leaves/apppled-leaves.component';
+import { EmployeesComponent } from './employees/employees.component';
+import { PaySlipComponent } from './pay-slip/pay-slip.component';
 
 @NgModule({
   declarations: [
@@ -61,6 +63,7 @@ import { ApppledLeavesComponent } from './apppled-leaves/apppled-leaves.componen
     LeavesApprovelComponent,
     EmployeeAccessComponent,
     ApppledLeavesComponent,
+    EmployeesComponent,PaySlipComponent
   ],
   imports: [
     BrowserModule,
