@@ -1,0 +1,9 @@
+.cont{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.icon{
+    font-size: 10px;
+    padding-right:5px;
+}

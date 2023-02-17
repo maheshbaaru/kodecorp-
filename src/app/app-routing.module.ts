@@ -21,6 +21,7 @@ import { ApppledLeavesComponent } from './apppled-leaves/apppled-leaves.componen
 import { EmployeesComponent } from './employees/employees.component';
 import { PaySlipComponent } from './pay-slip/pay-slip.component';
 import { ModifypasswordComponent } from './modifypassword/modifypassword.component';
+import { UpdatephotoComponent } from './updatephoto/updatephoto.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
@@ -50,13 +51,15 @@ const routes: Routes = [
       { path: 'apply', component: ApppledLeavesComponent },
       { path: 'Employees', component: EmployeesComponent },
        {path: 'paySlip', component: PaySlipComponent},
-       {path: 'create-new-salary-details',component: CreateNewSalaryDetailsComponent},
+      
        {path: 'modifypassword', component: ModifypasswordComponent},
+       {path:'updatephoto',component:UpdatephotoComponent},
 
   
 ],
 
   },
+  {path: 'create-new-salary-details',component: CreateNewSalaryDetailsComponent},
   { path: 'changepassword', component: ChangepasswordComponent },
   { path: 'login',component: LoginComponent,},
 ];
