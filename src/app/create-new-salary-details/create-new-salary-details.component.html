@@ -1,13 +1,66 @@
+<p-panel  >
+  <ng-template pTemplate="header" >
+    <div  class="col -md-6" style="text-align:left">
+    <strong>CREATE SALARY DETAILS </strong>
+  </div>
+      <div class="col-sm-6" style="text-align:right">
+      <button pButton type="button" label="Back"  icon=" pi pi-arrow-left"  routerLink="/navbar/salary-details" iconPos="left" class="p-button-sm " ></button>&nbsp;
+      <button pButton type="button" label="Save" icon="pi pi-check" iconPos="left" type="submit" (click)="onFormSubmit()" form="empForm" class="p-button-sm"></button>
 
+  </div>
+  </ng-template> 
+  <div class="row">
+    
+    <form  [formGroup]="empForm" class=" form-styles cont  " (submit)="onFormSubmit()" >
+
+      <div class="cont2 ">
+       <label for="designation-input" class="input-styling" required >EmpID
+           <span class="required">*</span>
+        </label>
+        <p-dropdown [options]="names" placeholder="SELECT EMPLOYEE" optionLabel="name"
+        [showClear]="true"  formControlName="name" ></p-dropdown>
+      </div>
+      <div  class="cont2">
+       <label for="designation-input" class="input-styling" required  >Salary
+           <span class="required">*</span>
+        </label>
+        <input id="designation-input" type="input" placeholder="ENTER SALARY" pInputText formControlName="Salary"/>
+    
+      </div>
+      <div  class="cont2">
+       <label for="designation-input" class="input-styling" required>Last Revised Date
+           <span class="required">*</span>
+        </label>
+        <p-calendar [showIcon]="true"  id="designation-input" placeholder="DD-MM-YYYY"  formControlName="LastRevisedDate"></p-calendar>
+      </div>
+      <div  class="cont2">
+       <label for="designation-input" class="input-styling" required>Next Revised Date
+           <span class="required">*</span>
+        </label>
+        <p-calendar [showIcon]="true"  id="designation-input" placeholder="DD-MM-YYYY"  formControlName="NextRevisedDate"></p-calendar>
+      </div>
+    </form>
+
+
+</div>
+
+</p-panel>
+
+
+<!-- 
 
 <div class="form-group create-container">
+  <p-panel >
     <div style="padding-bottom: 20px; width: 100%;" >
       <label >CREATE EMPLOYEE SALARY</label>
       <button class="btn btn-primary" type="submit" style="float: right; font-size: smaller;" routerLink="/navbar/salary-details"><i class="pi pi-arrow-left icon"></i>BACK</button>
       <button class="btn btn-primary" type="submit" style="float: right;margin-right:5px; font-size: smaller;" (click)="onFormSubmit()" form="empForm" ><i class="pi pi-check icon"></i>SAVE</button>
        
     </div>
+    
 
+  </p-panel>
+    
 
      <div >
       <form  [formGroup]="empForm" class="form-control form-styles cont  " (submit)="onFormSubmit()" >
@@ -40,4 +93,4 @@
           </div>
        </form>
      </div>
-  </div>
+  </div> -->

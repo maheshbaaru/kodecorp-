@@ -1,4 +1,43 @@
+<p-panel  >
+  <ng-template pTemplate="header" >
+    <div  class="col -md-6" style="text-align:left">
+    <strong>CREATE PROFILE PHOTO </strong>
+  </div>
+      <div class="col-sm-6" style="text-align:right">
+       
 
+          <button pButton class="h-1rem" style="float: right;margin-right:5px; font-size: smaller;"><i class="pi pi-check icon"></i>SAVE</button>
+
+  </div>
+  </ng-template> 
+  <div class="row">
+    
+    <form  class=" form-styles cont  "  >
+
+      
+      <div  >
+        <form class=" form-styles cont  " >
+          <div class="cont2 ">
+           <label for="designation-input" class="input-styling" required>EmpID
+               <span class="required">*</span>
+            </label>
+            <input id="designation-input" type="input" pInputText/>
+          </div>
+          <div  class="cont2">
+           <label for="designation-input" class="input-styling" required>Photo
+               <span class="required">*</span>
+            </label>
+            <p-fileUpload #fubauto mode="basic" name="demo[]" url="./upload.php" accept="image/*" [auto]="true" chooseLabel="Browse"></p-fileUpload>
+           
+  
+          </div>
+          
+       </form>
+    
+      </div>
+
+
+<!-- 
 <div class="form-group create-container">
     <div style="padding-bottom: 20px;">
         <label >PROFILE PHOTO</label>
@@ -24,4 +63,4 @@
         
      </form>
    </div>
-</div>
+</div> -->
