@@ -25,7 +25,7 @@ import { ModifypasswordComponent } from './modifypassword/modifypassword.compone
 const routes: Routes = [
   { path: '', component: LoginComponent },
 
-  { path: '** ', redirectTo: '/login'},
+  { path: '** ', redirectTo: '/login' },
 
   {
     path: 'navbar',
@@ -42,28 +42,27 @@ const routes: Routes = [
       { path: 'create-designation', component: CreateDesignationComponent },
       { path: 'create-taxtype', component: CreateTaxtypeComponent },
       { path: 'profile-photo', component: ProfilePhotoComponent },
-      { path: 'salDeduction', component: SalDeductionComponent },
+
       { path: 'DeductionList/:id', component: SalDeductionListComponent },
-      { path: 'back', redirectTo: 'SalDeductionListComponent' },
+
       { path: 'leavesApprov', component: LeavesApprovelComponent },
       { path: 'access', component: EmployeeAccessComponent },
       { path: 'apply', component: ApppledLeavesComponent },
       { path: 'Employees', component: EmployeesComponent },
-       {path: 'paySlip', component: PaySlipComponent},
-       {path: 'create-new-salary-details',component: CreateNewSalaryDetailsComponent},
-       {path: 'modifypassword', component: ModifypasswordComponent},
-
-  
-],
-
+      { path: 'paySlip', component: PaySlipComponent },
+      {
+        path: 'create-new-salary-details',
+        component: CreateNewSalaryDetailsComponent,
+      },
+      { path: 'modifypassword', component: ModifypasswordComponent },
+    ],
   },
   { path: 'changepassword', component: ChangepasswordComponent },
-  { path: 'login',component: LoginComponent,},
+  { path: 'login', component: LoginComponent },
 ];
 
-
 @NgModule({
-      imports: [RouterModule.forRoot(routes)],
-      exports: [RouterModule],
-    })
-export class AppRoutingModule { }
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule],
+})
+export class AppRoutingModule {}
