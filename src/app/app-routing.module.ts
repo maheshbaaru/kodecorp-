@@ -31,7 +31,7 @@ const routes: Routes = [
       {path:'create-taxtype',component:CreateTaxtypeComponent},
       {path:'profile-photo',component:ProfilePhotoComponent},
       {path:'salDeduction',component:SalDeductionComponent},
-      {path:'appliedleaves',component:AppliedleavesComponent}
+      {path:'appliedleaves',component:AppliedleavesComponent},
   
       { path: 'salary-details', component: SalaryDetailsComponent },
       { path: 'create-designation', component: CreateDesignationComponent },
