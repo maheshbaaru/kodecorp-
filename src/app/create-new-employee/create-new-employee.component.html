@@ -25,7 +25,7 @@
 
     <h3 >DesignationID<span class="required">*</span></h3>
    
-     <p-dropdown [options]="roles"    placeholder="Select Designation" >
+     <p-dropdown [options]="roles" [showClear]="true"  [(ngModel)]="selectedrole"   placeholder="Select Designation" >
     
     </p-dropdown> 
     <!-- <p-dropdown [options]="roles" [(ngModel)]="selectedrole"  placeholder="Select Role" [group]="true">

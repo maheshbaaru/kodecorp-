@@ -24,7 +24,7 @@
 
     <label >DesignationID<span  class="required">*</span></label>
     <!-- <p-dropdown [options]="roles"  ></p-dropdown> -->
-     <p-dropdown   [showClear]="true" ></p-dropdown> 
+     <p-dropdown   [options]="roles" placeholder="SelectRole" ></p-dropdown> 
     
     <br>
     <br>
@@ -47,7 +47,7 @@
   <br>
 
   <label>ShiftId<span class="required">*</span></label>
-  <p-dropdown [showClear]="true"  ></p-dropdown>
+  <p-dropdown  [options]="Shifts" ></p-dropdown>
   </div>
 </div>
 <div class="col-md-4">
