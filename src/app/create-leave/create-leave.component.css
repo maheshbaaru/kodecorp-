@@ -1,0 +1,14 @@
+.cont2{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    margin:40px;
+}
+input{
+    width:100%;
+}
+.icon{
+    font-size: 10px;
+    padding-right:5px;
+}

@@ -28,6 +28,7 @@ import { EmployeeLeavesComponent } from './employee-leaves/employee-leaves.compo
 import { BankDetailsComponent } from './bank-details/bank-details.component';
 import { CreateBankDetailsComponent } from './create-bank-details/create-bank-details.component';
 import { EditBankDetailsComponent } from './edit-bank-details/edit-bank-details.component';
+import { CreateLeaveComponent } from './create-leave/create-leave.component';
 
 
 
@@ -54,25 +55,18 @@ const routes: Routes = [
       { path: 'create-designation', component: CreateDesignationComponent },
       { path: 'create-taxtype', component: CreateTaxtypeComponent },
       { path: 'profile-photo', component: ProfilePhotoComponent },
-
       { path: 'DeductionList/:id', component: SalDeductionListComponent },
-
       { path: 'leavesApprov', component: LeavesApprovelComponent },
       { path: 'access', component: EmployeeAccessComponent },
       { path: 'apply', component: ApppledLeavesComponent },
       { path: 'Employees', component: EmployeesComponent },
       { path: 'paySlip', component: PaySlipComponent },
-      {
-        path: 'create-new-salary-details',
-        component: CreateNewSalaryDetailsComponent,
-      },
+      {path: 'create-new-salary-details',component: CreateNewSalaryDetailsComponent,},
+      {path: 'create-leave',component: CreateLeaveComponent},
       {path:'cretenewemployee',component:CreateNewEmployeeComponent},
-   {path:'updatephoto',component:UpdatephotoComponent},
-      
+      {path:'updatephoto',component:UpdatephotoComponent},
       {path:'updateemployee',component:UpdateEmployeeComponent},
       {path:'employee-leaves',component:EmployeeLeavesComponent},
-
-
       {path:'bankDetails',component:BankDetailsComponent},
       {path:'create-bank-details',component:CreateBankDetailsComponent},
       {path:'edit-bank-details/:id',component:EditBankDetailsComponent},

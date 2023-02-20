@@ -50,6 +50,7 @@ import { BankDetailsComponent } from './bank-details/bank-details.component';
 import { CreateBankDetailsComponent } from './create-bank-details/create-bank-details.component';
 import { EditBankDetailsComponent } from './edit-bank-details/edit-bank-details.component';
 import { EmployeService } from './employeBankService';
+import { CreateLeaveComponent } from './create-leave/create-leave.component';
 
 @NgModule({
   declarations: [
@@ -83,6 +84,7 @@ import { EmployeService } from './employeBankService';
     BankDetailsComponent,
     CreateBankDetailsComponent,
     EditBankDetailsComponent,
+    CreateLeaveComponent,
   ],
   imports: [
     BrowserModule,

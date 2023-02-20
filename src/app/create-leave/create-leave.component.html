@@ -1,0 +1,58 @@
+<p-panel  >
+    <ng-template pTemplate="header" >
+      <div  class="col -md-6" style="text-align:left">
+      <strong>CREATE SALARY DETAILS </strong>
+    </div>
+        <div class="col-sm-6" style="text-align:right">
+          <button pButton class="h-1rem" style="float: right; font-size: smaller;" routerLink="/navbar/apply"><i class="pi pi-arrow-left icon"></i>BACK</button>
+          <button pButton class="h-1rem" style="float: right;margin-right:5px; font-size: smaller;"  type="submit" (click)="onFormSubmit()" ><i class="pi pi-check icon"></i>SAVE</button>
+        <!-- <button pButton type="button" label="Back"  icon=" pi pi-arrow-left"  routerLink="/navbar/salary-details" iconPos="left" class="p-button-sm " ></button>&nbsp;
+        <button pButton class="h-1rem" type="button" label="Save" icon="pi pi-check" iconPos="left" type="submit" (click)="onFormSubmit()" form="empForm" class="p-button-sm"></button> -->
+  
+    </div>
+    </ng-template> 
+    <div class="row">
+      
+      <form  [formGroup]="empForm" class=" form-styles cont  " (submit)="onFormSubmit()" >
+  
+        <div class="cont2 ">
+         <label for="designation-input" class="input-styling" required >Leave Type
+             <span class="required">*</span>
+          </label>
+          <p-dropdown [options]="leaveTypes" placeholder="SELECT LEAVE TYPE" optionLabel="name"
+          [showClear]="true"  formControlName="name" ></p-dropdown>
+        </div>
+        
+        <div  class="cont2">
+         <label for="designation-input" class="input-styling" required>From Date
+             <span class="required">*</span>
+          </label>
+          <p-calendar [showIcon]="true"  id="designation-input" placeholder="DD-MM-YYYY"  formControlName="LastRevisedDate"></p-calendar>
+        </div>
+        <div  class="cont2">
+         <label for="designation-input" class="input-styling" required>To Date
+             <span class="required">*</span>
+          </label>
+          <p-calendar [showIcon]="true"  id="designation-input" placeholder="DD-MM-YYYY"  formControlName="NextRevisedDate"></p-calendar>
+        </div>
+        <div  class="cont2">
+            <label for="designation-input" class="input-styling" required  >Status
+                <span class="required">*</span>
+             </label>
+             <input id="designation-input" type="input" placeholder="NEW" pInputText formControlName="Salary"/>
+         
+           </div>
+           <div  class="cont2">
+            <label for="designation-input" class="input-styling" required  >Comments
+                <span class="required">*</span>
+             </label>
+             <input id="designation-input" type="input" placeholder="ENTER COMMENTS" pInputText formControlName="Salary"/>
+         
+           </div>
+      </form>
+  
+  
+  </div>
+  
+  </p-panel>
+  
