@@ -47,7 +47,14 @@ export class EmployeeLeavesComponent {
     });
   }
 
-  sample = salary;
+  sample = [
+    {
+        "FirstName": "HARI RAM",
+        "LastName": "KODI",
+        "EmployeeID": "9",
+        "NumofLeaves": 12,
+    }
+  ];
 
   representatives: Representative[] = [];
   @ViewChild('dt')
