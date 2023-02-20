@@ -23,7 +23,7 @@ input{
 .cont2{
     display:flex;
     flex-direction: column;
-    margin:30px;
+   
     margin-top:30px !important;
     margin-bottom: 30px !important;
     padding-bottom: 40px;
