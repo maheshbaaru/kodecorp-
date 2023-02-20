@@ -9,7 +9,7 @@
               <mat-tab label="Third">Content 3</mat-tab>
             </mat-tab-group> -->
             <div>
-                <p class="nav-link" [routerLink]="['paySlip']" >Payslip</p>
+                <p class="nav-link customizing" [routerLink]="['paySlip']" >Payslip</p>
             </div>
 
             <div class="leaves">
@@ -17,7 +17,7 @@
 
                     <div class="nav-item" routerLinkActive="active" (mouseover)="leavesmenuTrigger.openMenu()"
                     (mouseout)="$event.stopPropagation();leavesmenuTrigger.openMenu()">
-                    <a class="nav-link" #leavesmenuTrigger="matMenuTrigger" [matMenuTriggerFor]="leavesmenu">Leaves</a>
+                    <a class="nav-link customizing" #leavesmenuTrigger="matMenuTrigger" [matMenuTriggerFor]="leavesmenu">Leaves</a>
                         <mat-menu #leavesmenu="matMenu">
                         <button mat-menu-item [routerLink]="['apply']" (click)="hideHome()"> <mat-icon>event_note</mat-icon>Apply Leave</button>
                         <button mat-menu-item [routerLink]="['access']"><mat-icon>people</mat-icon> EmployeeAccess</button>
@@ -40,7 +40,7 @@
 
                 <div class="nav-item" routerLinkActive="active" (mouseover)="createPlanmenuTrigger.openMenu()"
                         (mouseout)="$event.stopPropagation();createPlanmenuTrigger.openMenu()">
-                        <a class="nav-link" #createPlanmenuTrigger="matMenuTrigger"
+                        <a class="nav-link customizing" #createPlanmenuTrigger="matMenuTrigger"
                             [matMenuTriggerFor]="createPlan">Admin</a>
                         <mat-menu #createPlan="matMenu">
                             <button mat-menu-item
@@ -68,7 +68,7 @@
 
 
             <div class="nav-item" routerLinkActive="active" (mouseover)="dispatchPlanmenuTrigger.openMenu()">
-                <a class="nav-link" #dispatchPlanmenuTrigger="matMenuTrigger"
+                <a class="nav-link customizing" #dispatchPlanmenuTrigger="matMenuTrigger"
                     [matMenuTriggerFor]="dispatchPlan">Welcome {{name}} <mat-icon>account_circle</mat-icon> </a>
                 <mat-menu #dispatchPlan="matMenu">
 
