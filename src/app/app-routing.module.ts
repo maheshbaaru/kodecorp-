@@ -13,7 +13,6 @@ import { ProfilePhotoComponent } from './profilecomponents/profile-photo/profile
 import { SalDeductionComponent } from './sal-deduction/sal-deduction.component';
 import { HomeComponent } from './home/home.component';
 import { AppliedleavesComponent } from './appliedleaves/appliedleaves.component';
-
 import { SalDeductionListComponent } from './sal-deduction-list/sal-deduction-list.component';
 import { LeavesApprovelComponent } from './leaves-approvel/leaves-approvel.component';
 import { EmployeeAccessComponent } from './employee-access/employee-access.component';
