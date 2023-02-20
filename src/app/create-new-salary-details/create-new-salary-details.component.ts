@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import namesData from './names.json';
+import namesData from 'src/assets/data/names.json';
 interface EmployeeName {
   Name: string
 
