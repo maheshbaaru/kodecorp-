@@ -13,6 +13,8 @@ import { EmployeService } from '../employeBankService';
 export class BankDetailsComponent implements OnInit{
   employees: Employee[] | any;
 
+  employeeSearchText:string
+  
   selectedCustomers: Customer[] | any;
 
   representatives: Representative[] | any;

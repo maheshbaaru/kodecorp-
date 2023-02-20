@@ -30,3 +30,6 @@ footer {
     position: fixed;
     padding: 5px;
 }
+.nav-link{
+   cursor: pointer;
+}
