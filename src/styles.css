@@ -54,6 +54,16 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     }
    
  .p-panel .p-panel-header{
-    background-color:darkgray !important;
+    background-color:rgb(68, 65, 65) !important;
     padding:0.5rem !important;
+   
+
 } 
+b, strong {
+    font-weight: bolder;
+    color: aliceblue !important;
+}
+.p-panel .p-panel-header .p-panel-title {
+    font-weight: 700;
+    color: aliceblue;
+}
