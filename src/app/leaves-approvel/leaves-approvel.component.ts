@@ -1,6 +1,14 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
+import namesData from 'src/assets/data/names.json';
+interface StatusType {
+  name: string;
+}
+interface EmployeeName {
+  Name: string
 
+}
 @Component({
   selector: 'app-leaves-approvel',
   templateUrl: './leaves-approvel.component.html',
@@ -8,7 +16,24 @@ import { Component } from '@angular/core';
 })
 export class LeavesApprovelComponent {
   employeeLeavs: any;
-  constructor(private http: HttpClient) {}
+  empForm: FormGroup;
+  names: EmployeeName[];
+  statusTypes: StatusType[];
+  constructor(private http: HttpClient,private _fb:FormBuilder) {
+    this.names = namesData
+    this.statusTypes = [
+      { name: 'Pending' },
+      { name: 'Approved' },
+      { name: 'Declined' },
+    
+    ];
+    this.empForm=this._fb.group({
+      name:'',
+      Salary:'',
+      LastRevisedDate:'',
+      NextRevisedDate:''
+    })
+  }
   ngOnInit() {
     this.http.get('assets/data/employeeLeaves.json').subscribe((data) => {
       this.employeeLeavs = data;

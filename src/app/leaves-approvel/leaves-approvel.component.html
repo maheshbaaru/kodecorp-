@@ -1,4 +1,44 @@
-<p-panel header="Leaves Approval">
+<p-panel>
+  <ng-template pTemplate="header" >
+    <div  class="col -md-6" >
+    <strong>LEAVES APPROVAL</strong>
+  </div>
+    
+  </ng-template> 
+  <div class="row">
+    
+      <form [formGroup]="empForm" class=" form-styles cont  ">
+
+          <div class="cont2 ">
+              <label for="designation-input" class="input-styling" required>EmpID
+                  <span class="required">*</span>
+              </label>
+              <p-dropdown [options]="names" placeholder="SELECT EMPLOYEE" optionLabel="name" [showClear]="true"
+                  formControlName="name"></p-dropdown>
+          </div>
+          <div class="cont2 ">
+              <label for="designation-input" class="input-styling" required>Status ID
+                
+              </label>
+              <p-dropdown [options]="statusTypes" placeholder="SELECT STATUS TYPE" optionLabel="name"
+                  [showClear]="true" formControlName="name"></p-dropdown>
+          </div>
+
+          <div class="cont2">
+              <label for="designation-input" class="input-styling" required>From Date
+              </label>
+              <p-calendar [showIcon]="true"  id="designation-input" placeholder="DD/MM/YYYY"  formControlName="year"></p-calendar>
+          </div>
+          <div class="cont2">
+            <label for="designation-input" class="input-styling" required>To Date
+            </label>
+            <p-calendar [showIcon]="true"  id="designation-input" placeholder="DD/MM/YYYY"  formControlName="year"></p-calendar>
+        </div>
+          
+      </form>
+
+
+</div>
 
   <p-table #dt1 [value]="employeeLeavs" styleClass="p-datatable-sm p-datatable-gridlines p-datatable-striped" [paginator]="true" [rows]="10" [showCurrentPageReport]="true"  currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries" [rowsPerPageOptions]="[10,25,50]" [globalFilterFields]="['Name','EmpId','LeaveType','NoDays','FDate','Tdate','AppliedOn','status']" responsiveLayout="scroll">
 
