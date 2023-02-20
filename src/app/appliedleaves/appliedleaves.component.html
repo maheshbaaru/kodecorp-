@@ -1,111 +1,125 @@
+<p-panel  >
+    <ng-template pTemplate="header" >
+      <div  class="col -md-6" style="text-align:left">
+      <strong>EMPLOYEE LEAVES </strong>
+    </div>
+        <div class="col-sm-6" style="text-align:right">
+            <button pButton class="h-1rem" style="float: right; font-size: smaller;" routerLink="/navbar"><i class="pi pi-arrow-left icon"></i>BACK</button>
+          <button pButton class="h-1rem" style="float: right;margin-right:5px; font-size: smaller;"><i class="pi pi-check icon"></i>SAVE</button>
+  
+    </div>
+    </ng-template> 
+    <div class="row">
+      
+        <form [formGroup]="empForm" class=" form-styles cont  ">
 
-<div>
-
-    <div class="form-group create-container">
-        <div style="padding-bottom: 20px; width: 100%;">
-            <label>EMPLOYEE LEAVES</label>
-            <button class="btn btn-primary" type="submit" style="float: right; font-size: smaller;" [routerLink]="['/navbar']"><i
-                    class="pi pi-arrow-left icon"></i>BACK</button>
-            <button class="btn btn-primary" type="submit" style="float: right;margin-right:5px; font-size: smaller;"
-                form="empForm"><i class="pi pi-check icon"></i>SAVE</button>
-        </div>
-
-
-        <div>
-            <form [formGroup]="empForm" class="form-control form-styles cont  ">
-
-                <div class="cont2 ">
-                    <label for="designation-input" class="input-styling" required>EmpID
-                        <span class="required">*</span>
-                    </label>
-                    <p-dropdown [options]="names" placeholder="SELECT EMPLOYEE" optionLabel="name" [showClear]="true"
-                        formControlName="name"></p-dropdown>
-                </div>
-                <div class="cont2 ">
-                    <label for="designation-input" class="input-styling" required>Leave Type
-                        <span class="required">*</span>
-                    </label>
-                    <p-dropdown [options]="leaveTypes" placeholder="SELECT LEAVE TYPE" optionLabel="name"
-                        [showClear]="true" formControlName="name"></p-dropdown>
-                </div>
-
-                <div class="cont2">
-                    <label for="designation-input" class="input-styling" required>Year
-
-                    </label>
-                    <input id="designation-input" type="input" placeholder="YYYY" pInputText
-                        formControlName="LastRevisedDate" />
-                </div>
-                <div class="cont2">
-                    <label for="designation-input" class="input-styling" required>No. of Leaves
-
-                    </label>
-                    <input id="designation-input" type="input" placeholder="Number of leaves" pInputText
-                        formControlName="NextRevisedDate" />
-                </div>
-            </form>
-
-
-
-
-            <div>
-                <div>
-                    <p-table #dt [value]="sample" dataKey="id" styleClass="p-datatable-customers" [rowHover]="true"
-                        [rows]="10" [showCurrentPageReport]="true" [rowsPerPageOptions]="[10,25,50]" [paginator]="true"
-                        currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
-                        [filterDelay]="0" styleClass="p-datatable-gridlines"
-                        [globalFilterFields]="['sample.EmployeeId','Name','Salary','LastRevisedDate','NextRevisedDate']">
-
-
-                        <ng-template pTemplate="header">
-
-                            <tr>
-
-                                <th>
-                                    <div class="p-d-flex p-jc-between p-ai-center">
-                                        Employee ID
-                                        <p-columnFilter type="text" field="country.name"
-                                            display="menu"></p-columnFilter>
-                                    </div>
-
-                                </th>
-                                <th>
-                                    <div class="p-d-flex p-jc-between p-ai-center">
-                                        Employee name
-                                        <p-columnFilter type="text" field="country.name"
-                                            display="menu"></p-columnFilter>
-                                    </div>
-                                </th>
-                                <th>
-                                    <div class="p-d-flex p-jc-between p-ai-center">
-                                        Salary
-                                        <p-columnFilter type="text" field="country.name"
-                                            display="menu"></p-columnFilter>
-                                    </div>
-
-                                </th>
-
-                            </tr>
-                        </ng-template>
-                        <ng-template pTemplate="body" let-Employee>
-                            <tr>
-                                <td><a href="#">KC{{Employee.EmployeeID
-                                        <100?'0'+Employee.EmployeeID:Employee.EmployeeID}} </a>
-                                </td>
-                                <td>{{Employee.FirstName}} {{Employee.LastName}}</td>
-                                <td>{{Employee.Salary}}</td>
-
-                            </tr>
-                        </ng-template>
-                    </p-table>
-
-                </div>
-
+            <div class="cont2 ">
+                <label for="designation-input" class="input-styling" required>EmpID
+                    <span class="required">*</span>
+                </label>
+                <p-dropdown [options]="names" placeholder="SELECT EMPLOYEE" optionLabel="name" [showClear]="true"
+                    formControlName="name"></p-dropdown>
             </div>
-        </div>
+            <div class="cont2 ">
+                <label for="designation-input" class="input-styling" required>Leave Type
+                    <span class="required">*</span>
+                </label>
+                <p-dropdown [options]="leaveTypes" placeholder="SELECT LEAVE TYPE" optionLabel="name"
+                    [showClear]="true" formControlName="name"></p-dropdown>
+            </div>
 
+            <div class="cont2">
+                <label for="designation-input" class="input-styling" required>Year
+
+                </label>
+               
+                    <p-calendar [showIcon]="true"  id="designation-input" placeholder="YYYY"  ></p-calendar>
+            </div>
+            <div class="cont2">
+                <label for="designation-input" class="input-styling" required>No. of Leaves
+
+                </label>
+                <input id="designation-input" type="input" placeholder="Number of leaves" pInputText
+                    formControlName="NextRevisedDate" />
+            </div>
+        </form>
+  
+  
+  </div>
+
+  <div>
+    <div>
+        <p-table #dt [value]="sample" dataKey="id" styleClass="p-datatable-customers" [rowHover]="true"
+            [rows]="10" [showCurrentPageReport]="true" [rowsPerPageOptions]="[10,25,50]" [paginator]="true"
+            currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
+            [filterDelay]="0" styleClass="p-datatable-gridlines"
+            [globalFilterFields]="['sample.EmployeeId','Name','Salary','LastRevisedDate','NextRevisedDate']">
+
+
+            <ng-template pTemplate="header">
+
+                <tr>
+
+                    <th>
+                        <div class="p-d-flex p-jc-between p-ai-center">
+                            Employee ID
+                            <p-columnFilter type="text" field="country.name"
+                                display="menu"></p-columnFilter>
+                        </div>
+
+                    </th>
+                    <th>
+                        <div class="p-d-flex p-jc-between p-ai-center">
+                            Employee name
+                            <p-columnFilter type="text" field="country.name"
+                                display="menu"></p-columnFilter>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="p-d-flex p-jc-between p-ai-center">
+                            Salary
+                            <p-columnFilter type="text" field="country.name"
+                                display="menu"></p-columnFilter>
+                        </div>
+
+                    </th>
+
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-Employee>
+                <tr>
+                    <td><a href="#">KC{{Employee.EmployeeID
+                            <100?'0'+Employee.EmployeeID:Employee.EmployeeID}} </a>
+                    </td>
+                    <td>{{Employee.FirstName}} {{Employee.LastName}}</td>
+                    <td>{{Employee.Salary}}</td>
+
+                </tr>
+            </ng-template>
+        </p-table>
 
     </div>
+
+</div>
+  
+  </p-panel>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -4,8 +4,10 @@
     <strong>CREATE SALARY DETAILS </strong>
   </div>
       <div class="col-sm-6" style="text-align:right">
-      <button pButton type="button" label="Back"  icon=" pi pi-arrow-left"  routerLink="/navbar/salary-details" iconPos="left" class="p-button-sm " ></button>&nbsp;
-      <button pButton type="button" label="Save" icon="pi pi-check" iconPos="left" type="submit" (click)="onFormSubmit()" form="empForm" class="p-button-sm"></button>
+        <button pButton class="h-1rem" style="float: right; font-size: smaller;" routerLink="/navbar/salary-details"><i class="pi pi-arrow-left icon"></i>BACK</button>
+        <button pButton class="h-1rem" style="float: right;margin-right:5px; font-size: smaller;"  type="submit" (click)="onFormSubmit()" ><i class="pi pi-check icon"></i>SAVE</button>
+      <!-- <button pButton type="button" label="Back"  icon=" pi pi-arrow-left"  routerLink="/navbar/salary-details" iconPos="left" class="p-button-sm " ></button>&nbsp;
+      <button pButton class="h-1rem" type="button" label="Save" icon="pi pi-check" iconPos="left" type="submit" (click)="onFormSubmit()" form="empForm" class="p-button-sm"></button> -->
 
   </div>
   </ng-template> 
