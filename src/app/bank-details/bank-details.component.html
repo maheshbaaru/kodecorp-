@@ -2,8 +2,10 @@
     <div class="caption-content1">
         <h1 class="bank-details-title">BANK DETAILS</h1>
         
-        <input class="caption-search-input" type="text" (input)="dt.filterGlobal($any($event.target).value, 'contains')" placeholder="Search Employee" />
-        <!-- <input pInputText type="text" (input)="dt.filterGlobal((<HTMLInputElement>$event.target).value, 'contains')" placeholder="Global Search" /> -->
+        <input class="caption-search-input" type="text" [(ngModel)]="employeeSearchText" (input)="dt.filterGlobal(employeeSearchText, 'contains')" placeholder="Search Employee" />
+        <!-- <input class="caption-search-input" type="text" (input)="dt.filterGlobal($any($event.target).value, 'contains')" placeholder="Search Employee" /> -->
+
+
     </div>
     
 
