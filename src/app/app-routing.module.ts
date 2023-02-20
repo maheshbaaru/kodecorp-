@@ -12,7 +12,7 @@ import { ProfilePhotoComponent } from './profilecomponents/profile-photo/profile
 
 import { SalDeductionComponent } from './sal-deduction/sal-deduction.component';
 import { HomeComponent } from './home/home.component';
-import { AppliedleavesComponent } from './appliedleaves/appliedleaves.component';
+
 import { SalDeductionListComponent } from './sal-deduction-list/sal-deduction-list.component';
 import { LeavesApprovelComponent } from './leaves-approvel/leaves-approvel.component';
 import { EmployeeAccessComponent } from './employee-access/employee-access.component';
@@ -24,6 +24,7 @@ import { CreateNewEmployeeComponent } from './create-new-employee/create-new-emp
 import { UpdatephotoComponent } from './profilecomponents/updatephoto/updatephoto.component';
 import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
 import { UpdateEmployeeComponent } from './update-employee/update-employee.component';
+import { EmployeeLeavesComponent } from './employee-leaves/employee-leaves.component';
 
 
 
@@ -45,7 +46,7 @@ const routes: Routes = [
       { path: 'create-taxtype', component: CreateTaxtypeComponent },
       { path: 'profile-photo', component: ProfilePhotoComponent },
       { path: 'salDeduction', component: SalDeductionComponent },
-      { path: 'appliedleaves', component: AppliedleavesComponent },
+    
       { path: 'salary-details', component: SalaryDetailsComponent },
       { path: 'create-designation', component: CreateDesignationComponent },
       { path: 'create-taxtype', component: CreateTaxtypeComponent },
@@ -65,7 +66,8 @@ const routes: Routes = [
       {path:'cretenewemployee',component:CreateNewEmployeeComponent},
    {path:'updatephoto',component:UpdatephotoComponent},
       
-      {path:'updateemployee',component:UpdateEmployeeComponent}
+      {path:'updateemployee',component:UpdateEmployeeComponent},
+      {path:'employee-leaves',component:EmployeeLeavesComponent}
     ],
   },
 

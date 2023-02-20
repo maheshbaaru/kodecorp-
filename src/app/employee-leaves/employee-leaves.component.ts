@@ -16,12 +16,14 @@ interface LeaveType {
   name: string;
 }
 
+
 @Component({
-  selector: 'app-appliedleaves',
-  templateUrl: './appliedleaves.component.html',
-  styleUrls: ['./appliedleaves.component.css'],
+  selector: 'app-employee-leaves',
+  templateUrl: './employee-leaves.component.html',
+  styleUrls: ['./employee-leaves.component.css']
 })
-export class AppliedleavesComponent {
+export class EmployeeLeavesComponent {
+
   employees: EmployeeData[] | any;
   leaveTypes: LeaveType[];
 
@@ -56,4 +58,5 @@ export class AppliedleavesComponent {
       .getCarsSmall()
       .then((employees: any) => (this.employees = employees));
   }
+
 }

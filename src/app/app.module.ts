@@ -1,7 +1,6 @@
 
 import { HomeComponent } from './home/home.component';
 import { PrimengModule } from './primeng/primeng.module';
-import { AppliedleavesComponent } from './appliedleaves/appliedleaves.component';
 import { AppComponent } from './app.component';
 import { SalarydisplyComponent } from './salarydisply/salarydisply.component';
 import { UpdateprofileComponent } from './profilecomponents/updateprofile/updateprofile.component';
@@ -33,7 +32,6 @@ import { FileUploadModule } from 'primeng/fileupload';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
-
 import { SalDeductionComponent } from './sal-deduction/sal-deduction.component';
 import { SalDeductionListComponent } from './sal-deduction-list/sal-deduction-list.component';
 import { LeavesApprovelComponent } from './leaves-approvel/leaves-approvel.component';
@@ -47,6 +45,7 @@ import { UpdatephotoComponent } from './profilecomponents/updatephoto/updatephot
 import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
 
 import { UpdateEmployeeComponent } from './update-employee/update-employee.component';
+import { EmployeeLeavesComponent } from './employee-leaves/employee-leaves.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +61,7 @@ import { UpdateEmployeeComponent } from './update-employee/update-employee.compo
     CreateNewSalaryDetailsComponent,
     ProfilePhotoComponent,
     HomeComponent,
-    AppliedleavesComponent,
+   
     SalDeductionComponent,
     SalDeductionListComponent,
     LeavesApprovelComponent,
@@ -76,6 +75,7 @@ import { UpdateEmployeeComponent } from './update-employee/update-employee.compo
     ForgotpasswordComponent,
     ChangepasswordComponent,
     UpdateEmployeeComponent,
+    EmployeeLeavesComponent,
   ],
   imports: [
     BrowserModule,
