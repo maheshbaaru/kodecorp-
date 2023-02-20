@@ -25,6 +25,9 @@ import { UpdatephotoComponent } from './profilecomponents/updatephoto/updatephot
 import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
 import { UpdateEmployeeComponent } from './update-employee/update-employee.component';
 import { EmployeeLeavesComponent } from './employee-leaves/employee-leaves.component';
+import { BankDetailsComponent } from './bank-details/bank-details.component';
+import { CreateBankDetailsComponent } from './create-bank-details/create-bank-details.component';
+import { EditBankDetailsComponent } from './edit-bank-details/edit-bank-details.component';
 
 
 
@@ -67,7 +70,12 @@ const routes: Routes = [
    {path:'updatephoto',component:UpdatephotoComponent},
       
       {path:'updateemployee',component:UpdateEmployeeComponent},
-      {path:'employee-leaves',component:EmployeeLeavesComponent}
+      {path:'employee-leaves',component:EmployeeLeavesComponent},
+
+
+      {path:'bankDetails',component:BankDetailsComponent},
+      {path:'create-bank-details',component:CreateBankDetailsComponent},
+      {path:'edit-bank-details/:id',component:EditBankDetailsComponent},
     ],
   },
 

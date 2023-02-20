@@ -1,0 +1,86 @@
+.edit-bank-container{
+  
+ 
+}
+
+.ebd-container{
+    background-color: #1d3c41;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    border-radius: 5px;
+    border-bottom-left-radius: none;
+    border-bottom-right-radius: none;
+}
+.ebd-caption-content1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.ebd-title{
+    font-size: 13px ;
+    font-weight: 600;
+    color: #ffffff;
+}
+.creat-button{
+    height: 25px;
+    color: white !important;
+   padding: 5px;
+   font-size: 12px;
+   width: 80px;
+   background-color: #5bc0de;
+   margin-right: 12px;
+   border-radius: 8px;
+   outline: none;
+   border: none;
+
+}
+.ebd-contnt-container{
+    height: 240px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    border-top: none;
+    border-top-left-radius: none !important;
+    border-top-right-radius: none !important;
+    padding: 15px;
+    flex-wrap: wrap;
+    display: flex;
+}
+.input-container{
+    display: flex;
+    flex-direction: column;
+
+    width: 31%;
+    padding: 7px;
+    margin: 10px;
+
+}
+.empClass{
+    color: red;
+    font-weight: 600;
+}
+.label{
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #1d3c41;
+}
+.input-fields{
+    font-size: 16px;
+    height: 35px;
+    border: 1px solid #d7dfe9;
+   font-weight: 500;
+    border-radius: 3px;
+    padding: 8px 16px 8px 16px;
+    max-width: 350px;
+    /* box-shadow: 1px 1px 1px 1px black inset; */
+    /* -webkit-tap-highlight-color: rgba(0,0,0,0); */
+}
+.disabledButton{
+    cursor: not-allowed;
+    font-weight: 500;
+    font-size: 16px;
+ }

@@ -1,0 +1,444 @@
+{
+    "data":[
+      {
+        "EmpId": 1,
+        "ACCNO": "737010417244",
+        "BankName": "kotak mahindra",
+        "ACCNAME": "SAVINGS",
+        "FirstName": "HARI RAM",
+        "LastName": "KODI"
+      },
+      {
+        "EmpId": 2,
+        "ACCNO": "2611917098",
+        "BankName": "kotak mahindra",
+        "ACCNAME": "savings",
+        "FirstName": "SWATHI",
+        "LastName": "RAVILLA"
+      },
+      {
+        "EmpId": 3,
+        "ACCNO": "737010429998",
+        "BankName": "kotak mahindra",
+        "ACCNAME": "savings",
+        "FirstName": "PUSHPALATHA",
+        "LastName": "GORRELA"
+      },
+      {
+        "EmpId": 4,
+        "ACCNO": "0412293502",
+        "BankName": "kotak mahindra",
+        "ACCNAME": "savings",
+        "FirstName": "Nireesha",
+        "LastName": "Desireddy"
+      },
+      {
+        "EmpId": 5,
+        "ACCNO": "1012523464",
+        "BankName": "kotak mahindra",
+        "ACCNAME": "savings",
+        "FirstName": "Jogeswara Rao",
+        "LastName": "Loya"
+      },
+      {
+        "EmpId": 6,
+        "ACCNO": "50036",
+        "BankName": "kotak mahindra",
+        "ACCNAME": "savings",
+        "FirstName": "Vasu",
+        "LastName": "Gummadidala"
+      },
+      {
+        "EmpId": 7,
+        "ACCNO": "2912652179",
+        "BankName": "kotak mahindra",
+        "ACCNAME": "savings",
+        "FirstName": "PAVAN KUMAR",
+        "LastName": "SUNKARA"
+      },
+      {
+        "EmpId": 8,
+        "ACCNO": "0713508923",
+        "BankName": "kotak mahindra",
+        "ACCNAME": "savings",
+        "FirstName": "VENKATESH",
+        "LastName": "NEELAM"
+      },
+      {
+        "EmpId": 9,
+        "ACCNO": "737010429971",
+        "BankName": "kotak mahindra",
+        "ACCNAME": "SAVINGS",
+        "FirstName": "SAI TEJA",
+        "LastName": "NANDURI"
+      },
+      {
+        "EmpId": 11,
+        "ACCNO": "2912830119",
+        "BankName": "kotak mahindra",
+        "ACCNAME": "savings",
+        "FirstName": "Keerthi Priya",
+        "LastName": "vinnakota"
+      },
+      {
+        "EmpId": 12,
+        "ACCNO": "5312832356",
+        "BankName": "kotak mahindra",
+        "ACCNAME": "savings",
+        "FirstName": "VEERA SANDEEP",
+        "LastName": "RAYUDU"
+      },
+      {
+        "EmpId": 13,
+        "ACCNO": "756010321963",
+        "BankName": "kotak mahindra",
+        "ACCNAME": "savings",
+        "FirstName": "NAVEEN KUMAR",
+        "LastName": "SIRANGU"
+      },
+      {
+        "EmpId": 14,
+        "ACCNO": "6712082648",
+        "BankName": "kotak mahindra",
+        "ACCNAME": "savings",
+        "FirstName": "RAJESH",
+        "LastName": "ADULAPURAM"
+      },
+      {
+        "EmpId": 15,
+        "ACCNO": "1712411511",
+        "BankName": "kotak mahindra",
+        "ACCNAME": "savings",
+        "FirstName": "Venkata Rao",
+        "LastName": "Pakkurthi"
+      },
+      {
+        "EmpId": 16,
+        "ACCNO": "0413767965",
+        "BankName": "kotak mahindra",
+        "ACCNAME": "savings",
+        "FirstName": "BHAVANI",
+        "LastName": "PAVULURI"
+      },
+      {
+        "EmpId": 17,
+        "ACCNO": "0912516521",
+        "BankName": "kotak mahindra",
+        "ACCNAME": "savings",
+        "FirstName": "Pranay Kumar",
+        "LastName": "Lakkam"
+      },
+      {
+        "EmpId": 18,
+        "ACCNO": "0412285422",
+        "BankName": "kotak mahindra",
+        "ACCNAME": "savings",
+        "FirstName": "KIRAN KUMAR",
+        "LastName": "BELLAM"
+      },
+      {
+        "EmpId": 19,
+        "ACCNO": "6311895083",
+        "BankName": "kotak mahindra",
+        "ACCNAME": "savings",
+        "FirstName": "Narmada",
+        "LastName": "Sunkara"
+      },
+      {
+        "EmpId": 20,
+        "ACCNO": "7411909090",
+        "BankName": "kotak mahindra",
+        "ACCNAME": "savings",
+        "FirstName": "Sowndarya",
+        "LastName": "Thamaskar"
+      },
+      {
+        "EmpId": 21,
+        "ACCNO": "2013366555",
+        "BankName": "kotak mahindra",
+        "ACCNAME": "savings",
+        "FirstName": "Asha",
+        "LastName": "Shaik"
+      },
+      {
+        "EmpId": 23,
+        "ACCNO": "6113683109",
+        "BankName": "kotak mahindra",
+        "ACCNAME": "savings",
+        "FirstName": "lokesh",
+        "LastName": "thanneru"
+      },
+      {
+        "EmpId": 24,
+        "ACCNO": "5013565003",
+        "BankName": "kotak mahindra",
+        "ACCNAME": "savings",
+        "FirstName": "MANEESHA",
+        "LastName": "KATTA"
+      },
+      {
+        "EmpId": 25,
+        "ACCNO": "5112938319",
+        "BankName": "kotak mahindra",
+        "ACCNAME": "savings",
+        "FirstName": "V P SHABARINADH",
+        "LastName": "VEMPATI"
+      },
+      {
+        "EmpId": 27,
+        "ACCNO": "6812869699",
+        "BankName": "kotak mahindra",
+        "ACCNAME": "savings",
+        "FirstName": "chakraveni",
+        "LastName": "doolla"
+      },
+      {
+        "EmpId": 28,
+        "ACCNO": "2812847491",
+        "BankName": "kotak mahindra",
+        "ACCNAME": "SAVINGS",
+        "FirstName": "SATEESH KUMAR",
+        "LastName": "TOLLIKONDA"
+      },
+      {
+        "EmpId": 29,
+        "ACCNO": "2413066031",
+        "BankName": "kotak mahindra",
+        "ACCNAME": "savings",
+        "FirstName": "SUNEEL KUMAR",
+        "LastName": "DASINENI"
+      },
+      {
+        "EmpId": 30,
+        "ACCNO": "9914097236",
+        "BankName": "kotak mahindra",
+        "ACCNAME": "savings",
+        "FirstName": "VINITH",
+        "LastName": "Vunjili"
+      },
+      {
+        "EmpId": 31,
+        "ACCNO": "3812759005",
+        "BankName": "kotak mahindra",
+        "ACCNAME": "savings",
+        "FirstName": "ANIL KUMAR",
+        "LastName": "BOTCHU"
+      },
+      {
+        "EmpId": 32,
+        "ACCNO": "",
+        "BankName": "",
+        "ACCNAME": "",
+        "FirstName": "RANJITHA",
+        "LastName": "KOMMANABOYINA"
+      },
+      {
+        "EmpId": 33,
+        "ACCNO": "",
+        "BankName": "",
+        "ACCNAME": "",
+        "FirstName": "ANJANI",
+        "LastName": "SIRANGU"
+      },
+      {
+        "EmpId": 34,
+        "ACCNO": "9914299135",
+        "BankName": "kotak mahindra",
+        "ACCNAME": "SAVINGS",
+        "FirstName": "SRIKANTH",
+        "LastName": "SUNKAVALLI"
+      },
+      {
+        "EmpId": 35,
+        "ACCNO": "7113127563",
+        "BankName": "kotak mahindra",
+        "ACCNAME": "savings",
+        "FirstName": "NARESH GUPTA",
+        "LastName": "MAREMALLA"
+      },
+      {
+        "EmpId": 36,
+        "ACCNO": "8113461411",
+        "BankName": "kotak mahindra",
+        "ACCNAME": "savings",
+        "FirstName": "GOPI KUMAR",
+        "LastName": "JEEDIMALLA"
+      },
+      {
+        "EmpId": 37,
+        "ACCNO": "7413603040",
+        "BankName": "kotak mahindra",
+        "ACCNAME": "savings",
+        "FirstName": "LAKSHMI PRASANNA",
+        "LastName": "PENTYALA"
+      },
+      {
+        "EmpId": 38,
+        "ACCNO": "",
+        "BankName": "",
+        "ACCNAME": "",
+        "FirstName": "SUNITHA",
+        "LastName": "MORTHA"
+      },
+      {
+        "EmpId": 39,
+        "ACCNO": "",
+        "BankName": "",
+        "ACCNAME": "",
+        "FirstName": "V D S S GOWTHAM",
+        "LastName": "KOMMANA"
+      },
+      {
+        "EmpId": 40,
+        "ACCNO": "",
+        "BankName": "",
+        "ACCNAME": "",
+        "FirstName": "LAXMI MOUNIKA",
+        "LastName": "MODUKURI"
+      },
+      {
+        "EmpId": 41,
+        "ACCNO": "7413522976",
+        "BankName": "kotak mahindra",
+        "ACCNAME": "savings",
+        "FirstName": "BILVA SAISRI",
+        "LastName": "GATTE"
+      },
+      {
+        "EmpId": 42,
+        "ACCNO": "756010321980",
+        "BankName": "kotak mahindra",
+        "ACCNAME": "savings",
+        "FirstName": "HANUMANTHU",
+        "LastName": "UPPARA"
+      },
+      {
+        "EmpId": 43,
+        "ACCNO": "",
+        "BankName": "",
+        "ACCNAME": "",
+        "FirstName": "PRIYANKA",
+        "LastName": "TELLA"
+      },
+      {
+        "EmpId": 45,
+        "ACCNO": "2513902499",
+        "BankName": "kotak mahindra",
+        "ACCNAME": "savings",
+        "FirstName": "SATYA SOBHARANI",
+        "LastName": "TATIPAKA"
+      },
+      {
+        "EmpId": 46,
+        "ACCNO": "7413780154",
+        "BankName": "kotak mahindra",
+        "ACCNAME": "savings",
+        "FirstName": "NAGENDRA BABU",
+        "LastName": "ANASURI"
+      },
+      {
+        "EmpId": 47,
+        "ACCNO": "8512905318",
+        "BankName": "kotak mahindra",
+        "ACCNAME": "savings",
+        "FirstName": "RASHI REDDY",
+        "LastName": "GUNUKULA"
+      },
+      {
+        "EmpId": 48,
+        "ACCNO": "",
+        "BankName": "",
+        "ACCNAME": "",
+        "FirstName": "OME LAKSHMI DURGA",
+        "LastName": "KUNKATLA"
+      },
+      {
+        "EmpId": 49,
+        "ACCNO": "5445328603",
+        "BankName": "kotak mahindra",
+        "ACCNAME": "savings",
+        "FirstName": "NITHIN",
+        "LastName": "PONDURI"
+      },
+      {
+        "EmpId": 50,
+        "ACCNO": "6045300426",
+        "BankName": "kotak mahindra",
+        "ACCNAME": "SAVINGS",
+        "FirstName": "SITARAMARAJU",
+        "LastName": "KAKARLAPUDI"
+      },
+      {
+        "EmpId": 51,
+        "ACCNO": "6645186147",
+        "BankName": "kotak mahindra",
+        "ACCNAME": "savings",
+        "FirstName": "MOUNICA",
+        "LastName": "R"
+      },
+      {
+        "EmpId": 52,
+        "ACCNO": "6645186154",
+        "BankName": "kotak mahindra",
+        "ACCNAME": "savings",
+        "FirstName": "NIKITA",
+        "LastName": "B"
+      },
+      {
+        "EmpId": 53,
+        "ACCNO": "1314213445",
+        "BankName": "kotak mahindra",
+        "ACCNAME": "savings",
+        "FirstName": "JAGADEESH",
+        "LastName": "KOPPISETTI"
+      },
+      {
+        "EmpId": 54,
+        "ACCNO": "1314217412",
+        "BankName": "kotak mahindra",
+        "ACCNAME": "savings",
+        "FirstName": "SAINADH",
+        "LastName": "CHINTHA"
+      },
+      {
+        "EmpId": 55,
+        "ACCNO": "6645190427",
+        "BankName": "kotak mahindra",
+        "ACCNAME": "savings",
+        "FirstName": "SRI VIDYA PRATYUSHA",
+        "LastName": "VULIMIRI"
+      },
+      {
+        "EmpId": 56,
+        "ACCNO": "6312001292",
+        "BankName": "kotak mahindra",
+        "ACCNAME": "savings",
+        "FirstName": "Jyosthna Priyanka",
+        "LastName": "Kodi"
+      },
+      {
+        "EmpId": 57,
+        "ACCNO": "4245978636",
+        "BankName": "KotaK Bank",
+        "ACCNAME": "BADISA BHARATH KUMAR",
+        "FirstName": "BHARATH KUMAR",
+        "LastName": "BADISA"
+      },
+      {
+        "EmpId": 59,
+        "ACCNO": "8746198173",
+        "BankName": "KotaK Bank",
+        "ACCNAME": "PRAVEENA BUNGA",
+        "FirstName": "RASMITHA",
+        "LastName": "SETTIPALLI"
+      }
+    ]
+  }
+  
+  
+  
+  
+  
+  
+  
+  

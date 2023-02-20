@@ -46,6 +46,10 @@ import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.compone
 
 import { UpdateEmployeeComponent } from './update-employee/update-employee.component';
 import { EmployeeLeavesComponent } from './employee-leaves/employee-leaves.component';
+import { BankDetailsComponent } from './bank-details/bank-details.component';
+import { CreateBankDetailsComponent } from './create-bank-details/create-bank-details.component';
+import { EditBankDetailsComponent } from './edit-bank-details/edit-bank-details.component';
+import { EmployeService } from './employeBankService';
 
 @NgModule({
   declarations: [
@@ -76,6 +80,9 @@ import { EmployeeLeavesComponent } from './employee-leaves/employee-leaves.compo
     ChangepasswordComponent,
     UpdateEmployeeComponent,
     EmployeeLeavesComponent,
+    BankDetailsComponent,
+    CreateBankDetailsComponent,
+    EditBankDetailsComponent,
   ],
   imports: [
     BrowserModule,
@@ -115,7 +122,7 @@ import { EmployeeLeavesComponent } from './employee-leaves/employee-leaves.compo
     FormsModule,
     HttpClientModule,
   ],
-  providers: [SalaryService],
+  providers: [SalaryService,EmployeService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

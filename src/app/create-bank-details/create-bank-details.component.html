@@ -1,0 +1,52 @@
+<div class="create-bank-container">
+    
+    <div class="cbd-container">
+        <div class="cbd-caption-content1">
+            <h1 class="cbd-title">CREATE BANK DETAILS</h1>
+        </div>
+        <div class="cbd-buttons-container">
+            <button class="creat-button" routerLink="../bankDetails"> <i class="pi pi-arrow-left"></i> Back</button>
+            <button class="creat-button" (click)="savingForm()" form="myForm"> <i class="pi pi-check" ></i> Save</button>
+        </div>
+    </div>
+    
+    <form class="cbd-contnt-container" id="myForm" #myForm="ngForm">
+        
+        <div class="cbd-input-container" >
+                 <label for="EmpId" class="cbd-label">
+                    EmpId<span class="cbd-empClass">*</span>
+                </label>
+                 <select name="EmpId" id="EmpId" class="cbd-input-fields" [(ngModel)]="employeDetails.EmpIdName">
+                     <option  selected="Default" value="SELECT EMPLOYEE">SELECT EMPLOYEE</option>
+                     <option [value]="empname.FirstName" *ngFor="let empname of  employeess">{{empname.FirstName}}</option>
+                 </select>
+             </div>
+        
+             <!-- <div class="cbd-input-container">
+        <label for="EmpId" class="cbd-label">EmpId<span class="cbd-empClass">*</span></label>
+        <input type="text" id="EmpId" class="cbd-input-fields"/>
+       </div> -->
+
+
+       <div class="cbd-input-container">
+            <label for="accno" class="label">ACCNO<span class="cbd-empClass">*</span></label>
+            <input type="text" id="accno" class="cbd-input-fields" placeholder="ENTER ACCOUNT NUMBER" name="ACCNO" [(ngModel)]="employeDetails.ACCNO"/>
+       </div>
+
+       <div class="cbd-input-container">
+            <label for="accname" class="label">ACCNAME<span class="cbd-empClass">*</span></label>
+            <input type="text" id="accname" class="cbd-input-fields" placeholder="ENTER HOLDER NAME" name="ACCNO" [(ngModel)]="employeDetails.ACCNAME"/>
+       </div>
+
+       <div class="cbd-input-container">
+            <label for="bankname" class="label ">BankName<span class="cbd-empClass">*</span></label>
+            <input type="text" id="bankname" class="cbd-input-fields disabledButton" disabled value="Kotak Bank" name="BankName" />
+       </div>
+    
+    </form>
+
+
+    <h1>{{employeDetails.ACCNO}}</h1>
+</div>
+
+
