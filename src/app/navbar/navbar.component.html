@@ -19,7 +19,7 @@
                     (mouseout)="$event.stopPropagation();leavesmenuTrigger.openMenu()">
                     <a class="nav-link" #leavesmenuTrigger="matMenuTrigger" [matMenuTriggerFor]="leavesmenu">Leaves</a>
                         <mat-menu #leavesmenu="matMenu">
-                        <button mat-menu-item [routerLink]="['apply']"> <mat-icon>event_note</mat-icon>Apply Leave</button>
+                        <button mat-menu-item [routerLink]="['apply']" (click)="hideHome()"> <mat-icon>event_note</mat-icon>Apply Leave</button>
                         <button mat-menu-item [routerLink]="['access']"><mat-icon>people</mat-icon> EmployeeAccess</button>
                             <button mat-menu-item [routerLink]="['leavesApprov']">
                                 <mat-icon>event_busy</mat-icon>Leaves Approval</button>
@@ -80,7 +80,7 @@
                     <button mat-menu-item [routerLink]="['updateprofile']"> <mat-icon>person</mat-icon>Profile</button>
                     <button mat-menu-item [routerLink]="['changepassword']">
                         <mat-icon>build</mat-icon>Change Password</button>
-                    <button mat-menu-item [routerLink]="['/login']">
+                    <button mat-menu-item (click)="logout()">
                         <mat-icon>exit_to_app</mat-icon>Logout</button>
                 </mat-menu>
             </div>
@@ -94,7 +94,7 @@
 
 
     <div class="bottom-content">
-        <app-home></app-home>
+        <app-home *ngIf="isHome"></app-home>
 
         <router-outlet></router-outlet>
     </div>

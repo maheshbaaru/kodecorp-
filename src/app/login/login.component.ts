@@ -1,8 +1,9 @@
 import { Component,OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
-
 import { first } from 'rxjs';
+import { AuthguardService } from '../services/authguard.service';
+import { StorageService } from '../services/storage.service';
 
 @Component({
   selector: 'app-login',
@@ -10,34 +11,47 @@ import { first } from 'rxjs';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  loginform!: FormGroup;
-  submitted = false;
-
-  
+  form: any = {
+    username: null,
+    password: null
+  };
+  isLoggedIn = false;
+  isLoginFailed = false;
+  errorMessage = '';
+  roles: string[] = [];
 
   constructor(
-    private fb: FormBuilder,) { }
+    private fb: FormBuilder,private authService: AuthguardService, private storageService: StorageService) { }
 
     
-  ngOnInit() {
-    this.loginform = this.fb.group({
-      username: [null,Validators.required],
-      password: [null,Validators.required]
-    });
-
-  }
-  get f() { return this.loginform.controls; }
-  onSubmit() {
-   
-
-    this.submitted = true;
-
-    // stop here if form is invalid
-    if (this.loginform.invalid) {
-        return;
+    ngOnInit(): void {
+      if (this.storageService.isLoggedIn()) {
+        this.isLoggedIn = true;
+        this.roles = this.storageService.getUser().roles;
+      }
     }
-
-    alert('SUCCESS!! :-)\n\n' + JSON.stringify(this.loginform.value))
-}
+  
+    onSubmit(): void {
+      const { username, password } = this.form;
+  
+      this.authService.login(username, password).subscribe({
+        next: data => {
+          this.storageService.saveUser(data);
+  
+          this.isLoginFailed = false;
+          this.isLoggedIn = true;
+          this.roles = this.storageService.getUser().roles;
+          this.reloadPage();
+        },
+        error: err => {
+          this.errorMessage = err.error.message;
+          this.isLoginFailed = true;
+        }
+      });
+    }
+  
+    reloadPage(): void {
+      window.location.reload();
+    }
   }
 

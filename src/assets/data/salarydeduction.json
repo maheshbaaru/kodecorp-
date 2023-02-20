@@ -1,0 +1,805 @@
+[
+    {
+      "Id": 1,
+      "EmpId": 2,
+      "TaxTypeId": 2,
+      "TaxDescription": "Medical Insurance",
+      "Amount": 479,
+      "EffectedMonth": "2019-09-01T00:00:00",
+      "NoOfLOPDays": 0
+    },
+    {
+      "Id": 2,
+      "EmpId": 3,
+      "TaxTypeId": 2,
+      "TaxDescription": "Medical Insurance",
+      "Amount": 2015,
+      "EffectedMonth": "2019-09-01T00:00:00",
+      "NoOfLOPDays": 0
+    },
+    {
+      "Id": 3,
+      "EmpId": 7,
+      "TaxTypeId": 2,
+      "TaxDescription": "Medical Insurance",
+      "Amount": 0,
+      "EffectedMonth": "2019-09-01T00:00:00",
+      "NoOfLOPDays": 0
+    },
+    {
+      "Id": 4,
+      "EmpId": 9,
+      "TaxTypeId": 2,
+      "TaxDescription": "Medical Insurance",
+      "Amount": 3506,
+      "EffectedMonth": "2019-09-01T00:00:00",
+      "NoOfLOPDays": 0
+    },
+    {
+      "Id": 5,
+      "EmpId": 11,
+      "TaxTypeId": 2,
+      "TaxDescription": "Medical Insurance",
+      "Amount": 2015,
+      "EffectedMonth": "2019-09-01T00:00:00",
+      "NoOfLOPDays": 0
+    },
+    {
+      "Id": 6,
+      "EmpId": 12,
+      "TaxTypeId": 2,
+      "TaxDescription": "Medical Insurance",
+      "Amount": 2015,
+      "EffectedMonth": "2019-09-01T00:00:00",
+      "NoOfLOPDays": 0
+    },
+    {
+      "Id": 7,
+      "EmpId": 13,
+      "TaxTypeId": 2,
+      "TaxDescription": "Medical Insurance",
+      "Amount": 3506,
+      "EffectedMonth": "2019-09-01T00:00:00",
+      "NoOfLOPDays": 0
+    },
+    {
+      "Id": 8,
+      "EmpId": 15,
+      "TaxTypeId": 2,
+      "TaxDescription": "Medical Insurance",
+      "Amount": 3549,
+      "EffectedMonth": "2019-09-01T00:00:00",
+      "NoOfLOPDays": 0
+    },
+    {
+      "Id": 9,
+      "EmpId": 16,
+      "TaxTypeId": 2,
+      "TaxDescription": "Medical Insurance",
+      "Amount": 3506,
+      "EffectedMonth": "2019-09-01T00:00:00",
+      "NoOfLOPDays": 0
+    },
+    {
+      "Id": 10,
+      "EmpId": 18,
+      "TaxTypeId": 2,
+      "TaxDescription": "Medical Insurance",
+      "Amount": 4552,
+      "EffectedMonth": "2019-09-01T00:00:00",
+      "NoOfLOPDays": 0
+    },
+    {
+      "Id": 11,
+      "EmpId": 20,
+      "TaxTypeId": 2,
+      "TaxDescription": "Medical Insurance",
+      "Amount": 3506,
+      "EffectedMonth": "2019-09-01T00:00:00",
+      "NoOfLOPDays": 0
+    },
+    {
+      "Id": 12,
+      "EmpId": 21,
+      "TaxTypeId": 2,
+      "TaxDescription": "Medical Insurance",
+      "Amount": 7993,
+      "EffectedMonth": "2019-09-01T00:00:00",
+      "NoOfLOPDays": 0
+    },
+    {
+      "Id": 13,
+      "EmpId": 24,
+      "TaxTypeId": 2,
+      "TaxDescription": "Medical Insurance",
+      "Amount": 0,
+      "EffectedMonth": "2019-09-01T00:00:00",
+      "NoOfLOPDays": 0
+    },
+    {
+      "Id": 14,
+      "EmpId": 25,
+      "TaxTypeId": 2,
+      "TaxDescription": "Medical Insurance",
+      "Amount": 5015,
+      "EffectedMonth": "2019-09-01T00:00:00",
+      "NoOfLOPDays": 0
+    },
+    {
+      "Id": 15,
+      "EmpId": 28,
+      "TaxTypeId": 2,
+      "TaxDescription": "Medical Insurance",
+      "Amount": 10332,
+      "EffectedMonth": "2019-09-01T00:00:00",
+      "NoOfLOPDays": 0
+    },
+    {
+      "Id": 16,
+      "EmpId": 31,
+      "TaxTypeId": 2,
+      "TaxDescription": "Medical Insurance",
+      "Amount": 2015,
+      "EffectedMonth": "2019-09-01T00:00:00",
+      "NoOfLOPDays": 0
+    },
+    {
+      "Id": 18,
+      "EmpId": 27,
+      "TaxTypeId": 1,
+      "TaxDescription": "LOP",
+      "Amount": 0,
+      "EffectedMonth": "2019-09-01T00:00:00",
+      "NoOfLOPDays": 15
+    },
+    {
+      "Id": 34,
+      "EmpId": 13,
+      "TaxTypeId": 2,
+      "TaxDescription": "Medical Insurance",
+      "Amount": 1000,
+      "EffectedMonth": "2019-10-01T00:00:00",
+      "NoOfLOPDays": 0
+    },
+    {
+      "Id": 35,
+      "EmpId": 3,
+      "TaxTypeId": 2,
+      "TaxDescription": "Medical Insurance",
+      "Amount": 1000,
+      "EffectedMonth": "2019-10-01T00:00:00",
+      "NoOfLOPDays": 0
+    },
+    {
+      "Id": 36,
+      "EmpId": 9,
+      "TaxTypeId": 2,
+      "TaxDescription": "Medical Insurance",
+      "Amount": 1000,
+      "EffectedMonth": "2019-10-01T00:00:00",
+      "NoOfLOPDays": 0
+    },
+    {
+      "Id": 37,
+      "EmpId": 18,
+      "TaxTypeId": 2,
+      "TaxDescription": "Medical Insurance",
+      "Amount": 1000,
+      "EffectedMonth": "2019-10-01T00:00:00",
+      "NoOfLOPDays": 0
+    },
+    {
+      "Id": 38,
+      "EmpId": 15,
+      "TaxTypeId": 2,
+      "TaxDescription": "Medical Insurance",
+      "Amount": 1000,
+      "EffectedMonth": "2019-10-01T00:00:00",
+      "NoOfLOPDays": 0
+    },
+    {
+      "Id": 39,
+      "EmpId": 7,
+      "TaxTypeId": 2,
+      "TaxDescription": "Medical Insurance",
+      "Amount": 7788,
+      "EffectedMonth": "2019-10-01T00:00:00",
+      "NoOfLOPDays": 0
+    },
+    {
+      "Id": 40,
+      "EmpId": 11,
+      "TaxTypeId": 2,
+      "TaxDescription": "Medical Insurance",
+      "Amount": 1000,
+      "EffectedMonth": "2019-10-01T00:00:00",
+      "NoOfLOPDays": 0
+    },
+    {
+      "Id": 41,
+      "EmpId": 2,
+      "TaxTypeId": 2,
+      "TaxDescription": "Medical Insurance",
+      "Amount": 1000,
+      "EffectedMonth": "2019-10-01T00:00:00",
+      "NoOfLOPDays": 0
+    },
+    {
+      "Id": 42,
+      "EmpId": 12,
+      "TaxTypeId": 2,
+      "TaxDescription": "Medical Insurance",
+      "Amount": 1000,
+      "EffectedMonth": "2019-10-01T00:00:00",
+      "NoOfLOPDays": 0
+    },
+    {
+      "Id": 43,
+      "EmpId": 20,
+      "TaxTypeId": 2,
+      "TaxDescription": "Medical Insurance",
+      "Amount": 1000,
+      "EffectedMonth": "2019-10-01T00:00:00",
+      "NoOfLOPDays": 0
+    },
+    {
+      "Id": 44,
+      "EmpId": 21,
+      "TaxTypeId": 2,
+      "TaxDescription": "Medical Insurance",
+      "Amount": 6000,
+      "EffectedMonth": "2019-10-01T00:00:00",
+      "NoOfLOPDays": 0
+    },
+    {
+      "Id": 45,
+      "EmpId": 16,
+      "TaxTypeId": 2,
+      "TaxDescription": "Medical Insurance",
+      "Amount": 1000,
+      "EffectedMonth": "2019-10-01T00:00:00",
+      "NoOfLOPDays": 0
+    },
+    {
+      "Id": 46,
+      "EmpId": 31,
+      "TaxTypeId": 2,
+      "TaxDescription": "Medical Insurance",
+      "Amount": 1000,
+      "EffectedMonth": "2019-10-01T00:00:00",
+      "NoOfLOPDays": 0
+    },
+    {
+      "Id": 47,
+      "EmpId": 28,
+      "TaxTypeId": 2,
+      "TaxDescription": "Medical Insurance",
+      "Amount": 1000,
+      "EffectedMonth": "2019-10-01T00:00:00",
+      "NoOfLOPDays": 0
+    },
+    {
+      "Id": 48,
+      "EmpId": 24,
+      "TaxTypeId": 2,
+      "TaxDescription": "Medical Insurance",
+      "Amount": 3015,
+      "EffectedMonth": "2019-10-01T00:00:00",
+      "NoOfLOPDays": 0
+    },
+    {
+      "Id": 49,
+      "EmpId": 4,
+      "TaxTypeId": 1,
+      "TaxDescription": "LOP",
+      "Amount": 0,
+      "EffectedMonth": "2019-10-01T00:00:00",
+      "NoOfLOPDays": 5
+    },
+    {
+      "Id": 50,
+      "EmpId": 5,
+      "TaxTypeId": 1,
+      "TaxDescription": "LOP",
+      "Amount": 0,
+      "EffectedMonth": "2019-12-01T00:00:00",
+      "NoOfLOPDays": 1
+    },
+    {
+      "Id": 51,
+      "EmpId": 1,
+      "TaxTypeId": 3,
+      "TaxDescription": "Income Tax",
+      "Amount": 25000,
+      "EffectedMonth": "2020-02-01T00:00:00",
+      "NoOfLOPDays": 0
+    },
+    {
+      "Id": 52,
+      "EmpId": 1,
+      "TaxTypeId": 3,
+      "TaxDescription": "Income Tax",
+      "Amount": 30000,
+      "EffectedMonth": "2020-03-01T00:00:00",
+      "NoOfLOPDays": 0
+    },
+    {
+      "Id": 53,
+      "EmpId": 1,
+      "TaxTypeId": 3,
+      "TaxDescription": "Income Tax",
+      "Amount": 20000,
+      "EffectedMonth": "2020-04-01T00:00:00",
+      "NoOfLOPDays": 0
+    },
+    {
+      "Id": 54,
+      "EmpId": 25,
+      "TaxTypeId": 3,
+      "TaxDescription": "Income Tax",
+      "Amount": 10000,
+      "EffectedMonth": "2020-02-01T00:00:00",
+      "NoOfLOPDays": 0
+    },
+    {
+      "Id": 55,
+      "EmpId": 25,
+      "TaxTypeId": 3,
+      "TaxDescription": "Income Tax",
+      "Amount": 5000,
+      "EffectedMonth": "2020-03-01T00:00:00",
+      "NoOfLOPDays": 0
+    },
+    {
+      "Id": 57,
+      "EmpId": 18,
+      "TaxTypeId": 2,
+      "TaxDescription": "Medical Insurance",
+      "Amount": -4000,
+      "EffectedMonth": "2020-09-01T00:00:00",
+      "NoOfLOPDays": 0
+    },
+    {
+      "Id": 1056,
+      "EmpId": 17,
+      "TaxTypeId": 3,
+      "TaxDescription": "Income Tax",
+      "Amount": 15000,
+      "EffectedMonth": "2021-02-01T00:00:00",
+      "NoOfLOPDays": 0
+    },
+    {
+      "Id": 1057,
+      "EmpId": 17,
+      "TaxTypeId": 3,
+      "TaxDescription": "Income Tax",
+      "Amount": 11852,
+      "EffectedMonth": "2021-03-01T00:00:00",
+      "NoOfLOPDays": 0
+    },
+    {
+      "Id": 1058,
+      "EmpId": 11,
+      "TaxTypeId": 1,
+      "TaxDescription": "LOP",
+      "Amount": 0,
+      "EffectedMonth": "2021-04-01T00:00:00",
+      "NoOfLOPDays": 7
+    },
+    {
+      "Id": 1059,
+      "EmpId": 25,
+      "TaxTypeId": 3,
+      "TaxDescription": "Income Tax",
+      "Amount": 30000,
+      "EffectedMonth": "2021-02-01T00:00:00",
+      "NoOfLOPDays": 0
+    },
+    {
+      "Id": 1060,
+      "EmpId": 25,
+      "TaxTypeId": 3,
+      "TaxDescription": "Income Tax",
+      "Amount": 54953,
+      "EffectedMonth": "2021-03-01T00:00:00",
+      "NoOfLOPDays": 0
+    },
+    {
+      "Id": 1061,
+      "EmpId": 25,
+      "TaxTypeId": 3,
+      "TaxDescription": "Income Tax",
+      "Amount": 5000,
+      "EffectedMonth": "2021-04-01T00:00:00",
+      "NoOfLOPDays": 0
+    },
+    {
+      "Id": 1062,
+      "EmpId": 25,
+      "TaxTypeId": 3,
+      "TaxDescription": "Income Tax",
+      "Amount": 5000,
+      "EffectedMonth": "2021-05-01T00:00:00",
+      "NoOfLOPDays": 0
+    },
+    {
+      "Id": 1063,
+      "EmpId": 25,
+      "TaxTypeId": 3,
+      "TaxDescription": "Income Tax",
+      "Amount": 5000,
+      "EffectedMonth": "2021-06-01T00:00:00",
+      "NoOfLOPDays": 0
+    },
+    {
+      "Id": 1064,
+      "EmpId": 35,
+      "TaxTypeId": 3,
+      "TaxDescription": "Income Tax",
+      "Amount": 4000,
+      "EffectedMonth": "2021-04-01T00:00:00",
+      "NoOfLOPDays": 0
+    },
+    {
+      "Id": 1065,
+      "EmpId": 35,
+      "TaxTypeId": 3,
+      "TaxDescription": "Income Tax",
+      "Amount": 4000,
+      "EffectedMonth": "2021-05-01T00:00:00",
+      "NoOfLOPDays": 0
+    },
+    {
+      "Id": 1066,
+      "EmpId": 35,
+      "TaxTypeId": 3,
+      "TaxDescription": "Income Tax",
+      "Amount": 4000,
+      "EffectedMonth": "2021-06-01T00:00:00",
+      "NoOfLOPDays": 0
+    },
+    {
+      "Id": 1070,
+      "EmpId": 55,
+      "TaxTypeId": 1,
+      "TaxDescription": "LOP",
+      "Amount": 0,
+      "EffectedMonth": "2021-04-01T00:00:00",
+      "NoOfLOPDays": 25
+    },
+    {
+      "Id": 1071,
+      "EmpId": 1,
+      "TaxTypeId": 3,
+      "TaxDescription": "Income Tax",
+      "Amount": 5000,
+      "EffectedMonth": "2021-04-01T00:00:00",
+      "NoOfLOPDays": 0
+    },
+    {
+      "Id": 1072,
+      "EmpId": 1,
+      "TaxTypeId": 3,
+      "TaxDescription": "Income Tax",
+      "Amount": 5000,
+      "EffectedMonth": "2021-05-01T00:00:00",
+      "NoOfLOPDays": 0
+    },
+    {
+      "Id": 1073,
+      "EmpId": 1,
+      "TaxTypeId": 3,
+      "TaxDescription": "Income Tax",
+      "Amount": 5000,
+      "EffectedMonth": "2021-06-01T00:00:00",
+      "NoOfLOPDays": 0
+    },
+    {
+      "Id": 2071,
+      "EmpId": 25,
+      "TaxTypeId": 3,
+      "TaxDescription": "Income Tax",
+      "Amount": 5000,
+      "EffectedMonth": "2021-07-01T00:00:00",
+      "NoOfLOPDays": 0
+    },
+    {
+      "Id": 2072,
+      "EmpId": 7,
+      "TaxTypeId": 3,
+      "TaxDescription": "Income Tax",
+      "Amount": 3000,
+      "EffectedMonth": "2021-05-01T00:00:00",
+      "NoOfLOPDays": 0
+    },
+    {
+      "Id": 2073,
+      "EmpId": 7,
+      "TaxTypeId": 3,
+      "TaxDescription": "Income Tax",
+      "Amount": 3000,
+      "EffectedMonth": "2021-06-01T00:00:00",
+      "NoOfLOPDays": 0
+    },
+    {
+      "Id": 2074,
+      "EmpId": 7,
+      "TaxTypeId": 3,
+      "TaxDescription": "Income Tax",
+      "Amount": 3000,
+      "EffectedMonth": "2021-07-01T00:00:00",
+      "NoOfLOPDays": 0
+    },
+    {
+      "Id": 2075,
+      "EmpId": 7,
+      "TaxTypeId": 3,
+      "TaxDescription": "Income Tax",
+      "Amount": 3000,
+      "EffectedMonth": "2021-08-01T00:00:00",
+      "NoOfLOPDays": 0
+    },
+    {
+      "Id": 2076,
+      "EmpId": 25,
+      "TaxTypeId": 3,
+      "TaxDescription": "Income Tax",
+      "Amount": 5000,
+      "EffectedMonth": "2021-08-01T00:00:00",
+      "NoOfLOPDays": 0
+    },
+    {
+      "Id": 2077,
+      "EmpId": 25,
+      "TaxTypeId": 3,
+      "TaxDescription": "Income Tax",
+      "Amount": 5000,
+      "EffectedMonth": "2021-09-01T00:00:00",
+      "NoOfLOPDays": 0
+    },
+    {
+      "Id": 2078,
+      "EmpId": 35,
+      "TaxTypeId": 3,
+      "TaxDescription": "Income Tax",
+      "Amount": 4000,
+      "EffectedMonth": "2021-07-01T00:00:00",
+      "NoOfLOPDays": 0
+    },
+    {
+      "Id": 2079,
+      "EmpId": 35,
+      "TaxTypeId": 3,
+      "TaxDescription": "Income Tax",
+      "Amount": 4000,
+      "EffectedMonth": "2021-08-01T00:00:00",
+      "NoOfLOPDays": 0
+    },
+    {
+      "Id": 2080,
+      "EmpId": 35,
+      "TaxTypeId": 3,
+      "TaxDescription": "Income Tax",
+      "Amount": 4000,
+      "EffectedMonth": "2021-09-01T00:00:00",
+      "NoOfLOPDays": 0
+    },
+    {
+      "Id": 2081,
+      "EmpId": 1,
+      "TaxTypeId": 3,
+      "Amount": 5000,
+      "EffectedMonth": "2021-10-01T00:00:00"
+    },
+    {
+      "Id": 2082,
+      "EmpId": 34,
+      "TaxTypeId": 3,
+      "Amount": 5000,
+      "EffectedMonth": "2022-02-01T00:00:00"
+    },
+    {
+      "Id": 2083,
+      "EmpId": 34,
+      "TaxTypeId": 2,
+      "Amount": 9705,
+      "EffectedMonth": "2022-01-01T00:00:00"
+    },
+    {
+      "Id": 2084,
+      "EmpId": 9,
+      "TaxTypeId": 3,
+      "Amount": 4000,
+      "EffectedMonth": "2022-01-01T00:00:00"
+    },
+    {
+      "Id": 2085,
+      "EmpId": 9,
+      "TaxTypeId": 3,
+      "Amount": 4000,
+      "EffectedMonth": "2022-09-01T00:00:00"
+    },
+    {
+      "Id": 2086,
+      "EmpId": 9,
+      "TaxTypeId": 3,
+      "Amount": 4000,
+      "EffectedMonth": "2022-08-01T00:00:00"
+    },
+    {
+      "Id": 2087,
+      "EmpId": 9,
+      "TaxTypeId": 3,
+      "Amount": 4000,
+      "EffectedMonth": "2022-07-01T00:00:00"
+    },
+    {
+      "Id": 2088,
+      "EmpId": 9,
+      "TaxTypeId": 1,
+      "Amount": 84722,
+      "EffectedMonth": "2022-09-01T00:00:00",
+      "NoOfLOPDays": 5
+    },
+    {
+      "Id": 2089,
+      "EmpId": 9,
+      "TaxTypeId": 4,
+      "Amount": 9760,
+      "EffectedMonth": "2022-08-01T00:00:00"
+    },
+    {
+      "Id": 2090,
+      "EmpId": 9,
+      "TaxTypeId": 4,
+      "Amount": 9760,
+      "EffectedMonth": "2022-07-01T00:00:00"
+    },
+    {
+      "Id": 2091,
+      "EmpId": 1,
+      "TaxTypeId": 3,
+      "Amount": 10000,
+      "EffectedMonth": "2022-06-01T00:00:00"
+    },
+    {
+      "Id": 2092,
+      "EmpId": 1,
+      "TaxTypeId": 3,
+      "Amount": 10000,
+      "EffectedMonth": "2022-07-01T00:00:00"
+    },
+    {
+      "Id": 2093,
+      "EmpId": 1,
+      "TaxTypeId": 3,
+      "Amount": 10000,
+      "EffectedMonth": "2022-08-01T00:00:00"
+    },
+    {
+      "Id": 2094,
+      "EmpId": 1,
+      "TaxTypeId": 3,
+      "Amount": 10000,
+      "EffectedMonth": "2022-09-01T00:00:00"
+    },
+    {
+      "Id": 2095,
+      "EmpId": 56,
+      "TaxTypeId": 3,
+      "Amount": 5000,
+      "EffectedMonth": "2022-06-01T00:00:00"
+    },
+    {
+      "Id": 2096,
+      "EmpId": 56,
+      "TaxTypeId": 3,
+      "Amount": 5000,
+      "EffectedMonth": "2022-07-01T00:00:00"
+    },
+    {
+      "Id": 2097,
+      "EmpId": 56,
+      "TaxTypeId": 3,
+      "Amount": 5000,
+      "EffectedMonth": "2022-08-01T00:00:00"
+    },
+    {
+      "Id": 2098,
+      "EmpId": 56,
+      "TaxTypeId": 3,
+      "Amount": 5000,
+      "EffectedMonth": "2022-09-01T00:00:00"
+    },
+    {
+      "Id": 3091,
+      "EmpId": 1,
+      "TaxTypeId": 3,
+      "Amount": 10000,
+      "EffectedMonth": "2022-10-01T00:00:00"
+    },
+    {
+      "Id": 4091,
+      "EmpId": 28,
+      "TaxTypeId": 3,
+      "Amount": 0,
+      "EffectedMonth": "2022-07-01T00:00:00"
+    },
+    {
+      "Id": 4092,
+      "EmpId": 1,
+      "TaxTypeId": 3,
+      "Amount": 10000,
+      "EffectedMonth": "2022-11-01T00:00:00"
+    },
+    {
+      "Id": 4093,
+      "EmpId": 59,
+      "TaxTypeId": 4,
+      "Amount": 11200,
+      "EffectedMonth": "2022-11-01T00:00:00"
+    },
+    {
+      "Id": 4094,
+      "EmpId": 59,
+      "TaxTypeId": 4,
+      "Amount": 11200,
+      "EffectedMonth": "2022-10-01T00:00:00"
+    },
+    {
+      "Id": 4095,
+      "EmpId": 59,
+      "TaxTypeId": 4,
+      "Amount": 11200,
+      "EffectedMonth": "2022-09-01T00:00:00"
+    },
+    {
+      "Id": 4096,
+      "EmpId": 59,
+      "TaxTypeId": 3,
+      "Amount": 8000,
+      "EffectedMonth": "2022-09-01T00:00:00"
+    },
+    {
+      "Id": 4097,
+      "EmpId": 59,
+      "TaxTypeId": 3,
+      "Amount": 8000,
+      "EffectedMonth": "2022-10-01T00:00:00"
+    },
+    {
+      "Id": 4098,
+      "EmpId": 59,
+      "TaxTypeId": 3,
+      "Amount": 8000,
+      "EffectedMonth": "2022-11-01T00:00:00"
+    },
+    {
+      "Id": 4099,
+      "EmpId": 12,
+      "TaxTypeId": 4,
+      "Amount": 4160,
+      "EffectedMonth": "2022-01-01T00:00:00"
+    },
+    {
+      "Id": 4100,
+      "EmpId": 59,
+      "TaxTypeId": 4,
+      "Amount": 11200,
+      "EffectedMonth": "2022-12-01T00:00:00"
+    },
+    {
+      "Id": 4101,
+      "EmpId": 59,
+      "TaxTypeId": 3,
+      "Amount": 8000,
+      "EffectedMonth": "2022-12-01T00:00:00"
+    },
+    {
+      "Id": 5093,
+      "EmpId": 1,
+      "TaxTypeId": 3,
+      "Amount": 10000,
+      "EffectedMonth": "2022-12-01T00:00:00"
+    }
+  ]
