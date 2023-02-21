@@ -14,7 +14,7 @@ export class SalaryDetailsComponent {
 
   representatives: Representative[] = [];
   @ViewChild('dt')
-  table!: Table;
+  table: Table;
 
   employees: EmployeeData[] | any;
 
