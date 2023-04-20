@@ -83,4 +83,6 @@
     cursor: not-allowed;
     font-weight: 500;
     font-size: 16px;
+    padding: 8px;
+    border-radius: 7px;
  }

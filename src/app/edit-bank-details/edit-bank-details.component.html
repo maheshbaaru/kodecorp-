@@ -1,4 +1,70 @@
-<div class="edit-bank-container">
+<p-panel  >
+    <ng-template pTemplate="header" >
+      <div  class="col -md-6" style="text-align:left">
+      <strong>UPDATE BANK DETAILS </strong>
+    </div>
+        <div class="col-sm-6" style="text-align:right">
+          <button pButton class="h-1rem" style="float: right; font-size: smaller;" routerLink="/navbar/bankDetails"><i class="pi pi-arrow-left icon"></i>BACK</button>
+          <button pButton class="h-1rem" style="float: right;margin-right:5px; font-size: smaller;"  type="submit" ><i class="pi pi-check icon"></i>SAVE</button>
+    </div>
+    </ng-template> 
+    <div class="row">   
+      <form  class=" form-styles cont  "  >
+        <div class="cont2 ">
+         <label for="EmpId" class="input-styling" required >EmpID
+             <span class="required">*</span>
+          </label>
+          <input id="EmpId" type="input" pInputText/>
+        </div>
+        <div  class="cont2">
+         <label for="accno" class="input-styling" required  >ACCNO
+             <span class="required">*</span>
+          </label>
+          <input id="accno" type="input"  pInputText />
+        </div>
+        <div  class="cont2">
+         <label for="accname" class="input-styling" required>ACCNAME
+             <span class="required">*</span>
+          </label>
+          <input id="accname"  type="input"  pInputText/>
+        </div>
+        <div  class="cont2">
+         <label for="bankname" class="input-styling disabledButton" required disabled value="Kotak mahindra">BankName
+            
+          </label>
+        <input type="text" id="bankname" class="input-styling disabledButton" disabled value="Kotak mahindra"/>
+        </div>
+      </form>
+  </div>
+  </p-panel>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="edit-bank-container">
     
     <div class="ebd-container">
         <div class="ebd-caption-content1">
@@ -33,6 +99,10 @@
     </div>
 
     
-</div>
+</div> -->
+
+
+
+
 
 

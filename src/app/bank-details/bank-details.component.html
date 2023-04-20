@@ -1,9 +1,125 @@
-<div class="caption-container">
+<div>
+    <p-panel>
+        <ng-template pTemplate="header">
+          <div  class="col -md-6" style="text-align:left">
+          <strong>BANK DETAILS</strong>
+          <input type="text" pInputText placeholder="Search Employee" [(ngModel)]="employeeSearchText" (input)="dt.filterGlobal($any($event.target).value,'contains')"    />
+        </div>
+            <div class="col-sm-6" style="text-align:right">
+                <button pButton class="h-1rem" routerLink="../create-bank-details" (click)="onCLickcreate()" class="h-2rem"style="float: right;font-size: small;font-weight: 500;margin-top:6px ;">+ CREATE NEW</button>
+            
+        </div>
+        </ng-template> 
+        <p-table #dt [value]="employees" [(selection)]="selectedCustomers" [tableStyle]="{'min-width': '50rem'}" styleClass="p-datatable-gridlines" dataKey="id" styleClass="p-datatable-customers" [rowHover]="true"
+        [rows]="10" [showCurrentPageReport]="true" [rowsPerPageOptions]="[10,25,50]" 
+        [paginator]="true" currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
+        [filterDelay]="0" styleClass="p-datatable-gridlines"  [globalFilterFields]="['EmpId','ACCNO','ACCNAME','BankName']"  >
+        <ng-template pTemplate="header">
+            <tr >
+                <!-- <th style="width: 3rem"></th> -->
+                <th >
+                    <div class="p-d-flex p-jc-between p-ai-center th-div">
+                        Emp ID
+                         <p-columnFilter type="text" field="employee.name" display="menu">
+                         </p-columnFilter> 
+                    </div>
+                    
+                </th>
+                
+                <th >
+                    <div class="p-d-flex p-jc-between p-ai-center th-div">
+                        Account No
+                        <p-columnFilter type="text" field="employee.name" display="menu">
+                        </p-columnFilter> 
+                   </div>
+                </th>
+                
+                <th >
+                    <div class="p-d-flex p-jc-between p-ai-center th-div">
+                        Account Holder Name 
+                        <p-columnFilter type="text" field="employee.name" display="menu">
+                        </p-columnFilter> 
+                   </div>
+                </th>
+                
+                <th >
+                    <div class="p-d-flex p-jc-between p-ai-center th-div">
+                        Bank Name 
+                        <p-columnFilter type="text" field="country.name" display="menu" class="filter-container">
+                        </p-columnFilter> 
+                   </div>
+                </th>
+                
+            </tr>
+            
+        </ng-template>
+        <ng-template pTemplate="body" let-employee>
+                
+            <tr class="p-selectable-row">
+               
+                <td>
+                    <!-- <a routerLink="'../edit-bank-details',employee.EmpId" class="empId">
+                        
+                        KC{{employee.EmpId<100?'0'+employee.EmpId:employee.EmpId}}
+                    </a> -->
+                    
+                    <a [routerLink]="['../edit-bank-details', employee.EmpId]" class="empId">
+                        KC{{employee.EmpId<100?'0'+employee.EmpId:employee.EmpId}}
+                    </a>
+
+                </td>
+                <td>
+                    <span class="p-column-title">Country</span>
+                    <span class="image-text">{{employee.ACCNO}}</span>
+                </td>
+                <td>
+                    <span class="p-column-title">Representative</span>
+                    <span class="image-text">{{employee.ACCNAME}}</span>
+                </td>
+                <td>
+                    <span class="p-column-title">Date</span>
+                    {{employee.BankName}}
+                </td>
+            </tr>
+        
+        </ng-template>
+      </p-table> 
+      </p-panel>
+      
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="caption-container">
     <div class="caption-content1">
         <h1 class="bank-details-title">BANK DETAILS</h1>
         
         <input class="caption-search-input" type="text" [(ngModel)]="employeeSearchText" (input)="dt.filterGlobal(employeeSearchText, 'contains')" placeholder="Search Employee" />
-        <!-- <input class="caption-search-input" type="text" (input)="dt.filterGlobal($any($event.target).value, 'contains')" placeholder="Search Employee" /> -->
+    
 
 
     </div>
@@ -18,13 +134,10 @@
         [rows]="10" [showCurrentPageReport]="true" [rowsPerPageOptions]="[10,25,50]" [loading]="loading"
         [paginator]="true" currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
         [filterDelay]="0" styleClass="p-datatable-gridlines" [globalFilterFields]="['EmpId','ACCNO','ACCNAME','BankName']">
-            <!-- <ng-template pTemplate="caption">
-                
-            </ng-template> -->
             
             <ng-template pTemplate="header">
                 <tr >
-                    <!-- <th style="width: 3rem"></th> -->
+                 
                     <th >
                         <div class="p-d-flex p-jc-between p-ai-center th-div">
                             Emp ID
@@ -67,10 +180,7 @@
                 <tr class="p-selectable-row">
                    
                     <td>
-                        <!-- <a routerLink="'../edit-bank-details',employee.EmpId" class="empId">
-                            
-                            KC{{employee.EmpId<100?'0'+employee.EmpId:employee.EmpId}}
-                        </a> -->
+                 
                         
                         <a [routerLink]="['../edit-bank-details', employee.EmpId]" class="empId">
                             KC{{employee.EmpId<100?'0'+employee.EmpId:employee.EmpId}}
@@ -102,7 +212,8 @@
 </p-table>
 
 
-</div>
+</div> -->
+
 
 
 
