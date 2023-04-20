@@ -5,7 +5,7 @@ import { EmployeeData } from '../employee';
 export class SalaryService {
   constructor(private http: HttpClient) {}
 
-  getCarsSmall() {
+  getEmployee() {
     return this.http
       .get('')
       .toPromise()

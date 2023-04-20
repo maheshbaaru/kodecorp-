@@ -17,7 +17,10 @@
         
     </div>
     </ng-template> 
-    <p-table #dt [value]="sample" [tableStyle]="{'min-width': '50rem'}" styleClass="p-datatable-gridlines"   [globalFilterFields]="['FirstName']">
+    <p-table #dt [value]="sample" [tableStyle]="{'min-width': '50rem'}" styleClass="p-datatable-gridlines" dataKey="id" styleClass="p-datatable-customers" [rowHover]="true"
+    [rows]="10" [showCurrentPageReport]="true" [rowsPerPageOptions]="[10,25,50]" 
+    [paginator]="true" currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
+    [filterDelay]="0" styleClass="p-datatable-gridlines" [globalFilterFields]="['sample.EmployeeId','Name','Salary','LastRevisedDate','NextRevisedDate']"  >
     <ng-template pTemplate="header">
         <tr>
 
