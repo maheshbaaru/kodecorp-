@@ -3,7 +3,7 @@
         <ng-template pTemplate="header">
           <div  class="col -md-6" style="text-align:left">
           <strong>BANK DETAILS</strong>
-          <input type="text" pInputText placeholder="Search Employee" [(ngModel)]="employeeSearchText" (input)="dt.filterGlobal($any($event.target).value,'contains')"    />
+          <input type="text" pInputText placeholder="Search Employee" class="h-1rem" [(ngModel)]="employeeSearchText" (input)="dt.filterGlobal($any($event.target).value,'contains')"    />
         </div>
             <div class="col-sm-6" style="text-align:right">
                 <button pButton class="h-1rem" routerLink="../create-bank-details" (click)="onCLickcreate()" class="h-2rem"style="float: right;font-size: small;font-weight: 500;margin-top:6px ;">+ CREATE NEW</button>

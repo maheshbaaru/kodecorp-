@@ -10,7 +10,7 @@
     <ng-template pTemplate="header">
       <div  class="col -md-6" style="text-align:left">
       <strong>SALARY DISPLAY LIST  </strong>
-      <input type="text" pInputText placeholder="Search Employee" (input)="table.filterGlobal($any($event.target).value,'contains')"    />
+      <input type="text" class="h-1rem" pInputText placeholder="Search Employee" (input)="table.filterGlobal($any($event.target).value,'contains')"    />
     </div>
         <div class="col-sm-6" style="text-align:right">
             <button pButton class="h-1rem" routerLink="../create-new-salary-details" class="h-2rem"style="float: right;font-size: small;font-weight: 500;margin-top:6px ;">+ CREATE NEW</button>
@@ -20,7 +20,7 @@
     <p-table #dt [value]="sample" [tableStyle]="{'min-width': '50rem'}" styleClass="p-datatable-gridlines" dataKey="id" styleClass="p-datatable-customers" [rowHover]="true"
     [rows]="10" [showCurrentPageReport]="true" [rowsPerPageOptions]="[10,25,50]" 
     [paginator]="true" currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
-    [filterDelay]="0" styleClass="p-datatable-gridlines" [globalFilterFields]="['sample.EmployeeId','Name','Salary','LastRevisedDate','NextRevisedDate']"  >
+    [filterDelay]="0" styleClass="p-datatable-gridlines" [globalFilterFields]="['FirstName']"  >
     <ng-template pTemplate="header">
         <tr>
 
